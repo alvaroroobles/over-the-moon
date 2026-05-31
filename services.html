@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Servicios y Cursos - Over the Moon Academia</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet">
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "error": "#ba1a1a",
+            "surface": "#f9f9fc",
+            "on-tertiary": "#ffffff",
+            "on-tertiary-container": "#ffe3b7",
+            "secondary-container": "#dae1e2",
+            "tertiary-container": "#886000",
+            "on-secondary": "#ffffff",
+            "primary-fixed-dim": "#80d3e4",
+            "on-secondary-fixed-variant": "#414849",
+            "surface-dim": "#dadadc",
+            "on-primary-fixed": "#001f25",
+            "error-container": "#ffdad6",
+            "background": "#f9f9fc",
+            "secondary-fixed": "#dde4e5",
+            "surface-container-low": "#f3f3f6",
+            "primary": "#005864",
+            "on-secondary-fixed": "#161d1e",
+            "on-primary-container": "#b1f1ff",
+            "tertiary-fixed-dim": "#ffba20",
+            "on-primary-fixed-variant": "#004e59",
+            "on-tertiary-fixed-variant": "#5e4200",
+            "inverse-on-surface": "#f0f0f3",
+            "secondary": "#586061",
+            "tertiary": "#694a00",
+            "on-secondary-container": "#5d6465",
+            "surface-container": "#eeeef0",
+            "surface-bright": "#f9f9fc",
+            "tertiary-fixed": "#ffdea8",
+            "surface-tint": "#006876",
+            "on-primary": "#ffffff",
+            "on-background": "#1a1c1e",
+            "primary-container": "#017281",
+            "secondary-fixed-dim": "#c1c8c9",
+            "surface-container-lowest": "#ffffff",
+            "outline-variant": "#bec8cb",
+            "inverse-primary": "#80d3e4",
+            "on-error-container": "#93000a",
+            "primary-fixed": "#a0efff",
+            "on-surface-variant": "#3e484b",
+            "on-tertiary-fixed": "#271900",
+            "on-surface": "#1a1c1e",
+            "surface-variant": "#e2e2e5",
+            "surface-container-high": "#e8e8ea",
+            "outline": "#6e797b",
+            "on-error": "#ffffff",
+            "surface-container-highest": "#e2e2e5",
+            "inverse-surface": "#2f3133"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "margin-desktop": "64px",
+            "margin-mobile": "20px",
+            "section-gap": "80px",
+            "container-max": "1280px",
+            "gutter": "24px",
+            "base": "8px"
+          },
+          "fontFamily": {
+            "headline-lg": ["Montserrat"],
+            "headline-md": ["Montserrat"],
+            "headline-lg-mobile": ["Montserrat"],
+            "label-sm": ["Inter"],
+            "label-md": ["Inter"],
+            "body-md": ["Inter"],
+            "display-lg": ["Montserrat"],
+            "body-lg": ["Inter"]
+          },
+          "fontSize": {
+            "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }],
+            "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+            "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500" }],
+            "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+          }
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      line-height: 1;
+    }
+
+    .card-lift {
+      transition: transform 200ms ease-out, box-shadow 200ms ease-out;
+    }
+
+    .card-lift:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px -8px rgba(1, 114, 129, 0.15);
+    }
+  </style>
+</head>
+
+<body class="bg-surface font-body-md text-on-surface">
+  <!-- TopNavBar -->
+  <header class="docked full-width top-0 sticky z-50 shadow-sm bg-surface-container-lowest">
+    <nav
+      class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+      <div class="text-headline-md font-headline-md font-bold text-primary dark:text-primary-fixed-dim"><img
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_HBfSAIqQ2tLV6wVnV0rdCnK_F33GiC179y2RIL3REvDZbFpdPYrGCQOhhMeaoXq0Ym6Ai1ZB31M75uLHzZ2fmYqcqsXf0cKnrW5gwwoClwtrM3esrsbNCkOHUvLFWDhRXFl2gjAp8lEDTxyM9APjpd9r8Ai0hIV1j6uBsi_Ij-9mUy8UeHV8HchxsjMuPKRd85opbSt-JTqfluugvOeRpuoMmcwNnV9s8_Ny936LisKZiLbU5XgweNeS3cRBJ_vB4LVSB2ZQci0"
+          alt="Over the Moon Academia Logo" class="h-12 w-auto object-contain"></div>
+      <!-- Desktop Links -->
+      <div class="hidden md:flex items-center gap-8">
+        <a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200 font-label-md text-label-md"
+          href="/index.html">Inicio</a>
+        <a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200 font-label-md text-label-md"
+          href="/about.html">Nosotros</a>
+        <a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-md text-label-md"
+          href="/services.html">Servicios</a>
+        <a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200 font-label-md text-label-md"
+          href="#">Contacto</a>
+      </div>
+      <div class="flex items-center gap-4">
+        <button
+          class="bg-[#FFB800] text-on-tertiary-fixed font-bold py-2 px-6 rounded-lg shadow-sm hover:opacity-90 transition-all font-label-md text-label-md">
+          Enroll Now
+        </button>
+        <button class="md:hidden text-primary">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <main class="min-h-screen">
+    <!-- Hero Section -->
+    <section class="bg-secondary-container/30 py-section-gap">
+      <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center">
+        <h1 class="font-display-lg text-display-lg text-primary mb-6">Nuestros Servicios Educativos</h1>
+        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+          Descubre una amplia gama de programas diseñados para potenciar el talento académico y profesional de cada
+          estudiante en un entorno moderno y eficiente.
+        </p>
+      </div>
+    </section>
+    <!-- Search & Filter Bar -->
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop -mt-8">
+      <div
+        class="bg-surface-container-lowest p-4 rounded-xl shadow-sm border border-outline-variant flex flex-wrap gap-4 items-center justify-between">
+        <div class="flex gap-2 overflow-x-auto pb-2 md:pb-0 scrollbar-hide">
+          <span
+            class="bg-primary-container text-on-primary-container px-4 py-1.5 rounded-full font-label-md text-label-md cursor-pointer">Todos</span>
+          <span
+            class="bg-surface-container text-on-surface-variant px-4 py-1.5 rounded-full font-label-md text-label-md cursor-pointer hover:bg-secondary-container transition-colors">A-Levels</span>
+          <span
+            class="bg-surface-container text-on-surface-variant px-4 py-1.5 rounded-full font-label-md text-label-md cursor-pointer hover:bg-secondary-container transition-colors">Idiomas</span>
+          <span
+            class="bg-surface-container text-on-surface-variant px-4 py-1.5 rounded-full font-label-md text-label-md cursor-pointer hover:bg-secondary-container transition-colors">Empresas</span>
+          <span
+            class="bg-surface-container text-on-surface-variant px-4 py-1.5 rounded-full font-label-md text-label-md cursor-pointer hover:bg-secondary-container transition-colors">Refuerzo</span>
+        </div>
+        <div class="relative w-full md:w-64">
+          <input
+            class="w-full bg-surface-container-low border border-outline-variant rounded-lg py-2 pl-10 pr-4 focus:ring-2 focus:ring-primary focus:border-transparent outline-none font-body-md"
+            placeholder="Buscar cursos..." type="text">
+          <span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant">search</span>
+        </div>
+      </div>
+    </div>
+    <!-- Services Grid -->
+    <section class="py-section-gap">
+      <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+          <!-- Card 1 -->
+          <div
+            class="bg-surface-container-lowest rounded-xl border border-outline-variant card-lift overflow-hidden group"
+            style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s ease-out, transform 0.6s ease-out;">
+            <div class="h-48 overflow-hidden">
+              <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                data-alt="A clean, minimalist study space with a modern desk, a tablet, and professional textbooks. The lighting is bright and airy, reflecting a focused academic atmosphere. The color palette features soft teals and neutral whites, creating a professional and calm learning environment."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIrbN9Cz0YISADi9-qOf6h_AGqDP4s4YU46X_G4yuZG_2nB5Iyf8O9od4vRCPZINyZuOsg2C10DeH365L0w1_9FSie-3indR0QU5ttvpbVQCfFKrIwnV_BteMYHNmCj4_R14CEy5JtTnzAOA-FOUs2T-ViPTqSJZ7VQP_ieML4_gBbzhKlA2gsW8g-ZVN6YQvzwrMVYKlJltDBfIATtvThZgtOLKRflfnpY6sQk15Ax6VF1v79cEG4XX9A5H0ajhB65vLpYl3S_CA">
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-2 mb-3">
+                <span class="material-symbols-outlined text-primary"
+                  style="font-variation-settings: 'FILL' 1;">school</span>
+                <span
+                  class="bg-secondary-container text-secondary text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">A-Levels</span>
+              </div>
+              <h3 class="font-headline-md text-headline-md text-on-surface mb-3">Preparación A-Levels</h3>
+              <p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                Programas intensivos diseñados para maximizar tus resultados en exámenes internacionales con tutoría
+                personalizada.
+              </p>
+              <button
+                class="w-full border-2 border-primary text-primary font-bold py-2.5 rounded-lg hover:bg-primary/5 transition-colors flex items-center justify-center gap-2">
+                Más información
+                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div
+            class="bg-surface-container-lowest rounded-xl border border-outline-variant card-lift overflow-hidden group"
+            style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s ease-out, transform 0.6s ease-out;">
+            <div class="h-48 overflow-hidden">
+              <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                data-alt="A small group of diverse students engaging in a collaborative discussion around a modern light wood table. The background is a clean white academy wall with subtle teal accents. The lighting is soft and natural, emphasizing a professional yet welcoming educational setting."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5qX1fhyOcjPi09Hvf0eZNPWA3JSiV5YfwucTuAQ0PcR2GQzQKQhLgOTglSydVIWXqBf99ESan19G524QG4OnHimiyV1kVfwXqJnN_OO9z7ua_EAfLV3vFhfM3HrgBFKA9Vs1JX1dYrl_E5Rp6vb68-F-xzDj13WiAkGnY5LZ4guqhFEoDncBK_iCHg8NlIBK6E7lAdcFWSX6ene2lErPaAIFB0ndGKjEHaWWMSbsgGQGiTPXxipmKS5obBWa5408JqgQeDg3mxGg">
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-2 mb-3">
+                <span class="material-symbols-outlined text-primary"
+                  style="font-variation-settings: 'FILL' 1;">language</span>
+                <span
+                  class="bg-secondary-container text-secondary text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">Idiomas</span>
+              </div>
+              <h3 class="font-headline-md text-headline-md text-on-surface mb-3">Inglés Académico</h3>
+              <p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                Domina el lenguaje técnico y académico necesario para triunfar en universidades de habla inglesa en todo
+                el mundo.
+              </p>
+              <button
+                class="w-full border-2 border-primary text-primary font-bold py-2.5 rounded-lg hover:bg-primary/5 transition-colors flex items-center justify-center gap-2">
+                Más información
+                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div
+            class="bg-surface-container-lowest rounded-xl border border-outline-variant card-lift overflow-hidden group"
+            style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s ease-out, transform 0.6s ease-out;">
+            <div class="h-48 overflow-hidden">
+              <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                data-alt="A professional business setting featuring a sleek laptop on a polished dark desk, with a soft-focus office interior behind it. High-end lighting creates sharp highlights and deep shadows. The color theme is corporate teal and soft gray, representing executive training and professional development."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAznEkX_oyY8hXJPwd2SkVYiNERP9MiPEtNujOfp3FpVns2wK32j3NHr7f5yxcBLP26Qsz-1tdePR0TqaO8z9paWA1KFxjfd0rgR6MmT7_9sy216C1jUi4Oy4PUGx38DdE_kE5HC3jGuTTFuQu9VN8UyZ_ekV-alLJz8QjGcNty8Mtv2mZTET5lntb23xbbwGNuyUYZOamTUTV_pbz7PKzAraKnEFkalRoeIGr7bQguO6FubtH3d7LaiEcWEyNOIvv8r8t3IoR-iTc">
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-2 mb-3">
+                <span class="material-symbols-outlined text-primary"
+                  style="font-variation-settings: 'FILL' 1;">corporate_fare</span>
+                <span
+                  class="bg-secondary-container text-secondary text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">Empresas</span>
+              </div>
+              <h3 class="font-headline-md text-headline-md text-on-surface mb-3">Capacitación Ejecutiva</h3>
+              <p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                Soluciones de aprendizaje a medida para equipos corporativos que buscan excelencia y actualización
+                profesional.
+              </p>
+              <button
+                class="w-full border-2 border-primary text-primary font-bold py-2.5 rounded-lg hover:bg-primary/5 transition-colors flex items-center justify-center gap-2">
+                Más información
+                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div
+            class="bg-surface-container-lowest rounded-xl border border-outline-variant card-lift overflow-hidden group"
+            style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s ease-out, transform 0.6s ease-out;">
+            <div class="h-48 overflow-hidden">
+              <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                data-alt="A brightly lit classroom with modern ergonomic furniture and a clean whiteboard featuring mathematical equations. The aesthetic is modern and structured, with plenty of natural light. Primary teal accents on the furniture provide a pop of color against the neutral background."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBh6fajoMgHbGtiG1akrM6RfEXMLCA-Je9kMaoDPI94STSH55g62Pu3t9N2_0iiQWYHs4M-lKctYdXZjfCuROmPzUj5iCwsS8RJlv6WVOW1tpEREaC3MKtzYHPDMj2SwMi0pKIy1WOLeHGT4ScsCTMD4s7tOOyCWnHaD2ImA7v3LfGKQj-oYhiRRAav2mXsisv4WCP2K9PJITttiQTOai_xNngYWuCB2u9XYs9HVgGcmJqDYmStrh0JjmOcUdCdtNB0YUG5EHoh8Bs">
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-2 mb-3">
+                <span class="material-symbols-outlined text-primary"
+                  style="font-variation-settings: 'FILL' 1;">functions</span>
+                <span
+                  class="bg-secondary-container text-secondary text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">Refuerzo</span>
+              </div>
+              <h3 class="font-headline-md text-headline-md text-on-surface mb-3">Apoyo en Ciencias</h3>
+              <p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                Clases de refuerzo personalizadas en Matemáticas, Física y Química para asegurar el éxito en la
+                educación secundaria.
+              </p>
+              <button
+                class="w-full border-2 border-primary text-primary font-bold py-2.5 rounded-lg hover:bg-primary/5 transition-colors flex items-center justify-center gap-2">
+                Más información
+                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div
+            class="bg-surface-container-lowest rounded-xl border border-outline-variant card-lift overflow-hidden group"
+            style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s ease-out, transform 0.6s ease-out;">
+            <div class="h-48 overflow-hidden">
+              <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                data-alt="A focused close-up of hands writing in a leather-bound notebook next to a modern fountain pen. The desk is clean marble, and the lighting is cinematic and warm. The scene conveys a sense of high-end academic rigor and creative writing focus in a professional academia setting."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB93HF9vKS3_pOA4K6zUOF7a7E2Po-ejH8hpQoXUO44Sa_-FTwNV_HpvA3N3BA59-pPP3kUjJax6V2VBHJ7j-Bw4s27CNHCWIh1PlV7HBAtzXLyeWQr2wrEg-QeZS4VVmx6LHwf3-v8P3k4WRw6Wh792wK_XoA32ORGqMsy1QK2fSIzL5mDWo6rUqYb1-LZT0LxU5ZgvzonwoFKgenV79fDEpwclSC3TdV276KiwXtHEZ2Ivhu-Q78XxxOkDlRDWxEpHQOgH1Ojk9w">
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-2 mb-3">
+                <span class="material-symbols-outlined text-primary"
+                  style="font-variation-settings: 'FILL' 1;">edit_note</span>
+                <span
+                  class="bg-secondary-container text-secondary text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">Humanidades</span>
+              </div>
+              <h3 class="font-headline-md text-headline-md text-on-surface mb-3">Literatura y Crítica</h3>
+              <p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                Explora el pensamiento crítico y la expresión escrita a través de nuestros talleres avanzados de
+                literatura universal.
+              </p>
+              <button
+                class="w-full border-2 border-primary text-primary font-bold py-2.5 rounded-lg hover:bg-primary/5 transition-colors flex items-center justify-center gap-2">
+                Más información
+                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div
+            class="bg-surface-container-lowest rounded-xl border border-outline-variant card-lift overflow-hidden group"
+            style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s ease-out, transform 0.6s ease-out;">
+            <div class="h-48 overflow-hidden">
+              <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                data-alt="A modern tech lab featuring sleek workstations and glowing screens displaying code and data visualizations. The lighting is cool-toned with bright accents. The aesthetic is clean, technological, and professional, representing digital skills training in a modern academic environment."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWcJzcqhos8TaMxWe0_iXO4WEuC7UW18PmzqNYd_xQmrGCrgxcxLA89U5uHTylqNqTYn4E8eAZwh7YkpH7XWcPIddK-RfLMJEtS3IzcE25pev-ymOo1jDDnaZFB6pPQzgO5680R82b0b4JsNfbB7q7w_eprHyU1axe5chpQw9S8onVSs7VW31ouR2x5wmto86-SP3SbRenKEe7KdzT9eLPCJS2xK2Y6P067omZHyVLpRba_45NpAZGef8ZRGWU-1pPw4ljdKF_WS0">
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-2 mb-3">
+                <span class="material-symbols-outlined text-primary"
+                  style="font-variation-settings: 'FILL' 1;">terminal</span>
+                <span
+                  class="bg-secondary-container text-secondary text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">Tecnología</span>
+              </div>
+              <h3 class="font-headline-md text-headline-md text-on-surface mb-3">Habilidades Digitales</h3>
+              <p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                Cursos de programación, análisis de datos y herramientas digitales para el mercado laboral del siglo
+                XXI.
+              </p>
+              <button
+                class="w-full border-2 border-primary text-primary font-bold py-2.5 rounded-lg hover:bg-primary/5 transition-colors flex items-center justify-center gap-2">
+                Más información
+                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CTA Section -->
+    <section class="py-section-gap bg-primary text-on-primary">
+      <div
+        class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row items-center justify-between gap-8">
+        <div class="text-center md:text-left">
+          <h2 class="font-headline-lg text-headline-lg mb-2">¿No encuentras lo que buscas?</h2>
+          <p class="font-body-lg text-body-lg opacity-90">Creamos planes de estudio personalizados para tus necesidades
+            específicas.</p>
+        </div>
+        <button
+          class="bg-[#FFB800] text-on-tertiary-fixed font-bold py-4 px-10 rounded-xl shadow-lg hover:scale-105 transition-transform">
+          Contáctanos ahora
+        </button>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer class="bg-surface-container dark:bg-surface-container-high full-width bottom-0">
+    <div
+      class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto">
+      <div class="col-span-1 md:col-span-1">
+        <div class="text-headline-md font-headline-md font-bold text-primary dark:text-primary-fixed-dim mb-4">
+          Over the Moon Academia
+        </div>
+        <p class="text-on-surface-variant font-body-md mb-6">
+          Liderando el camino hacia la excelencia académica con métodos modernos y atención personalizada.
+        </p>
+      </div>
+      <div class="flex flex-col gap-4">
+        <h4 class="text-primary font-bold font-headline-md text-[18px]">Programas</h4>
+        <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">A-Levels</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Idiomas</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Refuerzo
+          Académico</a>
+      </div>
+      <div class="flex flex-col gap-4">
+        <h4 class="text-primary font-bold font-headline-md text-[18px]">Institución</h4>
+        <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Privacy Policy</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Terms of
+          Service</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">FAQ</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Careers</a>
+      </div>
+      <div class="flex flex-col gap-4">
+        <h4 class="text-primary font-bold font-headline-md text-[18px]">Contacto</h4>
+        <div class="flex items-center gap-2 text-on-surface-variant font-body-md">
+          <span class="material-symbols-outlined text-[18px]">mail</span>
+          info@overthemoon.edu
+        </div>
+        <div class="flex items-center gap-2 text-on-surface-variant font-body-md">
+          <span class="material-symbols-outlined text-[18px]">call</span>
+          +34 900 123 456
+        </div>
+        <div class="flex items-center gap-2 text-on-surface-variant font-body-md">
+          <span class="material-symbols-outlined text-[18px]">location_on</span>
+          Madrid, España
+        </div>
+      </div>
+    </div>
+    <div
+      class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-8 border-t border-outline-variant text-center md:text-left">
+      <p class="text-on-surface-variant font-label-md text-label-md">
+        © 2024 Over the Moon Academia. All rights reserved.
+      </p>
+    </div>
+  </footer>
+  <script>
+    // Micro-interaction for filter chips
+    const chips = document.querySelectorAll('.rounded-full.cursor-pointer');
+    chips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        chips.forEach(c => {
+          c.classList.remove('bg-primary-container', 'text-on-primary-container');
+          c.classList.add('bg-surface-container', 'text-on-surface-variant');
+        });
+        chip.classList.add('bg-primary-container', 'text-on-primary-container');
+        chip.classList.remove('bg-surface-container', 'text-on-surface-variant');
+      });
+    });
+
+    // Simple scroll reveal for cards
+    const observerOptions = {
+      threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+          }, index * 100);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.card-lift').forEach(card => {
+      card.style.opacity = '0';
+      card.style.transform = 'translateY(20px)';
+      card.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+      observer.observe(card);
+    });
+  </script>
+
+
+</body>
+
+</html>

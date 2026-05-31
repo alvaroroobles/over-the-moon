@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Contacto y Registro | Over the Moon Academia</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet">
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "error": "#ba1a1a",
+            "surface": "#f9f9fc",
+            "on-tertiary": "#ffffff",
+            "on-tertiary-container": "#ffe3b7",
+            "secondary-container": "#dae1e2",
+            "tertiary-container": "#886000",
+            "on-secondary": "#ffffff",
+            "primary-fixed-dim": "#80d3e4",
+            "on-secondary-fixed-variant": "#414849",
+            "surface-dim": "#dadadc",
+            "on-primary-fixed": "#001f25",
+            "error-container": "#ffdad6",
+            "background": "#f9f9fc",
+            "secondary-fixed": "#dde4e5",
+            "surface-container-low": "#f3f3f6",
+            "primary": "#005864",
+            "on-secondary-fixed": "#161d1e",
+            "on-primary-container": "#b1f1ff",
+            "tertiary-fixed-dim": "#ffba20",
+            "on-primary-fixed-variant": "#004e59",
+            "on-tertiary-fixed-variant": "#5e4200",
+            "inverse-on-surface": "#f0f0f3",
+            "secondary": "#586061",
+            "tertiary": "#694a00",
+            "on-secondary-container": "#5d6465",
+            "surface-container": "#eeeef0",
+            "surface-bright": "#f9f9fc",
+            "tertiary-fixed": "#ffdea8",
+            "surface-tint": "#006876",
+            "on-primary": "#ffffff",
+            "on-background": "#1a1c1e",
+            "primary-container": "#017281",
+            "secondary-fixed-dim": "#c1c8c9",
+            "surface-container-lowest": "#ffffff",
+            "outline-variant": "#bec8cb",
+            "inverse-primary": "#80d3e4",
+            "on-error-container": "#93000a",
+            "primary-fixed": "#a0efff",
+            "on-surface-variant": "#3e484b",
+            "on-tertiary-fixed": "#271900",
+            "on-surface": "#1a1c1e",
+            "surface-variant": "#e2e2e5",
+            "surface-container-high": "#e8e8ea",
+            "outline": "#6e797b",
+            "on-error": "#ffffff",
+            "surface-container-highest": "#e2e2e5",
+            "inverse-surface": "#2f3133"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "margin-desktop": "64px",
+            "margin-mobile": "20px",
+            "section-gap": "80px",
+            "container-max": "1280px",
+            "gutter": "24px",
+            "base": "8px"
+          },
+          "fontFamily": {
+            "headline-lg": ["Montserrat"],
+            "headline-md": ["Montserrat"],
+            "headline-lg-mobile": ["Montserrat"],
+            "label-sm": ["Inter"],
+            "label-md": ["Inter"],
+            "body-md": ["Inter"],
+            "display-lg": ["Montserrat"],
+            "body-lg": ["Inter"]
+          },
+          "fontSize": {
+            "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }],
+            "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+            "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500" }],
+            "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+          }
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    .form-focus-ring:focus {
+      border-color: #017281;
+      box-shadow: 0 0 0 2px rgba(1, 114, 129, 0.1);
+      outline: none;
+    }
+  </style>
+</head>
+
+<body class="bg-surface text-on-surface">
+  <!-- TopNavBar -->
+  <nav class="sticky top-0 z-50 bg-surface-container-lowest shadow-sm w-full">
+    <div
+      class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+      <div class="text-primary dark:text-primary-fixed-dim"><img
+          src="assets/img/logo (2).png"
+          alt="Over the Moon Academia Logo" class="h-12 w-auto object-contain"></div>
+      <div class="hidden md:flex items-center gap-8">
+        <a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200 font-label-md text-label-md"
+          href="index.html">Inicio</a>
+        <a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200 font-label-md text-label-md"
+          href="about.html">Sobre Nosotros</a>
+        <a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200 font-label-md text-label-md"
+          href="services.html">Servicios</a>
+        <a class="text-primary font-bold border-b-2 border-primary pb-1 hover:text-primary transition-colors duration-200 font-label-md text-label-md"
+          href="contact.html">Contacto</a>
+        <button class="bg-[#FFB800] text-on-surface font-label-md text-label-md px-6 py-2.5 rounded-lg font-bold shadow-sm hover:shadow-md transition-all duration-200 active:opacity-80">
+          Inscribirse
+        </button>
+      </div>
+      <!-- Mobile Menu Toggle -->
+      <button class="md:hidden text-primary" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+    <!-- Mobile Nav -->
+    <div class="hidden bg-surface-container-lowest border-t border-outline-variant px-margin-mobile py-4 space-y-4 shadow-lg" id="mobile-menu">
+      <a class="block text-on-surface-variant font-medium font-label-md text-label-md" href="index.html">Inicio</a>
+      <a class="block text-on-surface-variant font-medium font-label-md text-label-md" href="about.html">Sobre Nosotros</a>
+      <a class="block text-on-surface-variant font-medium font-label-md text-label-md" href="services.html">Servicios</a>
+      <a class="block text-primary font-bold font-label-md text-label-md" href="contact.html">Contacto</a>
+      <button class="w-full bg-[#FFB800] text-on-surface px-6 py-3 rounded-lg font-label-md text-label-md font-bold">Inscribirse</button>
+    </div>
+  </nav>
+  <main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-section-gap">
+    <!-- Header Section -->
+    <header class="mb-12 text-center md:text-left">
+      <h1 class="font-display-lg text-display-lg text-primary mb-4 hidden md:block">Contáctanos y Comienza tu Futuro
+      </h1>
+      <h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-4 md:hidden">Comienza tu Futuro</h1>
+      <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+        Estamos aquí para guiarte en tu camino hacia la excelencia académica. Completa el formulario y nuestro equipo de
+        admisiones se pondrá en contacto contigo en menos de 24 horas.
+      </p>
+    </header>
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+      <!-- Registration Form Card -->
+      <section
+        class="lg:col-span-7 bg-surface-container-lowest p-8 rounded-xl border border-outline-variant shadow-sm hover:shadow-md transition-all duration-200">
+        <h2 class="font-headline-md text-headline-md text-on-surface mb-8">Formulario de Registro</h2>
+        <form class="space-y-6" id="registrationForm">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="space-y-2">
+              <label class="font-label-md text-label-md text-on-surface-variant" for="name">Nombre Completo</label>
+              <input
+                class="w-full p-3 rounded-lg border border-outline bg-white text-body-md font-body-md form-focus-ring"
+                id="name" name="name" placeholder="Ej. Ana García" required="" type="text">
+            </div>
+            <div class="space-y-2">
+              <label class="font-label-md text-label-md text-on-surface-variant" for="email">Correo Electrónico</label>
+              <input
+                class="w-full p-3 rounded-lg border border-outline bg-white text-body-md font-body-md form-focus-ring"
+                id="email" name="email" placeholder="ana@ejemplo.com" required="" type="email">
+            </div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="space-y-2">
+              <label class="font-label-md text-label-md text-on-surface-variant" for="phone">Teléfono</label>
+              <input
+                class="w-full p-3 rounded-lg border border-outline bg-white text-body-md font-body-md form-focus-ring"
+                id="phone" name="phone" placeholder="+34 600 000 000" required="" type="tel">
+            </div>
+            <div class="space-y-2">
+              <label class="font-label-md text-label-md text-on-surface-variant" for="course">Curso de Interés</label>
+              <select
+                class="w-full p-3 rounded-lg border border-outline bg-white text-body-md font-body-md form-focus-ring appearance-none"
+                id="course" name="course" required="">
+                <option disabled="" selected="" value="">Selecciona un programa</option>
+                <option value="matematicas">Matemáticas Avanzadas</option>
+                <option value="alevels">A-Levels Preparation</option>
+                <option value="ingles">Inglés Académico</option>
+                <option value="ciencias">Ciencias Experimentales</option>
+              </select>
+            </div>
+          </div>
+          <div class="space-y-2">
+            <label class="font-label-md text-label-md text-on-surface-variant" for="message">Mensaje (Opcional)</label>
+            <textarea
+              class="w-full p-3 rounded-lg border border-outline bg-white text-body-md font-body-md form-focus-ring"
+              id="message" name="message" placeholder="Cuéntanos más sobre tus objetivos académicos..."
+              rows="4"></textarea>
+          </div>
+          <div class="flex items-start gap-3 pt-2">
+            <input class="mt-1 h-4 w-4 rounded border-outline text-primary focus:ring-primary" id="privacy" required=""
+              type="checkbox">
+            <label class="font-label-sm text-label-sm text-on-surface-variant" for="privacy">
+              He leído y acepto la Política de Privacidad y el tratamiento de mis datos personales.
+            </label>
+          </div>
+          <button
+            class="w-full bg-primary-container text-white py-4 rounded-lg font-label-md text-label-md font-bold shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
+            type="submit">
+            Enviar Solicitud de Información
+          </button>
+        </form>
+      </section>
+      <!-- Contact Information Side -->
+      <aside class="lg:col-span-5 space-y-8">
+        <!-- Info Cards -->
+        <div class="bg-secondary-container bg-opacity-30 p-8 rounded-xl space-y-8">
+          <h2 class="font-headline-md text-headline-md text-primary">Información de Contacto</h2>
+          <div class="flex items-start gap-4">
+            <div class="bg-primary-container p-3 rounded-lg text-white">
+              <span class="material-symbols-outlined" data-icon="location_on">location_on</span>
+            </div>
+            <div>
+              <h3 class="font-label-md text-label-md text-on-surface font-bold">Nuestra Sede</h3>
+              <p class="font-body-md text-body-md text-on-surface-variant">Calle de la Academia, 42, 28014 Madrid,
+                España</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="bg-primary-container p-3 rounded-lg text-white">
+              <span class="material-symbols-outlined" data-icon="call">call</span>
+            </div>
+            <div>
+              <h3 class="font-label-md text-label-md text-on-surface font-bold">Teléfono</h3>
+              <p class="font-body-md text-body-md text-on-surface-variant">+34 912 345 678</p>
+              <p class="font-body-md text-body-md text-on-surface-variant">Lun - Vie, 9:00 - 20:00</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="bg-primary-container p-3 rounded-lg text-white">
+              <span class="material-symbols-outlined" data-icon="mail">mail</span>
+            </div>
+            <div>
+              <h3 class="font-label-md text-label-md text-on-surface font-bold">Correo Electrónico</h3>
+              <p class="font-body-md text-body-md text-on-surface-variant">info@overthemoon.edu.es</p>
+              <p class="font-body-md text-body-md text-on-surface-variant">admisiones@overthemoon.edu.es</p>
+            </div>
+          </div>
+        </div>
+        <!-- Map Placeholder -->
+        <div class="relative w-full h-[300px] rounded-xl overflow-hidden shadow-sm group">
+          <img alt="Mapa de ubicación"
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            data-alt="A clean, minimalist digital map interface showing the central district of Madrid. The map features a soft color palette of light grays and teals, with a prominent custom location pin in deep teal marking the academy. The aesthetic is modern and professional, matching the educational institution's corporate brand identity with clear typography for street names."
+            data-location="Madrid, Spain"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWM0jlO-sf9Lo_B2LzzCHK2TRsSE1aBO2b3eeSa348T1HxAK6qgdQhjA4UGdCrXeba0eimVFFabXXjkB0W4QwzECPXtaK7NUFCtGCUncr8Sah0ybObVF0N9vUp1I_agrzv3L3cc9IG47IuisbRbnAKeUYR7bf4zFmmScQyvoBG_gze9u9RX8LCRpMDmanzMilMQvlJdRnlKtwUw_V84xF8jVxRbiP3NOMsunU9l3HbTkhXGbYDFdPCCr1sEp5rMUcsR0R5U2ryj1Y">
+          <div class="absolute inset-0 bg-black/10 flex items-center justify-center">
+            <a class="bg-surface-container-lowest px-6 py-2 rounded-full font-label-md text-label-md text-primary font-bold shadow-md hover:bg-primary hover:text-white transition-all duration-200 flex items-center gap-2"
+              href="https://maps.google.com" target="_blank">
+              <span class="material-symbols-outlined text-[18px]" data-icon="open_in_new">open_in_new</span>
+              Ver en Google Maps
+            </a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+  <!-- Footer -->
+  <footer class="bg-surface-container dark:bg-surface-container-high w-full">
+    <div
+      class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto">
+      <div class="md:col-span-1">
+        <div class="text-headline-md font-headline-md font-bold text-primary dark:text-primary-fixed-dim mb-4">
+          Over the Moon Academia
+        </div>
+        <p class="text-on-surface-variant text-body-md font-body-md">
+          Elevando el estándar de la educación académica con rigor, pasión y visión moderna.
+        </p>
+      </div>
+      <div class="flex flex-col gap-3">
+        <h4 class="font-headline-md text-headline-md text-primary mb-2">Enlaces</h4>
+        <a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body-md"
+          href="#">Privacy Policy</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body-md" href="#">Terms
+          of Service</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body-md"
+          href="#">FAQ</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body-md"
+          href="#">Careers</a>
+      </div>
+      <div class="flex flex-col gap-3">
+        <h4 class="font-headline-md text-headline-md text-primary mb-2">Programas</h4>
+        <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Matemáticas</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Ciencias</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Idiomas</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">A-Levels</a>
+      </div>
+      <div class="flex flex-col gap-3">
+        <h4 class="font-headline-md text-headline-md text-primary mb-2">Newsletter</h4>
+        <p class="text-on-surface-variant text-body-md mb-2">Suscríbete para recibir noticias académicas.</p>
+        <div class="flex gap-2">
+          <input class="p-2 border border-outline rounded-lg w-full text-body-md" placeholder="Email" type="email">
+          <button class="bg-primary-container text-white px-4 rounded-lg"><span class="material-symbols-outlined"
+              data-icon="send">send</span></button>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-outline-variant py-8 text-center text-on-surface-variant font-body-md px-margin-mobile">
+      © 2024 Over the Moon Academia. All rights reserved.
+    </div>
+  </footer>
+  <script>
+    document.getElementById('registrationForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const btn = e.target.querySelector('button');
+      const originalText = btn.innerText;
+
+      // Micro-interaction simulation
+      btn.innerHTML = '<span class="material-symbols-outlined animate-spin" data-icon="progress_activity">progress_activity</span> Enviando...';
+      btn.disabled = true;
+      btn.style.opacity = '0.7';
+
+      setTimeout(() => {
+        btn.innerHTML = '<span class="material-symbols-outlined" data-icon="check_circle">check_circle</span> ¡Solicitud Enviada!';
+        btn.classList.remove('bg-primary-container');
+        btn.classList.add('bg-success', 'bg-[#1a8a3a]'); // Feedback color
+
+        setTimeout(() => {
+          btn.innerHTML = originalText;
+          btn.classList.remove('bg-[#1a8a3a]');
+          btn.classList.add('bg-primary-container');
+          btn.disabled = false;
+          btn.style.opacity = '1';
+          e.target.reset();
+        }, 3000);
+      }, 1500);
+    });
+
+    // Simple parallax or hover effects for modern feel
+    document.querySelectorAll('section, aside').forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        el.style.transform = 'translateY(-2px)';
+      });
+      el.addEventListener('mouseleave', () => {
+        el.style.transform = 'translateY(0px)';
+      });
+    });
+  </script>
+
+
+</body>
+
+</html>

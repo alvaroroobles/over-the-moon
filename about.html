@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Sobre Nosotros | Over the Moon Academia</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "error": "#ba1a1a",
+            "surface": "#f9f9fc",
+            "on-tertiary": "#ffffff",
+            "on-tertiary-container": "#ffe3b7",
+            "secondary-container": "#dae1e2",
+            "tertiary-container": "#886000",
+            "on-secondary": "#ffffff",
+            "primary-fixed-dim": "#80d3e4",
+            "on-secondary-fixed-variant": "#414849",
+            "surface-dim": "#dadadc",
+            "on-primary-fixed": "#001f25",
+            "error-container": "#ffdad6",
+            "background": "#f9f9fc",
+            "secondary-fixed": "#dde4e5",
+            "surface-container-low": "#f3f3f6",
+            "primary": "#005864",
+            "on-secondary-fixed": "#161d1e",
+            "on-primary-container": "#b1f1ff",
+            "tertiary-fixed-dim": "#ffba20",
+            "on-primary-fixed-variant": "#004e59",
+            "on-tertiary-fixed-variant": "#5e4200",
+            "inverse-on-surface": "#f0f0f3",
+            "secondary": "#586061",
+            "tertiary": "#694a00",
+            "on-secondary-container": "#5d6465",
+            "surface-container": "#eeeef0",
+            "surface-bright": "#f9f9fc",
+            "tertiary-fixed": "#ffdea8",
+            "surface-tint": "#006876",
+            "on-primary": "#ffffff",
+            "on-background": "#1a1c1e",
+            "primary-container": "#017281",
+            "secondary-fixed-dim": "#c1c8c9",
+            "surface-container-lowest": "#ffffff",
+            "outline-variant": "#bec8cb",
+            "inverse-primary": "#80d3e4",
+            "on-error-container": "#93000a",
+            "primary-fixed": "#a0efff",
+            "on-surface-variant": "#3e484b",
+            "on-tertiary-fixed": "#271900",
+            "on-surface": "#1a1c1e",
+            "surface-variant": "#e2e2e5",
+            "surface-container-high": "#e8e8ea",
+            "outline": "#6e797b",
+            "on-error": "#ffffff",
+            "surface-container-highest": "#e2e2e5",
+            "inverse-surface": "#2f3133"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "margin-desktop": "64px",
+            "margin-mobile": "20px",
+            "section-gap": "80px",
+            "container-max": "1280px",
+            "gutter": "24px",
+            "base": "8px"
+          },
+          "fontFamily": {
+            "headline-lg": ["Montserrat"],
+            "headline-md": ["Montserrat"],
+            "headline-lg-mobile": ["Montserrat"],
+            "label-sm": ["Inter"],
+            "label-md": ["Inter"],
+            "body-md": ["Inter"],
+            "display-lg": ["Montserrat"],
+            "body-lg": ["Inter"]
+          },
+          "fontSize": {
+            "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }],
+            "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+            "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500" }],
+            "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    .card-lift {
+      transition: transform 200ms ease-out, box-shadow 200ms ease-out;
+    }
+
+    .card-lift:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 30px -10px rgba(1, 114, 129, 0.15);
+    }
+
+    .text-gradient {
+      background: linear-gradient(135deg, #005864 0%, #017281 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</head>
+
+<body class="bg-background text-on-background font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+  <!-- TopNavBar -->
+  <nav class="bg-surface-container-lowest dark:bg-surface-container-lowest shadow-sm sticky top-0 z-50">
+    <div
+      class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-3 max-w-container-max mx-auto">
+      <a class="flex items-center" href="#">
+        <img alt="Over the Moon Academia Logo" class="h-12 w-auto object-contain"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMmHIkDO4zYzuOwT5EzkLaql0lGXGl-xoCdm8i6rRr05JFLn40qFn6DE7Ca_R2Y372Ybq-ToDWwUkQVHINK_aWTPiMgAvzzBDYLLG4TRACjv3zYzwDx9W41h1K2aOaYGnIsKMqp_LOP1dKiNwqqSHFbFIgbhl7fWtyhDr27LBggE474ZzbCmfsPfyEL2eDiRSeEhmEkZ9sMB2vFwK0JbQCuK3rXMzOdavJeYzPkcYatAbPlODYNX2YyMRB9UZCigwRi24SwtnM4KI" />
+      </a>
+      <div class="hidden md:flex items-center gap-8">
+        <a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200 font-label-md text-label-md"
+          href="index.html">Inicio</a>
+        <a class="text-primary font-bold border-b-2 border-primary pb-1 hover:text-primary transition-colors duration-200 font-label-md text-label-md"
+          href="about.html">Sobre Nosostros</a>
+        <a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200 font-label-md text-label-md"
+          href="services.html">Servicios</a>
+        <a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200 font-label-md text-label-md"
+          href="contact.html">Contacto</a>
+        <button
+          class="bg-[#FFB800] text-on-surface px-6 py-2.5 rounded-lg font-label-md text-label-md font-bold shadow-sm hover:opacity-90 transition-all duration-200">
+          Inscribirse
+        </button>
+      </div>
+      <!-- Mobile Menu Toggle -->
+      <button class="md:hidden text-primary" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+    <!-- Mobile Nav -->
+    <div class="hidden bg-surface-container-lowest border-t border-outline-variant px-margin-mobile py-4 space-y-4 shadow-lg" id="mobile-menu">
+      <a class="block text-on-surface-variant font-medium font-label-md text-label-md" href="index.html">Inicio</a>
+      <a class="block text-primary font-bold font-label-md text-label-md" href="about.html">Sobre Nosotros</a>
+      <a class="block text-on-surface-variant font-medium font-label-md text-label-md" href="services.html">Servicios</a>
+      <a class="block text-on-surface-variant font-medium font-label-md text-label-md" href="contact.html">Contacto</a>
+      <button class="w-full bg-[#FFB800] text-on-surface px-6 py-3 rounded-lg font-label-md text-label-md font-bold">Inscribirse</button>
+    </div>
+  </nav>
+  <main>
+    <!-- Redesigned Hero Section (Subtle Gradient, Centered) -->
+    <section class="bg-gradient-to-b from-surface-container-lowest to-surface py-20 md:py-24">
+      <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center">
+        <span
+          class="inline-block px-4 py-1.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm mb-6 uppercase tracking-wider">Sobre
+          Nosotros</span>
+        <h1 class="font-display-lg text-display-lg md:text-[56px] text-on-background mb-6 leading-tight">
+          Nuestra <span class="text-gradient">Historia</span> y Compromiso
+        </h1>
+        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl mx-auto mb-0">
+          En Over the Moon Academia, transformamos el aprendizaje en una aventura intelectual. Nuestra misión es guiar a
+          la próxima generación de líderes a través de la excelencia, la innovación y el compromiso personalizado.
+        </p>
+      </div>
+    </section>
+    <!-- Trust & Mission (Asymmetric Layout) -->
+    <section class="bg-surface pb-section-gap pt-8">
+      <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+          <div class="order-2 md:order-1 grid grid-cols-2 gap-4">
+            <div class="space-y-4 pt-8">
+              <div class="h-48 bg-surface-container-high rounded-xl overflow-hidden">
+                <div
+                  class="w-full h-full bg-gradient-to-br from-primary/10 to-primary/30 flex items-center justify-center">
+                  <span class="material-symbols-outlined text-primary text-5xl">school</span>
+                </div>
+              </div>
+              <div class="h-64 bg-surface-container-high rounded-xl overflow-hidden relative">
+                <div class="absolute inset-0 bg-black/10"></div>
+                <div class="w-full h-full bg-slate-200"
+                  data-alt="A brightly lit, modern classroom library with rows of books and comfortable wooden study tables. The lighting is soft and natural, pouring in from large windows, creating a focused and serene academic environment with teal accents on the furniture."
+                  style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCreN9R90JUJrUFdhw5zHP9IxyjUd_KX_AQyXdxgqNvEPhecppvxON-gwZ9osQMYJzr-hRhAR_9SXWhz17FqAQSWsVRAxoBqblzO1z3mO1YxjxMO3Da9Qbw1kIxEKAbGnu7JCpRCBHtA1LONMIL5GArRRCaiDRLvP6rc65jIuLuQgxw3V9ge-VszcOTzwlnWOiaIkpwzIUginBlD6aRGg8_ScvTMgKznfk24RXu-4EquYoWNf6x6nQNVjB45lG6lHQ8Gfq3U3sBpUg'); background-size: cover; background-position: center;">
+                </div>
+              </div>
+            </div>
+            <div class="space-y-4">
+              <div class="h-64 bg-surface-container-high rounded-xl overflow-hidden relative">
+                <div class="w-full h-full bg-slate-200"
+                  data-alt="A group of diverse university students collaborating around a large table in a modern, white-walled student center. They are engaged in an intellectual discussion, with laptops and notebooks open. The atmosphere is vibrant and professional, using a clean corporate aesthetic."
+                  style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBf8q5rdyi4eNHSnrjoG1j_9quR2yVdopwRcEtAyH0cVNMce2y9rgYp3V6IXD3MRY1_54KpCMvf0BXMYfzdcbbW86UG3KujtHvUYtJXx3dZ721KUeiabRfXOcdxo27y-DXC5_IG2hybNNETssHCKk1BbEhFqNEBbrM7yKkGhDG-NdfDQ1Pf6aTJPKwa8eq2lltlrGqb8QSKmRjp6U041dguh9IdBh-cDdIjNLMKsj74rZswatRg0dpbvWEfEG7E84lYGAlJSi6mrWg'); background-size: cover; background-position: center;">
+                </div>
+              </div>
+              <div class="h-48 bg-surface-container-high rounded-xl overflow-hidden">
+                <div
+                  class="w-full h-full bg-gradient-to-tr from-[#FFB800]/20 to-[#FFB800]/5 flex items-center justify-center">
+                  <span class="material-symbols-outlined text-tertiary text-5xl">verified_user</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="order-1 md:order-2">
+            <h2 class="font-headline-lg text-headline-lg text-on-background mb-6">Por Qué Confiar en Nosotros</h2>
+            <div class="space-y-8">
+              <div class="flex gap-4">
+                <div
+                  class="shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                  <span class="material-symbols-outlined">psychology</span>
+                </div>
+                <div>
+                  <h3 class="font-headline-md text-[18px] text-on-surface mb-2">Metodología Basada en Evidencia</h3>
+                  <p class="text-on-surface-variant">Utilizamos las últimas investigaciones en pedagogía para asegurar
+                    que el aprendizaje sea efectivo, duradero y motivador para cada estudiante.</p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <div
+                  class="shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                  <span class="material-symbols-outlined">groups</span>
+                </div>
+                <div>
+                  <h3 class="font-headline-md text-[18px] text-on-surface mb-2">Mentoría Personalizada</h3>
+                  <p class="text-on-surface-variant">No somos solo una academia; somos mentores. Cada estudiante recibe
+                    un plan de seguimiento único adaptado a sus metas profesionales.</p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <div
+                  class="shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                  <span class="material-symbols-outlined">workspace_premium</span>
+                </div>
+                <div>
+                  <h3 class="font-headline-md text-[18px] text-on-surface mb-2">Resultados Comprobados</h3>
+                  <p class="text-on-surface-variant">Nuestros alumnos logran tasas de éxito superiores al 95% en
+                    exámenes internacionales y admisiones universitarias de prestigio.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Values Section (Bento Grid) -->
+    <section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="font-headline-lg text-headline-lg text-on-background mb-4">Nuestros Pilares</h2>
+        <p class="text-on-surface-variant max-w-2xl mx-auto">Los valores que guían cada clase y cada interacción en Over
+          the Moon Academia.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter">
+        <!-- Bento Item 1 -->
+        <div
+          class="md:col-span-2 bg-surface-container-lowest border border-outline-variant/30 p-8 rounded-2xl card-lift flex flex-col justify-between h-80">
+          <div class="w-12 h-12 bg-primary/5 rounded-lg flex items-center justify-center text-primary mb-6">
+            <span class="material-symbols-outlined">lightbulb</span>
+          </div>
+          <div>
+            <h3 class="font-headline-md text-headline-md mb-2">Innovación Constante</h3>
+            <p class="text-on-surface-variant">Adaptamos nuestras herramientas digitales para ofrecer un entorno de
+              aprendizaje híbrido de vanguardia.</p>
+          </div>
+        </div>
+        <!-- Bento Item 2 -->
+        <div
+          class="md:col-span-2 bg-primary-container p-8 rounded-2xl text-on-primary-container h-80 flex flex-col justify-end relative overflow-hidden">
+          <span class="material-symbols-outlined absolute top-4 right-4 text-7xl opacity-20">diversity_3</span>
+          <h3 class="font-headline-md text-headline-md mb-2">Comunidad Global</h3>
+          <p class="opacity-90">Fomentamos un ambiente donde la diversidad de pensamiento y cultura enriquece la
+            experiencia educativa de todos.</p>
+        </div>
+        <!-- Bento Item 3 -->
+        <div
+          class="md:col-span-1 bg-surface-container-lowest border border-outline-variant/30 p-8 rounded-2xl card-lift h-80 flex flex-col items-center text-center justify-center">
+          <div class="w-16 h-16 bg-[#FFB800]/10 rounded-full flex items-center justify-center text-[#FFB800] mb-6">
+            <span class="material-symbols-outlined text-4xl" data-weight="fill">star</span>
+          </div>
+          <h3 class="font-headline-md text-[20px] mb-2">Excelencia</h3>
+          <p class="text-on-surface-variant text-sm">Buscamos el máximo estándar en todo lo que hacemos.</p>
+        </div>
+        <!-- Bento Item 4 -->
+        <div
+          class="md:col-span-1 bg-surface-container-lowest border border-outline-variant/30 p-8 rounded-2xl card-lift h-80 flex flex-col items-center text-center justify-center">
+          <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center text-primary mb-6">
+            <span class="material-symbols-outlined text-4xl">handshake</span>
+          </div>
+          <h3 class="font-headline-md text-[20px] mb-2">Integridad</h3>
+          <p class="text-on-surface-variant text-sm">Actuamos con honestidad y transparencia absoluta.</p>
+        </div>
+        <!-- Bento Item 5 -->
+        <div
+          class="md:col-span-2 bg-surface-container-lowest border border-outline-variant/30 p-8 rounded-2xl card-lift h-80 flex flex-col justify-center">
+          <div class="flex items-center gap-6">
+            <div class="shrink-0 w-24 h-24 rounded-xl bg-slate-100 overflow-hidden"
+              data-alt="Close-up of a professional female teacher smiling warmly in a bright, modern academic setting. She wears professional attire, and the background shows a blurred bookshelf and soft warm lighting, conveying authority and approachable kindness."
+              style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAxU2iPySEIwP8HDPJmWjWYXUmkNKKauhshTAFh0qJXs-nYIZxu4CuslvbCyxMx6OuNLPwsPgimnsR3Gkze-82SLHg_eZy3mTNrHW5ukID23swdNjV19MS9VJUV4wTyuuwTSdCUvqOU42Z4I2GxQrQN2w54gzahB_w5J_gw5ycucsBsp6ek335Yz7YpUwzPuh4Y5W4njkWrmpKo1Az_lmaSEXo2CY_VTV4ZCaLN-0xRD8UlxmOIoSsilinq9fMhjkJhdVfETHMIFow'); background-size: cover;">
+            </div>
+            <div>
+              <h3 class="font-headline-md text-headline-md mb-1">Cuidado Individual</h3>
+              <p class="text-on-surface-variant">Porque cada "Luna" brilla con luz propia, dedicamos tiempo a entender
+                las necesidades emocionales de cada alumno.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Team Preview / Trust -->
+    <section class="bg-surface-container-lowest py-section-gap">
+      <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+          <div class="max-w-xl">
+            <h2 class="font-headline-lg text-headline-lg text-on-background mb-4">Liderazgo Académico</h2>
+            <p class="text-on-surface-variant">Nuestro equipo está compuesto por doctores, investigadores y educadores
+              con pasión por la enseñanza.</p>
+          </div>
+          <button class="text-primary font-bold flex items-center gap-2 hover:translate-x-1 transition-transform">
+            Ver todo el equipo <span class="material-symbols-outlined">arrow_forward</span>
+          </button>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+          <!-- Member 1 -->
+          <div class="group">
+            <div class="relative aspect-square rounded-2xl overflow-hidden mb-4">
+              <div class="w-full h-full bg-slate-200"
+                data-alt="Portrait of a distinguished male academic professional in a navy blue suit, standing in a high-end corporate office with glass walls. The lighting is crisp and professional, reflecting a serious yet welcoming leadership style in a modern educational institution."
+                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCM6K63uZsiQC1Vd8jQ00jsHcTV6SX2o9HsMTjPgr5QK25yr7AXWGaraCUEZDcWFfN1AAL7xZ5XDpGdUo69Z6h1ncwVo0kTegZoBQW9_mUblC-CoJK85tT6_0L0nQf91ZgoX6nmNX1d9CwhNLg8KFv0VyfMlUJ7CCneC9dG8DuJrbGXWn5DeG2d3J1bT1X8s9RSYC6G4F2s_7Hf6udLGHncG7VMKOlCOZWQx_Q2XNgZAxYO3yszS-NviKp-HnOIgVaY8d0bTI1-dX4'); background-size: cover; background-position: center;">
+              </div>
+              <div
+                class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              </div>
+            </div>
+            <h4 class="font-headline-md text-[20px] text-on-background">Dr. Alberto Luna</h4>
+            <p class="text-primary font-medium text-sm">Director de Innovación</p>
+          </div>
+          <!-- Member 2 -->
+          <div class="group">
+            <div class="relative aspect-square rounded-2xl overflow-hidden mb-4">
+              <div class="w-full h-full bg-slate-200"
+                data-alt="A professional woman in business casual attire with a friendly smile, posing in a bright, white-walled modern educational space. She has a look of confidence and intellectual expertise, framed by minimalist architectural lines and soft natural daylight."
+                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC23wjoBG5mXObtC9HartBw9PfHLexkQ8K5yg9exFu442Y6UTX0gdCmQgg1PCbHcCdCwKXBXiCZ1aceZgkUF6cs0ydUKfQUBxr7o_eI5ABDfozBaoOvpwoJcWCiRfTAaNCQsviYzgQUW9zdC8SM9agkOG8w6VujfU7M3kUtm54LpIytYxFOXddVYGG3I2LF0NrjcvGPoQjGZ_qGctfyTGpRJIII8c50aj1u2Ac6rhe_P7VUK4x_ec0w50-J1IxdG0MLl6OF0jhQqZU'); background-size: cover; background-position: center;">
+              </div>
+              <div
+                class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              </div>
+            </div>
+            <h4 class="font-headline-md text-[20px] text-on-background">Dra. Elena Ortiz</h4>
+            <p class="text-primary font-medium text-sm">Jefa de Currículum</p>
+          </div>
+          <!-- Member 3 -->
+          <div class="group">
+            <div class="relative aspect-square rounded-2xl overflow-hidden mb-4">
+              <div class="w-full h-full bg-slate-200"
+                data-alt="Close-up portrait of a young, modern male educator in a well-lit studio setting. He is wearing a simple grey sweater, looking directly at the camera with an expression of calm and focused intelligence. The lighting is clean and balanced, fitting a high-end corporate UI aesthetic."
+                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAliDQ-_SYPzfI9tsn3a63Spx-zTaXLMq1MrVx5WwY6O6oDcpHMHwX2_-yMvuwDw_3YqcQFizk3xCP29fSyKLSefHicKt134K9vD5tT1RcOCMTBmY-2JjeOgm7XK0qtA9A5v3hwxJjkivAEQ9fhUBXzwp2UaStxBGfNDHef_DpAZuT5BxZBeUV-mCV7RL9c-AWzhSPL4lUlRvl4KUUQ0X_hE5QiewDDxRiJcvdzUn37LG33pOsYN0Lo905vAnLxNovJ9MVG1xOFOFw'); background-size: cover; background-position: center;">
+              </div>
+              <div
+                class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              </div>
+            </div>
+            <h4 class="font-headline-md text-[20px] text-on-background">Prof. Javier Soler</h4>
+            <p class="text-primary font-medium text-sm">Coordinador de Ciencias</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CTA Section -->
+    <section class="py-section-gap px-margin-mobile md:px-margin-desktop">
+      <div
+        class="max-w-container-max mx-auto bg-primary rounded-[2rem] p-12 md:p-20 text-center relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -mr-32 -mt-32"></div>
+        <div class="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full -ml-24 -mb-24"></div>
+        <div class="relative z-10">
+          <h2 class="font-headline-lg text-headline-lg md:text-[40px] text-on-primary mb-6">¿Listo para comenzar tu
+            viaje?</h2>
+          <p class="text-on-primary/80 max-w-xl mx-auto mb-10 font-body-lg">Únete a cientos de estudiantes que ya están
+            alcanzando sus sueños académicos con nosotros.</p>
+          <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <button
+              class="bg-[#FFB800] text-on-surface px-10 py-4 rounded-xl font-headline-md text-[18px] font-bold hover:scale-105 transition-all">
+              Inscribirse Ahora
+            </button>
+            <button
+              class="bg-white/10 text-on-primary border border-white/20 px-10 py-4 rounded-xl font-headline-md text-[18px] font-bold hover:bg-white/20 transition-all">
+              Agendar Visita
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer class="bg-surface-container dark:bg-surface-container-high border-t border-outline-variant/20">
+    <div
+      class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto">
+      <div class="md:col-span-1">
+        <div class="mb-6">
+          <img alt="Over the Moon Academia Logo" class="h-14 w-auto object-contain brightness-95"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMmHIkDO4zYzuOwT5EzkLaql0lGXGl-xoCdm8i6rRr05JFLn40qFn6DE7Ca_R2Y372Ybq-ToDWwUkQVHINK_aWTPiMgAvzzBDYLLG4TRACjv3zYzwDx9W41h1K2aOaYGnIsKMqp_LOP1dKiNwqqSHFbFIgbhl7fWtyhDr27LBggE474ZzbCmfsPfyEL2eDiRSeEhmEkZ9sMB2vFwK0JbQCuK3rXMzOdavJeYzPkcYatAbPlODYNX2YyMRB9UZCigwRi24SwtnM4KI" />
+        </div>
+        <p class="text-on-surface-variant font-body-md mb-6">
+          Formando mentes brillantes para un futuro global desde 2009.
+        </p>
+        <div class="flex gap-4">
+          <a class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all"
+            href="#">
+            <span class="material-symbols-outlined text-xl">social_leaderboard</span>
+          </a>
+          <a class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all"
+            href="#">
+            <span class="material-symbols-outlined text-xl">camera</span>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h4 class="font-headline-md text-[18px] text-on-surface mb-6">Explorar</h4>
+        <ul class="space-y-4">
+          <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Cursos de Verano</a></li>
+          <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Preparación A-Levels</a>
+          </li>
+          <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Tutorías 1 a 1</a></li>
+          <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Idiomas</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-headline-md text-[18px] text-on-surface mb-6">Recursos</h4>
+        <ul class="space-y-4">
+          <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+          <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a></li>
+          <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">FAQ</a></li>
+          <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-headline-md text-[18px] text-on-surface mb-6">Contacto</h4>
+        <ul class="space-y-4">
+          <li class="flex gap-3 text-on-surface-variant">
+            <span class="material-symbols-outlined text-primary">location_on</span>
+            <span>Calle Academia 123, Madrid, España</span>
+          </li>
+          <li class="flex gap-3 text-on-surface-variant">
+            <span class="material-symbols-outlined text-primary">mail</span>
+            <span>hola@overthemoon.edu</span>
+          </li>
+          <li class="flex gap-3 text-on-surface-variant">
+            <span class="material-symbols-outlined text-primary">call</span>
+            <span>+34 912 345 678</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      class="px-margin-mobile md:px-margin-desktop py-6 border-t border-outline-variant/10 max-w-container-max mx-auto text-center">
+      <p class="text-on-surface-variant text-sm">© 2024 Over the Moon Academia. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+    // Simple scroll interaction for navbar
+    window.addEventListener('scroll', () => {
+      const nav = document.querySelector('nav');
+      if (window.scrollY > 20) {
+        nav.classList.add('shadow-md');
+        nav.classList.remove('shadow-sm');
+      } else {
+        nav.classList.add('shadow-sm');
+        nav.classList.remove('shadow-md');
+      }
+    });
+  </script>
+</body>
+
+</html>
