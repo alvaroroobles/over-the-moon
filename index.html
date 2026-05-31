@@ -699,10 +699,10 @@
                 </div>
                 <div class="flex items-center gap-4 pt-6 border-t border-white/10 mt-6">
                     <div class="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center text-white font-bold text-sm shrink-0">
-                        DS
+                        DG
                     </div>
                     <div>
-                        <p class="font-label-md text-label-md font-bold text-white">David Smith</p>
+                        <p class="font-label-md text-label-md font-bold text-white">David García</p>
                         <p class="font-label-sm text-label-sm text-white/60">Alumno de Español</p>
                     </div>
                 </div>
@@ -822,17 +822,78 @@
         </div>
     </div>
 </footer>
-    <script>
-        // Micro-interactions for button hover effects
-        document.querySelectorAll('button').forEach(button => {
-            button.addEventListener('mousedown', () => {
-                button.style.transform = 'scale(0.95)';
-            });
-            button.addEventListener('mouseup', () => {
-                button.style.transform = 'scale(1)';
-            });
+<button 
+    id="btn-scroll-top" 
+    class="fixed bottom-6 right-6 z-50 hidden bg-[#017281] text-white p-1.5 rounded-full shadow-lg hover:bg-opacity-90 transition-all duration-300 hover:scale-110 active:scale-95 focus:outline-none group w-12 h-12"
+    onclick="scrollToTop()"
+    title="Volver arriba">
+    
+    <div class="relative w-full h-full flex items-center justify-center">
+        
+        <svg class="absolute top-0 left-0 w-full h-full transform -rotate-90" viewBox="0 0 36 36">
+            <path 
+                class="text-white/20" 
+                stroke="currentColor" 
+                stroke-width="2" 
+                fill="none" 
+                d="M18 1 a 17 17 0 0 1 0 34 a 17 17 0 0 1 0 -34" 
+            />
+            <path 
+                id="progress-circle"
+                class="text-white transition-all duration-75" 
+                stroke="currentColor" 
+                stroke-width="2" 
+                stroke-dasharray="106.8"
+                stroke-dashoffset="106.8"
+                stroke-linecap="round"
+                fill="none" 
+                d="M18 1 a 17 17 0 0 1 0 34 a 17 17 0 0 1 0 -34" 
+            />
+        </svg>
+
+        <svg class="w-5 h-5 transform transition-transform duration-300 group-hover:-translate-y-0.5 relative z-10" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5"></path>
+        </svg>
+    </div>
+</button>
+
+<script>
+    const scrollTopBtn = document.getElementById("btn-scroll-top");
+    const progressCircle = document.getElementById("progress-circle");
+    
+    // La longitud real del contorno de nuestro círculo de radio 17
+    const pathLength = 106.8; 
+
+    window.onscroll = function() {
+        const totalHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrollTop = document.documentElement.scrollTop;
+        
+        if (totalHeight > 0) {
+            // Calculamos el desfase exacto que necesita la línea para completarse
+            const progress = scrollTop / totalHeight;
+            const offset = pathLength - (progress * pathLength);
+            
+            // Modificamos el offset: cuando llega abajo, el offset es 0 y se cierra ENTERO
+            progressCircle.style.strokeDashoffset = offset;
+        }
+
+        // Mostrar u ocultar botón
+        if (scrollTop > 300) {
+            scrollTopBtn.classList.remove("hidden");
+            scrollTopBtn.classList.add("flex");
+        } else {
+            scrollTopBtn.classList.remove("flex");
+            scrollTopBtn.classList.add("hidden");
+        }
+    };
+
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
         });
-    </script>
+    }
+</script>
 </body>
 
 </html>
