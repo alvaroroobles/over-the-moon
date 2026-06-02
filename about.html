@@ -128,42 +128,57 @@
 </head>
 
 <body class="bg-background text-on-background font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
-  <!-- TopNavBar -->
-  <nav class="bg-surface-container-lowest dark:bg-surface-container-lowest shadow-sm sticky top-0 z-50">
-    <div
-      class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-3 max-w-container-max mx-auto">
-      <a class="flex items-center" href="#">
-        <img alt="Over the Moon Academia Logo" class="h-12 w-auto object-contain"
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMmHIkDO4zYzuOwT5EzkLaql0lGXGl-xoCdm8i6rRr05JFLn40qFn6DE7Ca_R2Y372Ybq-ToDWwUkQVHINK_aWTPiMgAvzzBDYLLG4TRACjv3zYzwDx9W41h1K2aOaYGnIsKMqp_LOP1dKiNwqqSHFbFIgbhl7fWtyhDr27LBggE474ZzbCmfsPfyEL2eDiRSeEhmEkZ9sMB2vFwK0JbQCuK3rXMzOdavJeYzPkcYatAbPlODYNX2YyMRB9UZCigwRi24SwtnM4KI" />
-      </a>
-      <div class="hidden md:flex items-center gap-8">
-        <a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200 font-label-md text-label-md"
-          href="index.html">Inicio</a>
-        <a class="text-primary font-bold border-b-2 border-primary pb-1 hover:text-primary transition-colors duration-200 font-label-md text-label-md"
-          href="about.html">Sobre Nosostros</a>
-        <a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200 font-label-md text-label-md"
-          href="services.html">Servicios</a>
-        <a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200 font-label-md text-label-md"
-          href="contact.html">Contacto</a>
-        <button
-          class="bg-[#FFB800] text-on-surface px-6 py-2.5 rounded-lg font-label-md text-label-md font-bold shadow-sm hover:opacity-90 transition-all duration-200">
-          Inscribirse
+  <header class="sticky top-0 z-50 w-full bg-white/70 backdrop-blur-md border-b border-white/20 shadow-[0_10px_40px_rgba(0,191,255,0.4)] transition-all duration-300">
+    <nav class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+        <div class="flex items-center gap-3">
+            <img alt="Over the Moon Academia Logo" class="h-14 w-auto object-contain" src="assets/img/logo (2).png">
+        </div>
+        
+        <div class="hidden md:flex items-center gap-8">
+            <a class="text-primary font-bold transition-colors duration-300 text-base relative py-1
+              after:absolute after:bottom-0 after:left-1/2 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-out hover:after:left-0 hover:after:w-full"
+                href="index.html">
+                Inicio
+            </a>
+
+            <a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 text-base relative py-1
+              after:absolute after:bottom-0 after:left-1/2 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-out hover:after:left-0 hover:after:w-full"
+                href="about.html">
+                Sobre Nosotros
+            </a>
+
+            <a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 text-base relative py-1
+              after:absolute after:bottom-0 after:left-1/2 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-out hover:after:left-0 hover:after:w-full"
+                href="services.html">
+                Servicios
+            </a>
+
+            <a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 text-base relative py-1
+              after:absolute after:bottom-0 after:left-1/2 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-out hover:after:left-0 hover:after:w-full"
+                href="contact.html">
+                Contacto
+            </a>
+
+            <button class="bg-tertiary-fixed text-on-tertiary-fixed px-6 py-2.5 rounded-lg text-base font-bold transition-all duration-300 hover:opacity-90 hover:scale-105 active:scale-95">
+                Inscribirse
+            </button>
+        </div>
+
+        <button class="md:hidden text-primary"
+            onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+            <span class="material-symbols-outlined">menu</span>
         </button>
-      </div>
-      <!-- Mobile Menu Toggle -->
-      <button class="md:hidden text-primary" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
-        <span class="material-symbols-outlined">menu</span>
-      </button>
+    </nav>
+
+    <div class="hidden bg-white/90 backdrop-blur-lg border-t border-outline-variant px-margin-mobile py-4 space-y-4 shadow-lg"
+        id="mobile-menu">
+        <a class="block text-primary font-bold text-base" href="index.html">Inicio</a>
+        <a class="block text-on-surface-variant font-medium text-base" href="about.html">Sobre Nosotros</a>
+        <a class="block text-on-surface-variant font-medium text-base" href="services.html">Servicios</a>
+        <a class="block text-on-surface-variant font-medium text-base" href="contact.html">Contacto</a>
+        <button class="w-full bg-tertiary-fixed text-on-tertiary-fixed px-6 py-3 rounded-lg text-base font-bold">Inscribirse Now</button>
     </div>
-    <!-- Mobile Nav -->
-    <div class="hidden bg-surface-container-lowest border-t border-outline-variant px-margin-mobile py-4 space-y-4 shadow-lg" id="mobile-menu">
-      <a class="block text-on-surface-variant font-medium font-label-md text-label-md" href="index.html">Inicio</a>
-      <a class="block text-primary font-bold font-label-md text-label-md" href="about.html">Sobre Nosotros</a>
-      <a class="block text-on-surface-variant font-medium font-label-md text-label-md" href="services.html">Servicios</a>
-      <a class="block text-on-surface-variant font-medium font-label-md text-label-md" href="contact.html">Contacto</a>
-      <button class="w-full bg-[#FFB800] text-on-surface px-6 py-3 rounded-lg font-label-md text-label-md font-bold">Inscribirse</button>
-    </div>
-  </nav>
+</header>
   <main>
     <!-- Redesigned Hero Section (Subtle Gradient, Centered) -->
     <section class="bg-gradient-to-b from-surface-container-lowest to-surface py-20 md:py-24">
@@ -404,83 +419,147 @@
     </section>
   </main>
   <!-- Footer -->
-  <footer class="bg-surface-container dark:bg-surface-container-high border-t border-outline-variant/20">
-    <div
-      class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto">
-      <div class="md:col-span-1">
-        <div class="mb-6">
-          <img alt="Over the Moon Academia Logo" class="h-14 w-auto object-contain brightness-95"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMmHIkDO4zYzuOwT5EzkLaql0lGXGl-xoCdm8i6rRr05JFLn40qFn6DE7Ca_R2Y372Ybq-ToDWwUkQVHINK_aWTPiMgAvzzBDYLLG4TRACjv3zYzwDx9W41h1K2aOaYGnIsKMqp_LOP1dKiNwqqSHFbFIgbhl7fWtyhDr27LBggE474ZzbCmfsPfyEL2eDiRSeEhmEkZ9sMB2vFwK0JbQCuK3rXMzOdavJeYzPkcYatAbPlODYNX2YyMRB9UZCigwRi24SwtnM4KI" />
+     <footer class="w-full bg-[#017281] text-white">
+    
+    <div class="max-w-[1600px] mx-auto px-6 xl:px-0 py-section-gap">
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 min-[1201px]:grid-cols-4 gap-10 lg:gap-gutter justify-items-stretch">
+            
+            <div class="space-y-6 flex flex-col justify-between">
+                <div class="space-y-4">
+                    <div class="flex flex-col items-start gap-2">
+                        <img alt="Footer Logo" class="h-20 w-auto" src="assets/img/logo (2).png">
+                        <span class="text-headline-md font-headline-md font-bold text-white">Over the Moon</span>
+                    </div>
+                    <p class="font-body-md text-body-md text-white/80 max-w-sm">
+                        Tu pasaporte al mundo. Te acompañamos a dominar nuevos idiomas con un método <br>práctico y adaptado a tu ritmo.
+                    </p>
+                    <div class="flex gap-5 items-center pt-2">
+                        <a class="text-white hover:opacity-70 transition-opacity" href="https://www.instagram.com/overthemoonidiomas?igsh=MXJjbTQyaDZmZHlzcw==" title="Instagram">
+                            <svg class="w-5 h-5 stroke-current fill-none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                    </div>
+                </div>
+                <p class="text-xs text-white/60 hidden md:block pt-6">© 2026 Over the Moon Academia.</p>
+            </div>
+
+            <div class="space-y-4 w-full">
+                <h4 class="font-headline-sm text-base text-white font-bold uppercase tracking-wider opacity-90">Explora</h4>
+                <ul class="space-y-3">
+                    <li><a class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0" href="index.html">Inicio</a></li>
+                    <li><a class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0" href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li><a class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0" href="services.html">Nuestros Servicios</a></li>
+                    <li><a class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="space-y-4 w-full">
+                <h4 class="font-headline-sm text-base text-white font-bold uppercase tracking-wider opacity-90">Información</h4>
+                <ul class="space-y-3">
+                    <li><a class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0" href="politica-privacidad.html">Política de Privacidad</a></li>
+                    <li><a class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0" href="terminos-condiciones.html">Términos y Condiciones</a></li>
+                    <li><a class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0" href="aviso-legal.html">Aviso Legal</a></li>
+                    <li><a class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0" href="cookie-policy.html">Política de Cookies</a></li>
+                </ul>
+            </div>
+
+            <div class="space-y-4 w-full">
+                <h4 class="font-headline-sm text-base text-white font-bold uppercase tracking-wider opacity-90">Contacto</h4>
+                <div class="space-y-4 font-body-md text-body-md text-white/80">
+                    <div class="flex items-start gap-3">
+                        <span class="material-symbols-outlined text-white shrink-0">location_on</span>
+                        <span>Avda América, 28, 18006 Zaidín</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-white shrink-0">call</span>
+                        <span>858 814 666 / 602 880 834</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-white shrink-0">mail</span>
+                        <span class="break-all min-[1201px]:break-normal">info@overthemoonidiomas.com</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block md:hidden col-span-1 pt-4 border-t border-white/10">
+                <p class="text-xs text-white/60">© 2026 Over the Moon Academia.</p>
+            </div>
+
         </div>
-        <p class="text-on-surface-variant font-body-md mb-6">
-          Formando mentes brillantes para un futuro global desde 2009.
-        </p>
-        <div class="flex gap-4">
-          <a class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all"
-            href="#">
-            <span class="material-symbols-outlined text-xl">social_leaderboard</span>
-          </a>
-          <a class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all"
-            href="#">
-            <span class="material-symbols-outlined text-xl">camera</span>
-          </a>
-        </div>
-      </div>
-      <div>
-        <h4 class="font-headline-md text-[18px] text-on-surface mb-6">Explorar</h4>
-        <ul class="space-y-4">
-          <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Cursos de Verano</a></li>
-          <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Preparación A-Levels</a>
-          </li>
-          <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Tutorías 1 a 1</a></li>
-          <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Idiomas</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="font-headline-md text-[18px] text-on-surface mb-6">Recursos</h4>
-        <ul class="space-y-4">
-          <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
-          <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a></li>
-          <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">FAQ</a></li>
-          <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Careers</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="font-headline-md text-[18px] text-on-surface mb-6">Contacto</h4>
-        <ul class="space-y-4">
-          <li class="flex gap-3 text-on-surface-variant">
-            <span class="material-symbols-outlined text-primary">location_on</span>
-            <span>Calle Academia 123, Madrid, España</span>
-          </li>
-          <li class="flex gap-3 text-on-surface-variant">
-            <span class="material-symbols-outlined text-primary">mail</span>
-            <span>hola@overthemoon.edu</span>
-          </li>
-          <li class="flex gap-3 text-on-surface-variant">
-            <span class="material-symbols-outlined text-primary">call</span>
-            <span>+34 912 345 678</span>
-          </li>
-        </ul>
-      </div>
     </div>
-    <div
-      class="px-margin-mobile md:px-margin-desktop py-6 border-t border-outline-variant/10 max-w-container-max mx-auto text-center">
-      <p class="text-on-surface-variant text-sm">© 2024 Over the Moon Academia. All rights reserved.</p>
+</footer>
+<button 
+    id="btn-scroll-top" 
+    class="fixed bottom-6 right-6 z-50 hidden bg-[#017281] text-white p-1.5 rounded-full shadow-lg hover:bg-opacity-90 transition-all duration-300 hover:scale-110 active:scale-95 focus:outline-none group w-12 h-12"
+    onclick="scrollToTop()"
+    title="Volver arriba">
+    
+    <div class="relative w-full h-full flex items-center justify-center">
+        
+        <svg class="absolute top-0 left-0 w-full h-full transform -rotate-90" viewBox="0 0 36 36">
+            <path 
+                class="text-white/20" 
+                stroke="currentColor" 
+                stroke-width="2" 
+                fill="none" 
+                d="M18 1 a 17 17 0 0 1 0 34 a 17 17 0 0 1 0 -34" 
+            />
+            <path 
+                id="progress-circle"
+                class="text-white transition-all duration-75" 
+                stroke="currentColor" 
+                stroke-width="2" 
+                stroke-dasharray="106.8"
+                stroke-dashoffset="106.8"
+                stroke-linecap="round"
+                fill="none" 
+                d="M18 1 a 17 17 0 0 1 0 34 a 17 17 0 0 1 0 -34" 
+            />
+        </svg>
+
+        <svg class="w-5 h-5 transform transition-transform duration-300 group-hover:-translate-y-0.5 relative z-10" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5"></path>
+        </svg>
     </div>
-  </footer>
-  <script>
-    // Simple scroll interaction for navbar
-    window.addEventListener('scroll', () => {
-      const nav = document.querySelector('nav');
-      if (window.scrollY > 20) {
-        nav.classList.add('shadow-md');
-        nav.classList.remove('shadow-sm');
-      } else {
-        nav.classList.add('shadow-sm');
-        nav.classList.remove('shadow-md');
-      }
-    });
-  </script>
+</button>
+
+<script>
+    const scrollTopBtn = document.getElementById("btn-scroll-top");
+    const progressCircle = document.getElementById("progress-circle");
+    
+    // La longitud real del contorno de nuestro círculo de radio 17
+    const pathLength = 106.8; 
+
+    window.onscroll = function() {
+        const totalHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrollTop = document.documentElement.scrollTop;
+        
+        if (totalHeight > 0) {
+            // Calculamos el desfase exacto que necesita la línea para completarse
+            const progress = scrollTop / totalHeight;
+            const offset = pathLength - (progress * pathLength);
+            
+            // Modificamos el offset: cuando llega abajo, el offset es 0 y se cierra ENTERO
+            progressCircle.style.strokeDashoffset = offset;
+        }
+
+        // Mostrar u ocultar botón
+        if (scrollTop > 300) {
+            scrollTopBtn.classList.remove("hidden");
+            scrollTopBtn.classList.add("flex");
+        } else {
+            scrollTopBtn.classList.remove("flex");
+            scrollTopBtn.classList.add("hidden");
+        }
+    };
+
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+</script>
 </body>
 
 </html>
