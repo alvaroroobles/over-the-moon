@@ -1,529 +1,955 @@
-<!DOCTYPE html>
+<!doctype html>
 <html class="light" lang="es">
-
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Contacto y Registro | Over the Moon Academia</title>
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap"
-    rel="stylesheet">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-    rel="stylesheet">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-    rel="stylesheet">
-  <script id="tailwind-config">
-    tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          "colors": {
-            "error": "#ba1a1a",
-            "surface": "#f9f9fc",
-            "on-tertiary": "#ffffff",
-            "on-tertiary-container": "#ffe3b7",
-            "secondary-container": "#dae1e2",
-            "tertiary-container": "#886000",
-            "on-secondary": "#ffffff",
-            "primary-fixed-dim": "#80d3e4",
-            "on-secondary-fixed-variant": "#414849",
-            "surface-dim": "#dadadc",
-            "on-primary-fixed": "#001f25",
-            "error-container": "#ffdad6",
-            "background": "#f9f9fc",
-            "secondary-fixed": "#dde4e5",
-            "surface-container-low": "#f3f3f6",
-            "primary": "#005864",
-            "on-secondary-fixed": "#161d1e",
-            "on-primary-container": "#b1f1ff",
-            "tertiary-fixed-dim": "#ffba20",
-            "on-primary-fixed-variant": "#004e59",
-            "on-tertiary-fixed-variant": "#5e4200",
-            "inverse-on-surface": "#f0f0f3",
-            "secondary": "#586061",
-            "tertiary": "#694a00",
-            "on-secondary-container": "#5d6465",
-            "surface-container": "#eeeef0",
-            "surface-bright": "#f9f9fc",
-            "tertiary-fixed": "#ffdea8",
-            "surface-tint": "#006876",
-            "on-primary": "#ffffff",
-            "on-background": "#1a1c1e",
-            "primary-container": "#017281",
-            "secondary-fixed-dim": "#c1c8c9",
-            "surface-container-lowest": "#ffffff",
-            "outline-variant": "#bec8cb",
-            "inverse-primary": "#80d3e4",
-            "on-error-container": "#93000a",
-            "primary-fixed": "#a0efff",
-            "on-surface-variant": "#3e484b",
-            "on-tertiary-fixed": "#271900",
-            "on-surface": "#1a1c1e",
-            "surface-variant": "#e2e2e5",
-            "surface-container-high": "#e8e8ea",
-            "outline": "#6e797b",
-            "on-error": "#ffffff",
-            "surface-container-highest": "#e2e2e5",
-            "inverse-surface": "#2f3133"
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Contacto y Registro | Over the Moon Academia</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              error: "#ba1a1a",
+              surface: "#f9f9fc",
+              "on-tertiary": "#ffffff",
+              "on-tertiary-container": "#ffe3b7",
+              "secondary-container": "#dae1e2",
+              "tertiary-container": "#886000",
+              "on-secondary": "#ffffff",
+              "primary-fixed-dim": "#80d3e4",
+              "on-secondary-fixed-variant": "#414849",
+              "surface-dim": "#dadadc",
+              "on-primary-fixed": "#001f25",
+              "error-container": "#ffdad6",
+              background: "#f9f9fc",
+              "secondary-fixed": "#dde4e5",
+              "surface-container-low": "#f3f3f6",
+              primary: "#005864",
+              "on-secondary-fixed": "#161d1e",
+              "on-primary-container": "#b1f1ff",
+              "tertiary-fixed-dim": "#ffba20",
+              "on-primary-fixed-variant": "#004e59",
+              "on-tertiary-fixed-variant": "#5e4200",
+              "inverse-on-surface": "#f0f0f3",
+              secondary: "#586061",
+              tertiary: "#694a00",
+              "on-secondary-container": "#5d6465",
+              "surface-container": "#eeeef0",
+              "surface-bright": "#f9f9fc",
+              "tertiary-fixed": "#ffdea8",
+              "surface-tint": "#006876",
+              "on-primary": "#ffffff",
+              "on-background": "#1a1c1e",
+              "primary-container": "#017281",
+              "secondary-fixed-dim": "#c1c8c9",
+              "surface-container-lowest": "#ffffff",
+              "outline-variant": "#bec8cb",
+              "inverse-primary": "#80d3e4",
+              "on-error-container": "#93000a",
+              "primary-fixed": "#a0efff",
+              "on-surface-variant": "#3e484b",
+              "on-tertiary-fixed": "#271900",
+              "on-surface": "#1a1c1e",
+              "surface-variant": "#e2e2e5",
+              "surface-container-high": "#e8e8ea",
+              outline: "#6e797b",
+              "on-error": "#ffffff",
+              "surface-container-highest": "#e2e2e5",
+              "inverse-surface": "#2f3133",
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+            spacing: {
+              "margin-desktop": "64px",
+              "margin-mobile": "20px",
+              "section-gap": "80px",
+              "container-max": "1280px",
+              gutter: "24px",
+              base: "8px",
+            },
+            fontFamily: {
+              "headline-lg": ["Montserrat"],
+              "headline-md": ["Montserrat"],
+              "headline-lg-mobile": ["Montserrat"],
+              "label-sm": ["Inter"],
+              "label-md": ["Inter"],
+              "body-md": ["Inter"],
+              "display-lg": ["Montserrat"],
+              "body-lg": ["Inter"],
+            },
+            fontSize: {
+              "headline-lg": [
+                "32px",
+                { lineHeight: "40px", fontWeight: "600" },
+              ],
+              "headline-md": [
+                "24px",
+                { lineHeight: "32px", fontWeight: "600" },
+              ],
+              "headline-lg-mobile": [
+                "28px",
+                { lineHeight: "36px", fontWeight: "600" },
+              ],
+              "label-sm": [
+                "12px",
+                {
+                  lineHeight: "16px",
+                  letterSpacing: "0.05em",
+                  fontWeight: "600",
+                },
+              ],
+              "label-md": [
+                "14px",
+                {
+                  lineHeight: "20px",
+                  letterSpacing: "0.01em",
+                  fontWeight: "500",
+                },
+              ],
+              "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+              "display-lg": [
+                "48px",
+                {
+                  lineHeight: "56px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "700",
+                },
+              ],
+              "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+            },
           },
-          "borderRadius": {
-            "DEFAULT": "0.25rem",
-            "lg": "0.5rem",
-            "xl": "0.75rem",
-            "full": "9999px"
-          },
-          "spacing": {
-            "margin-desktop": "64px",
-            "margin-mobile": "20px",
-            "section-gap": "80px",
-            "container-max": "1280px",
-            "gutter": "24px",
-            "base": "8px"
-          },
-          "fontFamily": {
-            "headline-lg": ["Montserrat"],
-            "headline-md": ["Montserrat"],
-            "headline-lg-mobile": ["Montserrat"],
-            "label-sm": ["Inter"],
-            "label-md": ["Inter"],
-            "body-md": ["Inter"],
-            "display-lg": ["Montserrat"],
-            "body-lg": ["Inter"]
-          },
-          "fontSize": {
-            "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
-            "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
-            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }],
-            "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
-            "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500" }],
-            "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
-            "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
-            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
-          }
         },
-      },
-    }
-  </script>
-  <style>
-    .material-symbols-outlined {
-      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-    }
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+      }
 
-    .form-focus-ring:focus {
-      border-color: #017281;
-      box-shadow: 0 0 0 2px rgba(1, 114, 129, 0.1);
-      outline: none;
-    }
-  </style>
-</head>
+      .form-focus-ring:focus {
+        border-color: #017281;
+        box-shadow: 0 0 0 2px rgba(1, 114, 129, 0.1);
+        outline: none;
+      }
+    </style>
+  </head>
 
-<body class="bg-surface text-on-surface">
-  <header class="sticky top-0 z-50 w-full bg-white/70 backdrop-blur-md border-b border-white/20 shadow-[0_10px_40px_rgba(0,191,255,0.4)] transition-all duration-300">
-    <nav class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+  <body class="bg-surface text-on-surface">
+    <header
+      class="sticky top-0 z-50 w-full bg-white/70 backdrop-blur-md border-b border-white/20 shadow-[0_10px_40px_rgba(0,191,255,0.4)] transition-all duration-300"
+    >
+      <nav
+        class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto"
+      >
         <div class="flex items-center gap-3">
-            <img alt="Over the Moon Academia Logo" class="h-14 w-auto object-contain" src="assets/img/logo (2).png">
+          <img
+            alt="Over the Moon Academia Logo"
+            class="h-14 w-auto object-contain"
+            src="assets/img/logo (2).png"
+          />
         </div>
-        
+
         <div class="hidden md:flex items-center gap-8">
-            <a class="text-primary font-bold transition-colors duration-300 text-base relative py-1
-              after:absolute after:bottom-0 after:left-1/2 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-out hover:after:left-0 hover:after:w-full"
-                href="index.html">
-                Inicio
-            </a>
-
-            <a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 text-base relative py-1
-              after:absolute after:bottom-0 after:left-1/2 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-out hover:after:left-0 hover:after:w-full"
-                href="about.html">
-                Sobre Nosotros
-            </a>
-
-            <a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 text-base relative py-1
-              after:absolute after:bottom-0 after:left-1/2 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-out hover:after:left-0 hover:after:w-full"
-                href="services.html">
-                Servicios
-            </a>
-
-            <a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 text-base relative py-1
-              after:absolute after:bottom-0 after:left-1/2 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-out hover:after:left-0 hover:after:w-full"
-                href="contact.html">
-                Contacto
-            </a>
-
-            <button class="bg-tertiary-fixed text-on-tertiary-fixed px-6 py-2.5 rounded-lg text-base font-bold transition-all duration-300 hover:opacity-90 hover:scale-105 active:scale-95">
-                Inscribirse
-            </button>
-        </div>
-
-        <button class="md:hidden text-primary"
-            onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
-            <span class="material-symbols-outlined">menu</span>
-        </button>
-    </nav>
-
-    <div class="hidden bg-white/90 backdrop-blur-lg border-t border-outline-variant px-margin-mobile py-4 space-y-4 shadow-lg"
-        id="mobile-menu">
-        <a class="block text-primary font-bold text-base" href="index.html">Inicio</a>
-        <a class="block text-on-surface-variant font-medium text-base" href="about.html">Sobre Nosotros</a>
-        <a class="block text-on-surface-variant font-medium text-base" href="services.html">Servicios</a>
-        <a class="block text-on-surface-variant font-medium text-base" href="contact.html">Contacto</a>
-        <button class="w-full bg-tertiary-fixed text-on-tertiary-fixed px-6 py-3 rounded-lg text-base font-bold">Inscribirse Now</button>
-    </div>
-</header>
-
-  <section class="relative bg-slate-50 py-16 md:py-24 overflow-hidden flex items-center border-b border-outline-variant">
-    <div class="relative z-10 w-full px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center">
-      <span class="inline-flex items-center gap-2 px-3 py-1 text-xs font-semibold tracking-wider text-[#017281] uppercase bg-[#017281]/10 rounded-full border border-[#017281]/20 mb-4">
-        <span class="w-1.5 h-1.5 rounded-full bg-[#017281]"></span>
-        Atención personalizada
-      </span>
-
-      <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-on-surface tracking-tight mb-4">
-        Hablemos de tu <span class="text-[#017281]">próximo paso</span>
-      </h1>
-
-      <p class="text-lg md:text-xl text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
-        ¿Tienes alguna pregunta sobre nuestros cursos o metodologías? Nuestro equipo está listo para guiarte en tu viaje hacia el dominio de un nuevo idioma.
-      </p>
-    </div>
-  </section>
-
-  <main class="w-full px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto py-12 md:py-20">
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-      
-      <section class="lg:col-span-7 bg-white p-8 rounded-xl border border-outline-variant shadow-sm hover:shadow-md transition-all duration-200">
-        <h2 class="text-2xl font-bold text-on-surface mb-8">Formulario de Registro</h2>
-        <form class="space-y-6" id="registrationForm">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div class="space-y-2">
-              <label class="text-sm font-medium text-on-surface-variant" for="name">Nombre Completo</label>
-              <input class="w-full p-3 rounded-lg border border-outline bg-white text-base form-focus-ring focus:outline-none focus:border-[#017281]" id="name" name="name" placeholder="Ej. Ana García" required type="text">
-            </div>
-            <div class="space-y-2">
-              <label class="text-sm font-medium text-on-surface-variant" for="email">Correo Electrónico</label>
-              <input class="w-full p-3 rounded-lg border border-outline bg-white text-base form-focus-ring focus:outline-none focus:border-[#017281]" id="email" name="email" placeholder="ana@ejemplo.com" required type="email">
-            </div>
-          </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div class="space-y-2">
-              <label class="text-sm font-medium text-on-surface-variant" for="phone">Teléfono</label>
-              <input class="w-full p-3 rounded-lg border border-outline bg-white text-base form-focus-ring focus:outline-none focus:border-[#017281]" id="phone" name="phone" placeholder="+34 600 000 000" required type="tel">
-            </div>
-          </div>
-          <div class="space-y-2">
-            <label class="text-sm font-medium text-on-surface-variant" for="message">Mensaje (Opcional)</label>
-            <textarea class="w-full p-3 rounded-lg border border-outline bg-white text-base form-focus-ring focus:outline-none focus:border-[#017281]" id="message" name="message" placeholder="Cuéntanos más sobre tus objetivos académicos..." rows="4"></textarea>
-          </div>
-          <div class="flex items-start gap-3 pt-2">
-            <input class="mt-1 h-4 w-4 rounded border-outline text-[#017281] focus:ring-[#017281]" id="privacy" required type="checkbox">
-            <label class="text-xs text-on-surface-variant" for="privacy">
-              He leído y acepto la Política de Privacidad y el tratamiento de mis datos personales.
-            </label>
-          </div>
-          <button class="w-full bg-[#017281] text-white py-4 rounded-lg font-bold shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" type="submit">
-            Enviar Solicitud de Información
-          </button>
-        </form>
-      </section>
-
-      <aside class="lg:col-span-5 space-y-8">
-        <div class="bg-slate-50 border border-outline-variant p-8 rounded-xl space-y-8">
-          <h2 class="text-2xl font-bold text-[#017281]">Información de Contacto</h2>
-          
-          <div class="flex items-start gap-4">
-            <div class="bg-[#017281] p-3 rounded-lg text-white flex items-center justify-center">
-              <span class="material-symbols-outlined">location_on</span>
-            </div>
-            <div>
-              <h3 class="text-base font-bold text-on-surface">Nuestra Sede</h3>
-              <p class="text-sm text-on-surface-variant">Avda América, 28, 18006 Zaidín,<br> Granada, España</p>
-            </div>
-          </div>
-          
-          <div class="flex items-start gap-4">
-            <div class="bg-[#017281] p-3 rounded-lg text-white flex items-center justify-center">
-              <span class="material-symbols-outlined">call</span>
-            </div>
-            <div>
-              <h3 class="text-base font-bold text-on-surface">Teléfono</h3>
-              <p class="text-sm text-on-surface-variant">+34 858 814 666 / 602 880 834</p>
-              <p class="text-xs text-on-surface-variant mt-0.5">Lun - Vie, 9:00 - 13:00 / 16:00 - 21:00</p>
-            </div>
-          </div>
-          
-          <div class="flex items-start gap-4">
-            <div class="bg-[#017281] p-3 rounded-lg text-white flex items-center justify-center">
-              <span class="material-symbols-outlined">mail</span>
-            </div>
-            <div>
-              <h3 class="text-base font-bold text-on-surface">Correo Electrónico</h3>
-              <p class="text-sm text-on-surface-variant">info@overthemoonidiomas.com</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="flex items-start gap-4 pt-6 border-t border-outline-variant/60">
-        <div class="bg-[#25D366] p-3 rounded-lg text-white flex items-center justify-center shrink-0">
-          <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
-            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397 0 11.93 0c3.165.001 6.14 1.233 8.377 3.474 2.237 2.24 3.466 5.214 3.466 8.381 0 6.586-5.338 11.933-11.873 11.933-1.999-.001-3.961-.508-5.706-1.472L0 24zm6.59-4.846c1.63.967 3.511 1.478 5.426 1.479 5.474 0 9.924-4.446 9.928-9.914.002-2.651-1.03-5.144-2.902-7.02C17.214 1.823 14.725.791 12.072.791c-5.461 0-9.914 4.446-9.917 9.916-.002 1.966.513 3.889 1.492 5.61l-.986 3.59 3.693-.969z"/>
-          </svg>
-        </div>
-        <div class="w-full">
-          <h3 class="text-base font-bold text-on-surface">¿Prefieres WhatsApp?</h3>
-          <p class="text-xs text-on-surface-variant">Respondemos de inmediato dentro del horario comercial.</p>
-          <a href="https://wa.me/34696517951?text=Hola%20Over%20the%20Moon,%20busco%20información%20sobre%20los%20cursos%20de%20idiomas" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            class="inline-flex items-center justify-center mt-3 bg-[#25D366] text-white px-5 py-2 rounded-lg text-sm font-bold shadow-sm hover:bg-[#20ba5a] hover:shadow transition-all duration-200">
-            Chatear ahora
+          <a
+            class="text-primary font-bold transition-colors duration-300 text-base relative py-1 after:absolute after:bottom-0 after:left-1/2 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-out hover:after:left-0 hover:after:w-full"
+            href="index.html"
+          >
+            Inicio
           </a>
+
+          <a
+            class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 text-base relative py-1 after:absolute after:bottom-0 after:left-1/2 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-out hover:after:left-0 hover:after:w-full"
+            href="about.html"
+          >
+            Sobre Nosotros
+          </a>
+
+          <a
+            class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 text-base relative py-1 after:absolute after:bottom-0 after:left-1/2 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-out hover:after:left-0 hover:after:w-full"
+            href="services.html"
+          >
+            Servicios
+          </a>
+
+          <a
+            class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 text-base relative py-1 after:absolute after:bottom-0 after:left-1/2 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-out hover:after:left-0 hover:after:w-full"
+            href="contact.html"
+          >
+            Contacto
+          </a>
+
+          <button
+            class="bg-tertiary-fixed text-on-tertiary-fixed px-6 py-2.5 rounded-lg text-base font-bold transition-all duration-300 hover:opacity-90 hover:scale-105 active:scale-95"
+          >
+            Inscribirse
+          </button>
+        </div>
+
+        <button
+          class="md:hidden text-primary"
+          onclick="
+            document.getElementById('mobile-menu').classList.toggle('hidden')
+          "
+        >
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </nav>
+
+      <div
+        class="hidden bg-white/90 backdrop-blur-lg border-t border-outline-variant px-margin-mobile py-4 space-y-4 shadow-lg"
+        id="mobile-menu"
+      >
+        <a class="block text-primary font-bold text-base" href="index.html"
+          >Inicio</a
+        >
+        <a
+          class="block text-on-surface-variant font-medium text-base"
+          href="about.html"
+          >Sobre Nosotros</a
+        >
+        <a
+          class="block text-on-surface-variant font-medium text-base"
+          href="services.html"
+          >Servicios</a
+        >
+        <a
+          class="block text-on-surface-variant font-medium text-base"
+          href="contact.html"
+          >Contacto</a
+        >
+        <button
+          class="w-full bg-tertiary-fixed text-on-tertiary-fixed px-6 py-3 rounded-lg text-base font-bold"
+        >
+          Inscribirse 
+        </button>
+      </div>
+    </header>
+
+    <section
+      class="relative bg-slate-50 py-16 md:py-24 overflow-hidden flex items-center border-b border-outline-variant"
+    >
+      <div
+        class="relative z-10 w-full px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center"
+      >
+        <span
+          class="inline-flex mb-6 items-center gap-2 text-primary bg-primary/10 text-label-sm font-bold uppercase tracking-widest px-4 py-2 rounded-full w-fit"
+        >
+          <span class="material-symbols-outlined text-base">support_agent</span>
+          Atención personalizada
+        </span>
+
+        <h1
+          class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-on-surface tracking-tight mb-4"
+        >
+          Hablemos de tu <span class="text-[#017281]">próximo paso</span>
+        </h1>
+
+        <p
+          class="text-lg md:text-xl text-on-surface-variant max-w-2xl mx-auto leading-relaxed"
+        >
+          ¿Tienes alguna pregunta sobre nuestros cursos o metodologías? Nuestro
+          equipo está listo para guiarte en tu viaje hacia el dominio de un
+          nuevo idioma.
+        </p>
+      </div>
+    </section>
+
+    <main
+      class="w-full px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto py-12 md:py-20"
+    >
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <section
+          class="lg:col-span-7 bg-white p-8 rounded-xl border border-outline-variant shadow-sm hover:shadow-md transition-all duration-200"
+        >
+          <h2 class="text-2xl font-bold text-on-surface mb-8">
+            Formulario de Registro
+          </h2>
+          <form class="space-y-6" id="registrationForm">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="space-y-2">
+                <label
+                  class="text-sm font-medium text-on-surface-variant"
+                  for="name"
+                  >Nombre Completo</label
+                >
+                <input
+                  class="w-full p-3 rounded-lg border border-outline bg-white text-base form-focus-ring focus:outline-none focus:border-[#017281]"
+                  id="name"
+                  name="name"
+                  placeholder="Ej. Ana García"
+                  required
+                  type="text"
+                />
+              </div>
+              <div class="space-y-2">
+                <label
+                  class="text-sm font-medium text-on-surface-variant"
+                  for="email"
+                  >Correo Electrónico</label
+                >
+                <input
+                  class="w-full p-3 rounded-lg border border-outline bg-white text-base form-focus-ring focus:outline-none focus:border-[#017281]"
+                  id="email"
+                  name="email"
+                  placeholder="ana@ejemplo.com"
+                  required
+                  type="email"
+                />
+              </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="space-y-2">
+                <label
+                  class="text-sm font-medium text-on-surface-variant"
+                  for="phone"
+                  >Teléfono</label
+                >
+                <input
+                  class="w-full p-3 rounded-lg border border-outline bg-white text-base form-focus-ring focus:outline-none focus:border-[#017281]"
+                  id="phone"
+                  name="phone"
+                  placeholder="+34 600 000 000"
+                  required
+                  type="tel"
+                />
+              </div>
+            </div>
+            <div class="space-y-2">
+              <label
+                class="text-sm font-medium text-on-surface-variant"
+                for="message"
+                >Mensaje (Opcional)</label
+              >
+              <textarea
+                class="w-full p-3 rounded-lg border border-outline bg-white text-base form-focus-ring focus:outline-none focus:border-[#017281]"
+                id="message"
+                name="message"
+                placeholder="Cuéntanos más sobre tus objetivos académicos..."
+                rows="4"
+              ></textarea>
+            </div>
+            <div class="flex items-start gap-3 pt-2">
+              <input
+                class="mt-1 h-4 w-4 rounded border-outline text-[#017281] focus:ring-[#017281]"
+                id="privacy"
+                required
+                type="checkbox"
+              />
+              <label class="text-xs text-on-surface-variant" for="privacy">
+                He leído y acepto la Política de Privacidad y el tratamiento de
+                mis datos personales.
+              </label>
+            </div>
+            <button
+              class="w-full bg-[#017281] text-white py-4 rounded-lg font-bold shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
+              type="submit"
+            >
+              Enviar Solicitud de Información
+            </button>
+          </form>
+        </section>
+
+        <aside class="lg:col-span-5 space-y-8">
+          <div
+            class="bg-slate-50 border border-outline-variant p-8 rounded-xl space-y-8"
+          >
+            <h2 class="text-2xl font-bold text-[#017281]">
+              Información de Contacto
+            </h2>
+
+            <div class="flex items-start gap-4">
+              <div
+                class="bg-[#017281] p-3 rounded-lg text-white flex items-center justify-center"
+              >
+                <span class="material-symbols-outlined">location_on</span>
+              </div>
+              <div>
+                <h3 class="text-base font-bold text-on-surface">
+                  Nuestra Sede
+                </h3>
+                <p class="text-sm text-on-surface-variant">
+                  Avda América, 28, 18006 Zaidín,<br />
+                  Granada, España
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div
+                class="bg-[#017281] p-3 rounded-lg text-white flex items-center justify-center"
+              >
+                <span class="material-symbols-outlined">call</span>
+              </div>
+              <div>
+                <h3 class="text-base font-bold text-on-surface">Teléfono</h3>
+                <p class="text-sm text-on-surface-variant">
+                  +34 858 814 666 / 602 880 834
+                </p>
+                <p class="text-xs text-on-surface-variant mt-0.5">
+                  Lun - Vie, 9:00 - 13:00 / 16:00 - 21:00
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div
+                class="bg-[#017281] p-3 rounded-lg text-white flex items-center justify-center"
+              >
+                <span class="material-symbols-outlined">mail</span>
+              </div>
+              <div>
+                <h3 class="text-base font-bold text-on-surface">
+                  Correo Electrónico
+                </h3>
+                <p class="text-sm text-on-surface-variant">
+                  info@overthemoonidiomas.com
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex items-start gap-4 pt-6 border-t border-outline-variant/60"
+          >
+            <div
+              class="bg-[#25D366] p-3 rounded-lg text-white flex items-center justify-center shrink-0"
+            >
+              <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                <path
+                  d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397 0 11.93 0c3.165.001 6.14 1.233 8.377 3.474 2.237 2.24 3.466 5.214 3.466 8.381 0 6.586-5.338 11.933-11.873 11.933-1.999-.001-3.961-.508-5.706-1.472L0 24zm6.59-4.846c1.63.967 3.511 1.478 5.426 1.479 5.474 0 9.924-4.446 9.928-9.914.002-2.651-1.03-5.144-2.902-7.02C17.214 1.823 14.725.791 12.072.791c-5.461 0-9.914 4.446-9.917 9.916-.002 1.966.513 3.889 1.492 5.61l-.986 3.59 3.693-.969z"
+                />
+              </svg>
+            </div>
+            <div class="w-full">
+              <h3 class="text-base font-bold text-on-surface">
+                ¿Prefieres WhatsApp?
+              </h3>
+              <p class="text-xs text-on-surface-variant">
+                Respondemos de inmediato dentro del horario comercial.
+              </p>
+              <a
+                href="https://wa.me/34696517951?text=Hola%20Over%20the%20Moon,%20busco%20información%20sobre%20los%20cursos%20de%20idiomas"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center justify-center mt-3 bg-[#25D366] text-white px-5 py-2 rounded-lg text-sm font-bold shadow-sm hover:bg-[#20ba5a] hover:shadow transition-all duration-200"
+              >
+                Chatear ahora
+              </a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <!-- SECCIÓN DE PREGUNTAS FRECUENTES (FONDO AZUL CORPORATIVO) -->
+    <section
+      class="w-full bg-[#017281] py-16 md:py-24 border-t border-b border-[#015d69]"
+    >
+      <div class="max-w-4xl mx-auto px-margin-mobile md:px-margin-desktop">
+        <div class="text-center mb-12">
+          <span
+            class="inline-flex mb-6 items-center gap-2 text-white bg-white/10 text-label-sm font-bold uppercase tracking-widest px-4 py-2 rounded-full w-fit"
+          >
+            <span class="material-symbols-outlined text-base">quiz</span>
+            ¿Tienes preguntas?
+          </span>
+
+          <h2
+            class="text-3xl md:text-4xl font-extrabold text-white tracking-tight mb-4"
+          >
+            Preguntas <span class="text-slate-200/90">Frecuentes</span>
+          </h2>
+          <p class="text-base text-white/80 max-w-xl mx-auto">
+            Resolvemos tus dudas principales sobre el funcionamiento de nuestra
+            academia, metodologías y matrículas.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          <!-- FAQ 1: Modalidad -->
+          <div
+            class="border border-white/10 rounded-xl p-5 bg-white/5 hover:bg-white/10 transition-colors duration-200"
+          >
+            <details class="group" open>
+              <summary
+                class="flex justify-between items-center font-bold text-base md:text-lg text-white cursor-pointer list-none"
+              >
+                <span>¿Las clases son presenciales u online?</span>
+                <span
+                  class="transition-transform duration-300 group-open:rotate-180 text-white material-symbols-outlined"
+                  >expand_more</span
+                >
+              </summary>
+              <p
+                class="text-white/85 text-sm md:text-base mt-3 leading-relaxed border-t border-white/10 pt-3"
+              >
+                Nuestra metodología apuesta por la cercanía; por ello,
+                <strong class="text-white font-bold"
+                  >todos nuestros cursos se imparten exclusivamente en modalidad
+                  presencial</strong
+                >
+                en nuestra academia de Granada,
+                <strong class="text-white font-bold"
+                  >a excepción de las clases de Español para Extranjeros
+                  (ELE)</strong
+                >, las cuales están disponibles tanto en modalidad presencial
+                como online.
+              </p>
+            </details>
+          </div>
+
+          <!-- FAQ 2: Prueba de Nivel -->
+          <div
+            class="border border-white/10 rounded-xl p-5 bg-white/5 hover:bg-white/10 transition-colors duration-200"
+          >
+            <details class="group">
+              <summary
+                class="flex justify-between items-center font-bold text-base md:text-lg text-white cursor-pointer list-none"
+              >
+                <span
+                  >¿Es necesario hacer una prueba de nivel antes de
+                  matricularme?</span
+                >
+                <span
+                  class="transition-transform duration-300 group-open:rotate-180 text-white material-symbols-outlined"
+                  >expand_more</span
+                >
+              </summary>
+              <p
+                class="text-white/85 text-sm md:text-base mt-3 leading-relaxed border-t border-white/10 pt-3"
+              >
+                Sí, para garantizar la homogeneidad de los grupos y tu correcto
+                aprendizaje. Realizamos una
+                <strong class="text-white font-bold"
+                  >evaluación de nivel totalmente gratuita y sin
+                  compromiso</strong
+                >
+                (con una parte escrita y otra oral) antes de asignarte un
+                horario.
+              </p>
+            </details>
+          </div>
+
+          <!-- FAQ 3: Exámenes Oficiales -->
+          <div
+            class="border border-white/10 rounded-xl p-5 bg-white/5 hover:bg-white/10 transition-colors duration-200"
+          >
+            <details class="group">
+              <summary
+                class="flex justify-between items-center font-bold text-base md:text-lg text-white cursor-pointer list-none"
+              >
+                <span
+                  >¿Preparáis para exámenes oficiales de certificación?</span
+                >
+                <span
+                  class="transition-transform duration-300 group-open:rotate-180 text-white material-symbols-outlined"
+                  >expand_more</span
+                >
+              </summary>
+              <p
+                class="text-white/85 text-sm md:text-base mt-3 leading-relaxed border-t border-white/10 pt-3"
+              >
+                ¡Por supuesto! Somos especialistas en la preparación de títulos
+                oficiales con un alto índice de aprobados. Te formamos
+                minuciosamente para los exámenes de
+                <strong class="text-white font-bold"
+                  >Cambridge (B1, B2, C1), Aptis ESOL, y los exámenes
+                  DELE</strong
+                >
+                en el caso de alumnos de español.
+              </p>
+            </details>
+          </div>
+
+          <!-- FAQ 4: Profesores -->
+          <div
+            class="border border-white/10 rounded-xl p-5 bg-white/5 hover:bg-white/10 transition-colors duration-200"
+          >
+            <details class="group">
+              <summary
+                class="flex justify-between items-center font-bold text-base md:text-lg text-white cursor-pointer list-none"
+              >
+                <span>¿Cuál es el perfil del profesorado de la academia?</span>
+                <span
+                  class="transition-transform duration-300 group-open:rotate-180 text-white material-symbols-outlined"
+                  >expand_more</span
+                >
+              </summary>
+              <p
+                class="text-white/85 text-sm md:text-base mt-3 leading-relaxed border-t border-white/10 pt-3"
+              >
+                Contamos con un equipo de
+                <strong class="text-white font-bold"
+                  >profesores nativos y bilingües certificados</strong
+                >, todos ellos con titulación universitaria y formación
+                específica en la enseñanza de segundas lenguas. Tienen amplia
+                experiencia dinamizando clases grupales.
+              </p>
+            </details>
+          </div>
+
+          <!-- FAQ 5: Ratio Alumnos -->
+          <div
+            class="border border-white/10 rounded-xl p-5 bg-white/5 hover:bg-white/10 transition-colors duration-200"
+          >
+            <details class="group">
+              <summary
+                class="flex justify-between items-center font-bold text-base md:text-lg text-white cursor-pointer list-none"
+              >
+                <span>¿Cuántos alumnos hay como máximo por aula?</span>
+                <span
+                  class="transition-transform duration-300 group-open:rotate-180 text-white material-symbols-outlined"
+                  >expand_more</span
+                >
+              </summary>
+              <p
+                class="text-white/85 text-sm md:text-base mt-3 leading-relaxed border-t border-white/10 pt-3"
+              >
+                Para garantizar nuestra promesa de
+                <strong class="text-white font-bold"
+                  >atención personalizada</strong
+                >, trabajamos con grupos reducidos. El número máximo suele
+                oscilar entre
+                <strong class="text-white font-bold"
+                  >8 y 10 alumnos por clase</strong
+                >, lo que permite al profesor hacer un seguimiento real y
+                fomenta la participación oral de todos.
+              </p>
+            </details>
+          </div>
+
+          <!-- FAQ 6: Matrícula y Pagos -->
+          <div
+            class="border border-white/10 rounded-xl p-5 bg-white/5 hover:bg-white/10 transition-colors duration-200"
+          >
+            <details class="group">
+              <summary
+                class="flex justify-between items-center font-bold text-base md:text-lg text-white cursor-pointer list-none"
+              >
+                <span>¿Existe algún tipo de compromiso de permanencia?</span>
+                <span
+                  class="transition-transform duration-300 group-open:rotate-180 text-white material-symbols-outlined"
+                  >expand_more</span
+                >
+              </summary>
+              <p
+                class="text-white/85 text-sm md:text-base mt-3 leading-relaxed border-t border-white/10 pt-3"
+              >
+                No, nuestros cursos estándar funcionan mediante mensualidades
+                corrientes y
+                <strong class="text-white font-bold"
+                  >no exigimos contratos de permanencia a largo plazo</strong
+                >. Solo te pedimos que nos avises con unos días de antelación si
+                decides darte de baja el mes siguiente para gestionar la plaza
+                correctamente.
+              </p>
+            </details>
+          </div>
         </div>
       </div>
+    </section>
 
-      </aside>
-    </div>
-  </main>
+    <section
+      class="w-full h-[450px] relative border-t border-b border-outline-variant bg-slate-100 overflow-hidden"
+    >
+      <iframe
+        class="w-full h-full border-0"
+        src="https://maps.google.com/maps?q=Avda%20Am%C3%A9rica,%2028,%2018006%20Zaid%C3%ADn,%20Granada&t=&z=16&ie=UTF8&iwloc=&output=embed"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      >
+      </iframe>
+    </section>
 
-<!-- SECCIÓN DE PREGUNTAS FRECUENTES (FONDO AZUL CORPORATIVO) -->
-<section class="w-full bg-[#017281] py-16 md:py-24 border-t border-b border-[#015d69]">
-  <div class="max-w-4xl mx-auto px-margin-mobile md:px-margin-desktop">
-    
-    <div class="text-center mb-12">
-      <h2 class="text-3xl md:text-4xl font-extrabold text-white tracking-tight mb-4">
-        Preguntas <span class="text-slate-200/90">Frecuentes</span>
-      </h2>
-      <p class="text-base text-white/80 max-w-xl mx-auto">
-        Resolvemos tus dudas principales sobre el funcionamiento de nuestra academia, metodologías y matrículas.
-      </p>
-    </div>
-
-    <div class="space-y-4">
-      
-      <!-- FAQ 1: Modalidad -->
-      <div class="border border-white/10 rounded-xl p-5 bg-white/5 hover:bg-white/10 transition-colors duration-200">
-        <details class="group" open>
-          <summary class="flex justify-between items-center font-bold text-base md:text-lg text-white cursor-pointer list-none">
-            <span>¿Las clases son presenciales u online?</span>
-            <span class="transition-transform duration-300 group-open:rotate-180 text-white material-symbols-outlined">expand_more</span>
-          </summary>
-          <p class="text-white/85 text-sm md:text-base mt-3 leading-relaxed border-t border-white/10 pt-3">
-            Nuestra metodología apuesta por la cercanía; por ello, <strong class="text-white font-bold">todos nuestros cursos se imparten exclusivamente en modalidad presencial</strong> en nuestra academia de Granada, <strong class="text-white font-bold">a excepción de las clases de Español para Extranjeros (ELE)</strong>, las cuales están disponibles tanto en modalidad presencial como online.
-          </p>
-        </details>
-      </div>
-
-      <!-- FAQ 2: Prueba de Nivel -->
-      <div class="border border-white/10 rounded-xl p-5 bg-white/5 hover:bg-white/10 transition-colors duration-200">
-        <details class="group">
-          <summary class="flex justify-between items-center font-bold text-base md:text-lg text-white cursor-pointer list-none">
-            <span>¿Es necesario hacer una prueba de nivel antes de matricularme?</span>
-            <span class="transition-transform duration-300 group-open:rotate-180 text-white material-symbols-outlined">expand_more</span>
-          </summary>
-          <p class="text-white/85 text-sm md:text-base mt-3 leading-relaxed border-t border-white/10 pt-3">
-            Sí, para garantizar la homogeneidad de los grupos y tu correcto aprendizaje. Realizamos una <strong class="text-white font-bold">evaluación de nivel totalmente gratuita y sin compromiso</strong> (con una parte escrita y otra oral) antes de asignarte un horario.
-          </p>
-        </details>
-      </div>
-
-      <!-- FAQ 3: Exámenes Oficiales -->
-      <div class="border border-white/10 rounded-xl p-5 bg-white/5 hover:bg-white/10 transition-colors duration-200">
-        <details class="group">
-          <summary class="flex justify-between items-center font-bold text-base md:text-lg text-white cursor-pointer list-none">
-            <span>¿Preparáis para exámenes oficiales de certificación?</span>
-            <span class="transition-transform duration-300 group-open:rotate-180 text-white material-symbols-outlined">expand_more</span>
-          </summary>
-          <p class="text-white/85 text-sm md:text-base mt-3 leading-relaxed border-t border-white/10 pt-3">
-            ¡Por supuesto! Somos especialistas en la preparación de títulos oficiales con un alto índice de aprobados. Te formamos minuciosamente para los exámenes de <strong class="text-white font-bold">Cambridge (B1, B2, C1), Aptis ESOL, y los exámenes DELE</strong> en el caso de alumnos de español.
-          </p>
-        </details>
-      </div>
-
-      <!-- FAQ 4: Profesores -->
-      <div class="border border-white/10 rounded-xl p-5 bg-white/5 hover:bg-white/10 transition-colors duration-200">
-        <details class="group">
-          <summary class="flex justify-between items-center font-bold text-base md:text-lg text-white cursor-pointer list-none">
-            <span>¿Cuál es el perfil del profesorado de la academia?</span>
-            <span class="transition-transform duration-300 group-open:rotate-180 text-white material-symbols-outlined">expand_more</span>
-          </summary>
-          <p class="text-white/85 text-sm md:text-base mt-3 leading-relaxed border-t border-white/10 pt-3">
-            Contamos con un equipo de <strong class="text-white font-bold">profesores nativos y bilingües certificados</strong>, todos ellos con titulación universitaria y formación específica en la enseñanza de segundas lenguas. Tienen amplia experiencia dinamizando clases grupales.
-          </p>
-        </details>
-      </div>
-
-      <!-- FAQ 5: Ratio Alumnos -->
-      <div class="border border-white/10 rounded-xl p-5 bg-white/5 hover:bg-white/10 transition-colors duration-200">
-        <details class="group">
-          <summary class="flex justify-between items-center font-bold text-base md:text-lg text-white cursor-pointer list-none">
-            <span>¿Cuántos alumnos hay como máximo por aula?</span>
-            <span class="transition-transform duration-300 group-open:rotate-180 text-white material-symbols-outlined">expand_more</span>
-          </summary>
-          <p class="text-white/85 text-sm md:text-base mt-3 leading-relaxed border-t border-white/10 pt-3">
-            Para garantizar nuestra promesa de <strong class="text-white font-bold">atención personalizada</strong>, trabajamos con grupos reducidos. El número máximo suele oscilar entre <strong class="text-white font-bold">8 y 10 alumnos por clase</strong>, lo que permite al profesor hacer un seguimiento real y fomenta la participación oral de todos.
-          </p>
-        </details>
-      </div>
-
-      <!-- FAQ 6: Matrícula y Pagos -->
-      <div class="border border-white/10 rounded-xl p-5 bg-white/5 hover:bg-white/10 transition-colors duration-200">
-        <details class="group">
-          <summary class="flex justify-between items-center font-bold text-base md:text-lg text-white cursor-pointer list-none">
-            <span>¿Existe algún tipo de compromiso de permanencia?</span>
-            <span class="transition-transform duration-300 group-open:rotate-180 text-white material-symbols-outlined">expand_more</span>
-          </summary>
-          <p class="text-white/85 text-sm md:text-base mt-3 leading-relaxed border-t border-white/10 pt-3">
-            No, nuestros cursos estándar funcionan mediante mensualidades corrientes y <strong class="text-white font-bold">no exigimos contratos de permanencia a largo plazo</strong>. Solo te pedimos que nos avises con unos días de antelación si decides darte de baja el mes siguiente para gestionar la plaza correctamente.
-          </p>
-        </details>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-  <section class="w-full h-[450px] relative border-t border-b border-outline-variant bg-slate-100 overflow-hidden">
-    <iframe 
-      class="w-full h-full border-0"
-      src="https://maps.google.com/maps?q=Avda%20Am%C3%A9rica,%2028,%2018006%20Zaid%C3%ADn,%20Granada&t=&z=16&ie=UTF8&iwloc=&output=embed"
-      allowfullscreen="" 
-      loading="lazy" 
-      referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-  </section>
-
-  <footer class="w-full bg-[#017281] text-white">
-    
-    <div class="max-w-[1600px] mx-auto px-6 xl:px-0 py-section-gap">
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 min-[1201px]:grid-cols-4 gap-10 lg:gap-gutter justify-items-stretch">
-            
-            <div class="space-y-6 flex flex-col justify-between">
-                <div class="space-y-4">
-                    <div class="flex flex-col items-start gap-2">
-                        <img alt="Footer Logo" class="h-20 w-auto" src="assets/img/logo (2).png">
-                        <span class="text-headline-md font-headline-md font-bold text-white">Over the Moon</span>
-                    </div>
-                    <p class="font-body-md text-body-md text-white/80 max-w-sm">
-                        Tu pasaporte al mundo. Te acompañamos a dominar nuevos idiomas con un método <br>práctico y adaptado a tu ritmo.
-                    </p>
-                    <div class="flex gap-5 items-center pt-2">
-                        <a class="text-white hover:opacity-70 transition-opacity" href="https://www.instagram.com/overthemoonidiomas?igsh=MXJjbTQyaDZmZHlzcw==" title="Instagram">
-                            <svg class="w-5 h-5 stroke-current fill-none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-                        </a>
-                    </div>
-                </div>
-                <p class="text-xs text-white/60 hidden md:block pt-6">© 2026 Over the Moon Academia.</p>
+    <footer class="w-full bg-[#017281] text-white">
+      <div class="max-w-[1600px] mx-auto px-6 xl:px-0 py-section-gap">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 min-[1201px]:grid-cols-4 gap-10 lg:gap-gutter justify-items-stretch"
+        >
+          <div class="space-y-6 flex flex-col justify-between">
+            <div class="space-y-4 lg:ml-12">
+              <div class="flex flex-col items-start gap-2">
+                <img
+                  alt="Footer Logo"
+                  class="h-20 w-auto"
+                  src="assets/img/logo (2).png"
+                />
+                <span
+                  class="text-headline-md font-headline-md font-bold text-white"
+                  >Over the Moon</span
+                >
+              </div>
+              <p class="font-body-md text-body-md text-white/80 max-w-sm">
+                Tu pasaporte al mundo. Te acompañamos a dominar nuevos idiomas
+                con un método <br />práctico y adaptado a tu ritmo.
+              </p>
+              <div class="flex gap-5 items-center pt-2">
+                <a
+                  class="text-white hover:opacity-70 transition-opacity"
+                  href="https://www.instagram.com/overthemoonidiomas?igsh=MXJjbTQyaDZmZHlzcw=="
+                  title="Instagram"
+                >
+                  <svg
+                    class="w-5 h-5 stroke-current fill-none"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect
+                      x="2"
+                      y="2"
+                      width="20"
+                      height="20"
+                      rx="5"
+                      ry="5"
+                    ></rect>
+                    <path
+                      d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                    ></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  </svg>
+                </a>
+              </div>
             </div>
+            <p class="text-xs text-white/60 hidden md:block lg:ml-12 pt-6">
+              © 2026 Over the Moon Academia.
+            </p>
+          </div>
 
-            <div class="space-y-4 w-full">
-                <h4 class="font-headline-sm text-base text-white font-bold uppercase tracking-wider opacity-90">Explora</h4>
-                <ul class="space-y-3">
-                    <li><a class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0" href="index.html">Inicio</a></li>
-                    <li><a class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0" href="sobre-nosotros.html">Sobre Nosotros</a></li>
-                    <li><a class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0" href="services.html">Nuestros Servicios</a></li>
-                    <li><a class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0" href="contacto.html">Contacto</a></li>
-                </ul>
+          <div class="space-y-4 w-full">
+            <h4
+              class="font-headline-sm text-base text-white font-bold uppercase tracking-wider opacity-90"
+            >
+              Explora
+            </h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0"
+                  href="index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li>
+                <a
+                  class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0"
+                  href="sobre-nosotros.html"
+                  >Sobre Nosotros</a
+                >
+              </li>
+              <li>
+                <a
+                  class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0"
+                  href="services.html"
+                  >Nuestros Servicios</a
+                >
+              </li>
+              <li>
+                <a
+                  class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0"
+                  href="contacto.html"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="space-y-4 w-full">
+            <h4
+              class="font-headline-sm text-base text-white font-bold uppercase tracking-wider opacity-90"
+            >
+              Información
+            </h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0"
+                  href="politica-privacidad.html"
+                  >Política de Privacidad</a
+                >
+              </li>
+              <li>
+                <a
+                  class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0"
+                  href="terminos-condiciones.html"
+                  >Términos y Condiciones</a
+                >
+              </li>
+              <li>
+                <a
+                  class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0"
+                  href="aviso-legal.html"
+                  >Aviso Legal</a
+                >
+              </li>
+              <li>
+                <a
+                  class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0"
+                  href="cookie-policy.html"
+                  >Política de Cookies</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="space-y-4 w-full">
+            <h4
+              class="font-headline-sm text-base text-white font-bold uppercase tracking-wider opacity-90"
+            >
+              Contacto
+            </h4>
+            <div class="space-y-4 font-body-md text-body-md text-white/80">
+              <div class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-white shrink-0"
+                  >location_on</span
+                >
+                <span>Avda América, 28, 18006 Zaidín</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-white shrink-0"
+                  >call</span
+                >
+                <span>858 814 666 / 602 880 834</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-white shrink-0"
+                  >mail</span
+                >
+                <span class="break-all min-[1201px]:break-normal"
+                  >info@overthemoonidiomas.com</span
+                >
+              </div>
             </div>
-
-            <div class="space-y-4 w-full">
-                <h4 class="font-headline-sm text-base text-white font-bold uppercase tracking-wider opacity-90">Información</h4>
-                <ul class="space-y-3">
-                    <li><a class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0" href="politica-privacidad.html">Política de Privacidad</a></li>
-                    <li><a class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0" href="terminos-condiciones.html">Términos y Condiciones</a></li>
-                    <li><a class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0" href="aviso-legal.html">Aviso Legal</a></li>
-                    <li><a class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0" href="cookie-policy.html">Política de Cookies</a></li>
-                </ul>
-            </div>
-
-            <div class="space-y-4 w-full">
-                <h4 class="font-headline-sm text-base text-white font-bold uppercase tracking-wider opacity-90">Contacto</h4>
-                <div class="space-y-4 font-body-md text-body-md text-white/80">
-                    <div class="flex items-start gap-3">
-                        <span class="material-symbols-outlined text-white shrink-0">location_on</span>
-                        <span>Avda América, 28, 18006 Zaidín</span>
-                    </div>
-                    <div class="flex items-center gap-3">
-                        <span class="material-symbols-outlined text-white shrink-0">call</span>
-                        <span>858 814 666 / 602 880 834</span>
-                    </div>
-                    <div class="flex items-center gap-3">
-                        <span class="material-symbols-outlined text-white shrink-0">mail</span>
-                        <span class="break-all min-[1201px]:break-normal">info@overthemoonidiomas.com</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="block md:hidden col-span-1 pt-4 border-t border-white/10">
-                <p class="text-xs text-white/60">© 2026 Over the Moon Academia.</p>
-            </div>
-
+          </div>
         </div>
-    </div>
-</footer>
+      </div>
+    </footer>
 
-  <button id="btn-scroll-top" class="fixed bottom-6 right-6 z-50 hidden bg-[#017281] text-white p-1.5 rounded-full shadow-lg hover:bg-opacity-90 transition-all duration-300 hover:scale-110 active:scale-95 focus:outline-none group w-12 h-12" onclick="scrollToTop()" title="Volver arriba">
-    <div class="relative w-full h-full flex items-center justify-center">
-        <svg class="absolute top-0 left-0 w-full h-full transform -rotate-90" viewBox="0 0 36 36">
-            <path class="text-white/20" stroke="currentColor" stroke-width="2" fill="none" d="M18 1 a 17 17 0 0 1 0 34 a 17 17 0 0 1 0 -34" />
-            <path id="progress-circle" class="text-white transition-all duration-75" stroke="currentColor" stroke-width="2" stroke-dasharray="106.8" stroke-dashoffset="106.8" stroke-linecap="round" fill="none" d="M18 1 a 17 17 0 0 1 0 34 a 17 17 0 0 1 0 -34" />
+    <button
+      id="btn-scroll-top"
+      class="fixed bottom-6 right-6 z-50 hidden bg-[#017281] text-white p-1.5 rounded-full shadow-lg hover:bg-opacity-90 transition-all duration-300 hover:scale-110 active:scale-95 focus:outline-none group w-12 h-12"
+      onclick="scrollToTop()"
+      title="Volver arriba"
+    >
+      <div class="relative w-full h-full flex items-center justify-center">
+        <svg
+          class="absolute top-0 left-0 w-full h-full transform -rotate-90"
+          viewBox="0 0 36 36"
+        >
+          <path
+            class="text-white/20"
+            stroke="currentColor"
+            stroke-width="2"
+            fill="none"
+            d="M18 1 a 17 17 0 0 1 0 34 a 17 17 0 0 1 0 -34"
+          />
+          <path
+            id="progress-circle"
+            class="text-white transition-all duration-75"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-dasharray="106.8"
+            stroke-dashoffset="106.8"
+            stroke-linecap="round"
+            fill="none"
+            d="M18 1 a 17 17 0 0 1 0 34 a 17 17 0 0 1 0 -34"
+          />
         </svg>
-        <svg class="w-5 h-5 transform transition-transform duration-300 group-hover:-translate-y-0.5 relative z-10" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5"></path>
+        <svg
+          class="w-5 h-5 transform transition-transform duration-300 group-hover:-translate-y-0.5 relative z-10"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="3"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4.5 15.75l7.5-7.5 7.5 7.5"
+          ></path>
         </svg>
-    </div>
-  </button>
+      </div>
+    </button>
 
-  <script>
-    const scrollTopBtn = document.getElementById("btn-scroll-top");
-    const progressCircle = document.getElementById("progress-circle");
-    const pathLength = 106.8; 
+    <script>
+      const scrollTopBtn = document.getElementById("btn-scroll-top");
+      const progressCircle = document.getElementById("progress-circle");
+      const pathLength = 106.8;
 
-    window.onscroll = function() {
-        const totalHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      window.onscroll = function () {
+        const totalHeight =
+          document.documentElement.scrollHeight -
+          document.documentElement.clientHeight;
         const scrollTop = document.documentElement.scrollTop;
-        
+
         if (totalHeight > 0) {
-            const progress = scrollTop / totalHeight;
-            const offset = pathLength - (progress * pathLength);
-            progressCircle.style.strokeDashoffset = offset;
+          const progress = scrollTop / totalHeight;
+          const offset = pathLength - progress * pathLength;
+          progressCircle.style.strokeDashoffset = offset;
         }
 
         if (scrollTop > 300) {
-            scrollTopBtn.classList.remove("hidden");
-            scrollTopBtn.classList.add("flex");
+          scrollTopBtn.classList.remove("hidden");
+          scrollTopBtn.classList.add("flex");
         } else {
-            scrollTopBtn.classList.remove("flex");
-            scrollTopBtn.classList.add("hidden");
+          scrollTopBtn.classList.remove("flex");
+          scrollTopBtn.classList.add("hidden");
         }
-    };
+      };
 
-    function scrollToTop() {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-  </script>
-  <script>
-  document.getElementById('registrationForm').addEventListener('submit', function(event) {
-    // Evita que la página se recargue automáticamente
-    event.preventDefault();
-    
-    const phoneInput = document.getElementById('phone');
-    const phoneValue = phoneInput.value.replace(/\s+/g, ''); 
-    
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    </script>
+    <script>
+      document
+        .getElementById("registrationForm")
+        .addEventListener("submit", function (event) {
+          // Evita que la página se recargue automáticamente
+          event.preventDefault();
 
-    const phonePattern = /^(?:\+34|0034)?[6789]\d{8}$/;
-    
-    if (!phonePattern.test(phoneValue)) {
-      alert('Por favor, introduce un número de teléfono válido (9 dígitos, ej: 600000000).');
-      phoneInput.focus();
-      return;
-    }
-    
-    alert('¡Solicitud enviada con éxito! Nos pondremos en contacto contigo pronto.');
-    this.reset();
-  });
-</script>
-</body>
+          const phoneInput = document.getElementById("phone");
+          const phoneValue = phoneInput.value.replace(/\s+/g, "");
 
+          const phonePattern = /^(?:\+34|0034)?[6789]\d{8}$/;
+
+          if (!phonePattern.test(phoneValue)) {
+            alert(
+              "Por favor, introduce un número de teléfono válido (9 dígitos, ej: 600000000).",
+            );
+            phoneInput.focus();
+            return;
+          }
+
+          alert(
+            "¡Solicitud enviada con éxito! Nos pondremos en contacto contigo pronto.",
+          );
+          this.reset();
+        });
+    </script>
+  </body>
 </html>
