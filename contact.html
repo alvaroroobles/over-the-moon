@@ -121,14 +121,15 @@
 </head>
 
 <body class="bg-surface text-on-surface">
-  <header class="sticky top-0 z-50 w-full bg-white/70 backdrop-blur-md border-b border-white/20 shadow-[0_10px_40px_rgba(0,191,255,0.4)] transition-all duration-300">
+  
+  <header class="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-md border-b border-outline-variant shadow-sm transition-all duration-300">
     <nav class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
         <div class="flex items-center gap-3">
             <img alt="Over the Moon Academia Logo" class="h-14 w-auto object-contain" src="assets/img/logo (2).png">
         </div>
         
         <div class="hidden md:flex items-center gap-8">
-            <a class="text-primary font-bold transition-colors duration-300 text-base relative py-1
+            <a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 text-base relative py-1
               after:absolute after:bottom-0 after:left-1/2 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-out hover:after:left-0 hover:after:w-full"
                 href="index.html">
                 Inicio
@@ -146,13 +147,13 @@
                 Servicios
             </a>
 
-            <a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 text-base relative py-1
+            <a class="text-primary font-bold transition-colors duration-300 text-base relative py-1
               after:absolute after:bottom-0 after:left-1/2 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-out hover:after:left-0 hover:after:w-full"
                 href="contact.html">
                 Contacto
             </a>
 
-            <button class="bg-tertiary-fixed text-on-tertiary-fixed px-6 py-2.5 rounded-lg text-base font-bold transition-all duration-300 hover:opacity-90 hover:scale-105 active:scale-95">
+            <button class="bg-[#017281] text-white px-6 py-2.5 rounded-lg text-base font-bold transition-all duration-300 hover:opacity-90 hover:scale-105 active:scale-95">
                 Inscribirse
             </button>
         </div>
@@ -163,132 +164,131 @@
         </button>
     </nav>
 
-    <div class="hidden bg-white/90 backdrop-blur-lg border-t border-outline-variant px-margin-mobile py-4 space-y-4 shadow-lg"
-        id="mobile-menu">
-        <a class="block text-primary font-bold text-base" href="index.html">Inicio</a>
+    <div class="hidden bg-white/90 backdrop-blur-lg border-t border-outline-variant px-margin-mobile py-4 space-y-4 shadow-lg" id="mobile-menu">
+        <a class="block text-on-surface-variant font-medium text-base" href="index.html">Inicio</a>
         <a class="block text-on-surface-variant font-medium text-base" href="about.html">Sobre Nosotros</a>
         <a class="block text-on-surface-variant font-medium text-base" href="services.html">Servicios</a>
-        <a class="block text-on-surface-variant font-medium text-base" href="contact.html">Contacto</a>
-        <button class="w-full bg-tertiary-fixed text-on-tertiary-fixed px-6 py-3 rounded-lg text-base font-bold">Inscribirse Now</button>
+        <a class="block text-primary font-bold text-base" href="contact.html">Contacto</a>
+        <button class="w-full bg-[#017281] text-white px-6 py-3 rounded-lg text-base font-bold">Inscribirse</button>
     </div>
-</header>
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
-      <!-- Registration Form Card -->
-      <section
-        class="lg:col-span-7 bg-surface-container-lowest p-8 rounded-xl border border-outline-variant shadow-sm hover:shadow-md transition-all duration-200">
-        <h2 class="font-headline-md text-headline-md text-on-surface mb-8">Formulario de Registro</h2>
+  </header>
+
+  <section class="relative bg-slate-50 py-16 md:py-24 overflow-hidden flex items-center border-b border-outline-variant">
+    <div class="relative z-10 w-full px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center">
+      <span class="inline-flex items-center gap-2 px-3 py-1 text-xs font-semibold tracking-wider text-[#017281] uppercase bg-[#017281]/10 rounded-full border border-[#017281]/20 mb-4">
+        <span class="w-1.5 h-1.5 rounded-full bg-[#017281]"></span>
+        Atención personalizada
+      </span>
+
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-on-surface tracking-tight mb-4">
+        Hablemos de tu <span class="text-[#017281]">próximo paso</span>
+      </h1>
+
+      <p class="text-lg md:text-xl text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
+        ¿Tienes alguna pregunta sobre nuestros cursos o metodologías? Nuestro equipo está listo para guiarte en tu viaje hacia el dominio de un nuevo idioma.
+      </p>
+    </div>
+  </section>
+
+  <main class="w-full px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto py-12 md:py-20">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      
+      <section class="lg:col-span-7 bg-white p-8 rounded-xl border border-outline-variant shadow-sm hover:shadow-md transition-all duration-200">
+        <h2 class="text-2xl font-bold text-on-surface mb-8">Formulario de Registro</h2>
         <form class="space-y-6" id="registrationForm">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div class="space-y-2">
-              <label class="font-label-md text-label-md text-on-surface-variant" for="name">Nombre Completo</label>
-              <input
-                class="w-full p-3 rounded-lg border border-outline bg-white text-body-md font-body-md form-focus-ring"
-                id="name" name="name" placeholder="Ej. Ana García" required="" type="text">
+              <label class="text-sm font-medium text-on-surface-variant" for="name">Nombre Completo</label>
+              <input class="w-full p-3 rounded-lg border border-outline bg-white text-base form-focus-ring focus:outline-none focus:border-[#017281]" id="name" name="name" placeholder="Ej. Ana García" required type="text">
             </div>
             <div class="space-y-2">
-              <label class="font-label-md text-label-md text-on-surface-variant" for="email">Correo Electrónico</label>
-              <input
-                class="w-full p-3 rounded-lg border border-outline bg-white text-body-md font-body-md form-focus-ring"
-                id="email" name="email" placeholder="ana@ejemplo.com" required="" type="email">
+              <label class="text-sm font-medium text-on-surface-variant" for="email">Correo Electrónico</label>
+              <input class="w-full p-3 rounded-lg border border-outline bg-white text-base form-focus-ring focus:outline-none focus:border-[#017281]" id="email" name="email" placeholder="ana@ejemplo.com" required type="email">
             </div>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div class="space-y-2">
-              <label class="font-label-md text-label-md text-on-surface-variant" for="phone">Teléfono</label>
-              <input
-                class="w-full p-3 rounded-lg border border-outline bg-white text-body-md font-body-md form-focus-ring"
-                id="phone" name="phone" placeholder="+34 600 000 000" required="" type="tel">
+              <label class="text-sm font-medium text-on-surface-variant" for="phone">Teléfono</label>
+              <input class="w-full p-3 rounded-lg border border-outline bg-white text-base form-focus-ring focus:outline-none focus:border-[#017281]" id="phone" name="phone" placeholder="+34 600 000 000" required type="tel">
             </div>
           </div>
           <div class="space-y-2">
-            <label class="font-label-md text-label-md text-on-surface-variant" for="message">Mensaje (Opcional)</label>
-            <textarea
-              class="w-full p-3 rounded-lg border border-outline bg-white text-body-md font-body-md form-focus-ring"
-              id="message" name="message" placeholder="Cuéntanos más sobre tus objetivos académicos..."
-              rows="4"></textarea>
+            <label class="text-sm font-medium text-on-surface-variant" for="message">Mensaje (Opcional)</label>
+            <textarea class="w-full p-3 rounded-lg border border-outline bg-white text-base form-focus-ring focus:outline-none focus:border-[#017281]" id="message" name="message" placeholder="Cuéntanos más sobre tus objetivos académicos..." rows="4"></textarea>
           </div>
           <div class="flex items-start gap-3 pt-2">
-            <input class="mt-1 h-4 w-4 rounded border-outline text-primary focus:ring-primary" id="privacy" required=""
-              type="checkbox">
-            <label class="font-label-sm text-label-sm text-on-surface-variant" for="privacy">
+            <input class="mt-1 h-4 w-4 rounded border-outline text-[#017281] focus:ring-[#017281]" id="privacy" required type="checkbox">
+            <label class="text-xs text-on-surface-variant" for="privacy">
               He leído y acepto la Política de Privacidad y el tratamiento de mis datos personales.
             </label>
           </div>
-          <button
-            class="w-full bg-primary-container text-white py-4 rounded-lg font-label-md text-label-md font-bold shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
-            type="submit">
+          <button class="w-full bg-[#017281] text-white py-4 rounded-lg font-bold shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" type="submit">
             Enviar Solicitud de Información
           </button>
         </form>
       </section>
-      <!-- Contact Information Side -->
+
       <aside class="lg:col-span-5 space-y-8">
-        <!-- Info Cards -->
-        <div class="bg-secondary-container bg-opacity-30 p-8 rounded-xl space-y-8">
-          <h2 class="font-headline-md text-headline-md text-primary">Información de Contacto</h2>
+        <div class="bg-slate-50 border border-outline-variant p-8 rounded-xl space-y-8">
+          <h2 class="text-2xl font-bold text-[#017281]">Información de Contacto</h2>
+          
           <div class="flex items-start gap-4">
-            <div class="bg-primary-container p-3 rounded-lg text-white">
-              <span class="material-symbols-outlined" data-icon="location_on">location_on</span>
+            <div class="bg-[#017281] p-3 rounded-lg text-white flex items-center justify-center">
+              <span class="material-symbols-outlined">location_on</span>
             </div>
             <div>
-              <h3 class="font-label-md text-label-md text-on-surface font-bold">Nuestra Sede</h3>
-              <p class="font-body-md text-body-md text-on-surface-variant">Avda América, 28, 18006 Zaidín,<br> Granada,
-                España</p>
+              <h3 class="text-base font-bold text-on-surface">Nuestra Sede</h3>
+              <p class="text-sm text-on-surface-variant">Avda América, 28, 18006 Zaidín,<br> Granada, España</p>
             </div>
           </div>
+          
           <div class="flex items-start gap-4">
-            <div class="bg-primary-container p-3 rounded-lg text-white">
-              <span class="material-symbols-outlined" data-icon="call">call</span>
+            <div class="bg-[#017281] p-3 rounded-lg text-white flex items-center justify-center">
+              <span class="material-symbols-outlined">call</span>
             </div>
             <div>
-              <h3 class="font-label-md text-label-md text-on-surface font-bold">Teléfono</h3>
-              <p class="font-body-md text-body-md text-on-surface-variant">+34 858 814 666 / 602 880 834</p>
-              <p class="font-body-md text-body-md text-on-surface-variant">Lun - Vie, 9:00 - 20:00</p>
+              <h3 class="text-base font-bold text-on-surface">Teléfono</h3>
+              <p class="text-sm text-on-surface-variant">+34 858 814 666 / 602 880 834</p>
+              <p class="text-xs text-on-surface-variant mt-0.5">Lun - Vie, 9:00 - 20:00</p>
             </div>
           </div>
+          
           <div class="flex items-start gap-4">
-            <div class="bg-primary-container p-3 rounded-lg text-white">
-              <span class="material-symbols-outlined" data-icon="mail">mail</span>
+            <div class="bg-[#017281] p-3 rounded-lg text-white flex items-center justify-center">
+              <span class="material-symbols-outlined">mail</span>
             </div>
             <div>
-              <h3 class="font-label-md text-label-md text-on-surface font-bold">Correo Electrónico</h3>
-              <p class="font-body-md text-body-md text-on-surface-variant">info@overthemoonidiomas.com</p>
+              <h3 class="text-base font-bold text-on-surface">Correo Electrónico</h3>
+              <p class="text-sm text-on-surface-variant">info@overthemoonidiomas.com</p>
             </div>
-          </div>
-        </div>
-        <!-- Map Placeholder -->
-        <div class="relative w-full h-[300px] rounded-xl overflow-hidden shadow-sm group">
-          <img alt="Mapa de ubicación"
-            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-            data-alt="A clean, minimalist digital map interface showing the central district of Madrid. The map features a soft color palette of light grays and teals, with a prominent custom location pin in deep teal marking the academy. The aesthetic is modern and professional, matching the educational institution's corporate brand identity with clear typography for street names."
-            data-location="Madrid, Spain"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWM0jlO-sf9Lo_B2LzzCHK2TRsSE1aBO2b3eeSa348T1HxAK6qgdQhjA4UGdCrXeba0eimVFFabXXjkB0W4QwzECPXtaK7NUFCtGCUncr8Sah0ybObVF0N9vUp1I_agrzv3L3cc9IG47IuisbRbnAKeUYR7bf4zFmmScQyvoBG_gze9u9RX8LCRpMDmanzMilMQvlJdRnlKtwUw_V84xF8jVxRbiP3NOMsunU9l3HbTkhXGbYDFdPCCr1sEp5rMUcsR0R5U2ryj1Y">
-          <div class="absolute inset-0 bg-black/10 flex items-center justify-center">
-            <a class="bg-surface-container-lowest px-6 py-2 rounded-full font-label-md text-label-md text-primary font-bold shadow-md hover:bg-primary hover:text-white transition-all duration-200 flex items-center gap-2"
-              href="https://maps.google.com" target="_blank">
-              <span class="material-symbols-outlined text-[18px]" data-icon="open_in_new">open_in_new</span>
-              Ver en Google Maps
-            </a>
           </div>
         </div>
       </aside>
     </div>
   </main>
-  <!-- Footer -->
+
+  <section class="w-full h-[450px] relative border-t border-b border-outline-variant bg-slate-100 overflow-hidden">
+    <iframe 
+      class="w-full h-full border-0"
+      src="https://maps.google.com/maps?q=Avda%20Am%C3%A9rica,%2028,%2018006%20Zaid%C3%ADn,%20Granada&t=&z=16&ie=UTF8&iwloc=&output=embed"
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </section>
+
   <footer class="w-full bg-[#017281] text-white">
-    
-    <div class="max-w-[1600px] mx-auto px-6 xl:px-0 py-section-gap">
-        
+    <div class="max-w-[1600px] mx-auto px-6 xl:px-0 py-16">
         <div class="grid grid-cols-1 md:grid-cols-2 min-[1201px]:grid-cols-4 gap-10 lg:gap-gutter justify-items-stretch">
             
             <div class="space-y-6 flex flex-col justify-between">
                 <div class="space-y-4">
                     <div class="flex flex-col items-start gap-2">
                         <img alt="Footer Logo" class="h-20 w-auto" src="assets/img/logo (2).png">
-                        <span class="text-headline-md font-headline-md font-bold text-white">Over the Moon</span>
+                        <span class="text-2xl font-bold text-white">Over the Moon</span>
                     </div>
-                    <p class="font-body-md text-body-md text-white/80 max-w-sm">
-                        Tu pasaporte al mundo. Te acompañamos a dominar nuevos idiomas con un método <br>práctico y adaptado a tu ritmo.
+                    <p class="text-sm text-white/80 max-w-sm">
+                        Tu pasaporte al mundo. Te acompañamos a dominar nuevos idiomas con un método práctico y adaptado a tu ritmo.
                     </p>
                     <div class="flex gap-5 items-center pt-2">
                         <a class="text-white hover:opacity-70 transition-opacity" href="https://www.instagram.com/overthemoonidiomas?igsh=MXJjbTQyaDZmZHlzcw==" title="Instagram">
@@ -300,18 +300,18 @@
             </div>
 
             <div class="space-y-4 w-full">
-                <h4 class="font-headline-sm text-base text-white font-bold uppercase tracking-wider opacity-90">Explora</h4>
-                <ul class="space-y-3">
+                <h4 class="text-base text-white font-bold uppercase tracking-wider opacity-90">Explora</h4>
+                <ul class="space-y-3 text-sm">
                     <li><a class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0" href="index.html">Inicio</a></li>
-                    <li><a class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0" href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li><a class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0" href="about.html">Sobre Nosotros</a></li>
                     <li><a class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0" href="services.html">Nuestros Servicios</a></li>
-                    <li><a class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0" href="contacto.html">Contacto</a></li>
+                    <li><a class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0" href="contact.html">Contacto</a></li>
                 </ul>
             </div>
 
             <div class="space-y-4 w-full">
-                <h4 class="font-headline-sm text-base text-white font-bold uppercase tracking-wider opacity-90">Información</h4>
-                <ul class="space-y-3">
+                <h4 class="text-base text-white font-bold uppercase tracking-wider opacity-90">Información</h4>
+                <ul class="space-y-3 text-sm">
                     <li><a class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0" href="politica-privacidad.html">Política de Privacidad</a></li>
                     <li><a class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0" href="terminos-condiciones.html">Términos y Condiciones</a></li>
                     <li><a class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0" href="aviso-legal.html">Aviso Legal</a></li>
@@ -320,8 +320,8 @@
             </div>
 
             <div class="space-y-4 w-full">
-                <h4 class="font-headline-sm text-base text-white font-bold uppercase tracking-wider opacity-90">Contacto</h4>
-                <div class="space-y-4 font-body-md text-body-md text-white/80">
+                <h4 class="text-base text-white font-bold uppercase tracking-wider opacity-90">Contacto</h4>
+                <div class="space-y-4 text-sm text-white/80">
                     <div class="flex items-start gap-3">
                         <span class="material-symbols-outlined text-white shrink-0">location_on</span>
                         <span>Avda América, 28, 18006 Zaidín</span>
@@ -332,7 +332,7 @@
                     </div>
                     <div class="flex items-center gap-3">
                         <span class="material-symbols-outlined text-white shrink-0">mail</span>
-                        <span class="break-all min-[1201px]:break-normal">info@overthemoonidiomas.com</span>
+                        <span class="break-all">info@overthemoonidiomas.com</span>
                     </div>
                 </div>
             </div>
@@ -340,50 +340,25 @@
             <div class="block md:hidden col-span-1 pt-4 border-t border-white/10">
                 <p class="text-xs text-white/60">© 2026 Over the Moon Academia.</p>
             </div>
-
         </div>
     </div>
-</footer>
-<button 
-    id="btn-scroll-top" 
-    class="fixed bottom-6 right-6 z-50 hidden bg-[#017281] text-white p-1.5 rounded-full shadow-lg hover:bg-opacity-90 transition-all duration-300 hover:scale-110 active:scale-95 focus:outline-none group w-12 h-12"
-    onclick="scrollToTop()"
-    title="Volver arriba">
-    
-    <div class="relative w-full h-full flex items-center justify-center">
-        
-        <svg class="absolute top-0 left-0 w-full h-full transform -rotate-90" viewBox="0 0 36 36">
-            <path 
-                class="text-white/20" 
-                stroke="currentColor" 
-                stroke-width="2" 
-                fill="none" 
-                d="M18 1 a 17 17 0 0 1 0 34 a 17 17 0 0 1 0 -34" 
-            />
-            <path 
-                id="progress-circle"
-                class="text-white transition-all duration-75" 
-                stroke="currentColor" 
-                stroke-width="2" 
-                stroke-dasharray="106.8"
-                stroke-dashoffset="106.8"
-                stroke-linecap="round"
-                fill="none" 
-                d="M18 1 a 17 17 0 0 1 0 34 a 17 17 0 0 1 0 -34" 
-            />
-        </svg>
+  </footer>
 
+  <button id="btn-scroll-top" class="fixed bottom-6 right-6 z-50 hidden bg-[#017281] text-white p-1.5 rounded-full shadow-lg hover:bg-opacity-90 transition-all duration-300 hover:scale-110 active:scale-95 focus:outline-none group w-12 h-12" onclick="scrollToTop()" title="Volver arriba">
+    <div class="relative w-full h-full flex items-center justify-center">
+        <svg class="absolute top-0 left-0 w-full h-full transform -rotate-90" viewBox="0 0 36 36">
+            <path class="text-white/20" stroke="currentColor" stroke-width="2" fill="none" d="M18 1 a 17 17 0 0 1 0 34 a 17 17 0 0 1 0 -34" />
+            <path id="progress-circle" class="text-white transition-all duration-75" stroke="currentColor" stroke-width="2" stroke-dasharray="106.8" stroke-dashoffset="106.8" stroke-linecap="round" fill="none" d="M18 1 a 17 17 0 0 1 0 34 a 17 17 0 0 1 0 -34" />
+        </svg>
         <svg class="w-5 h-5 transform transition-transform duration-300 group-hover:-translate-y-0.5 relative z-10" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5"></path>
         </svg>
     </div>
-</button>
+  </button>
 
-<script>
+  <script>
     const scrollTopBtn = document.getElementById("btn-scroll-top");
     const progressCircle = document.getElementById("progress-circle");
-    
-    // La longitud real del contorno de nuestro círculo de radio 17
     const pathLength = 106.8; 
 
     window.onscroll = function() {
@@ -391,15 +366,11 @@
         const scrollTop = document.documentElement.scrollTop;
         
         if (totalHeight > 0) {
-            // Calculamos el desfase exacto que necesita la línea para completarse
             const progress = scrollTop / totalHeight;
             const offset = pathLength - (progress * pathLength);
-            
-            // Modificamos el offset: cuando llega abajo, el offset es 0 y se cierra ENTERO
             progressCircle.style.strokeDashoffset = offset;
         }
 
-        // Mostrar u ocultar botón
         if (scrollTop > 300) {
             scrollTopBtn.classList.remove("hidden");
             scrollTopBtn.classList.add("flex");
@@ -410,11 +381,29 @@
     };
 
     function scrollToTop() {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     }
+  </script>
+  <script>
+  document.getElementById('registrationForm').addEventListener('submit', function(event) {
+    // Evita que la página se recargue automáticamente
+    event.preventDefault();
+    
+    const phoneInput = document.getElementById('phone');
+    const phoneValue = phoneInput.value.replace(/\s+/g, ''); 
+    
+
+    const phonePattern = /^(?:\+34|0034)?[6789]\d{8}$/;
+    
+    if (!phonePattern.test(phoneValue)) {
+      alert('Por favor, introduce un número de teléfono válido (9 dígitos, ej: 600000000).');
+      phoneInput.focus();
+      return;
+    }
+    
+    alert('¡Solicitud enviada con éxito! Nos pondremos en contacto contigo pronto.');
+    this.reset();
+  });
 </script>
 </body>
 
