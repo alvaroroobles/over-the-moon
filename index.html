@@ -539,82 +539,99 @@
                     y totalmente equipadas para que disfrutes de cada minuto de tu aprendizaje presencial.</p>
             </div>
 
-            <div class="columns-2 md:columns-3 xl:columns-4 gap-x-3 [column-fill:_balance] w-full">
+            <div class="relative w-full" id="masonry-grid" style="position: relative;">
 
-                <div
-                    class="break-inside-avoid mb-3 rounded-2xl overflow-hidden shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
-                    <img src="assets/img/interior-aula-1.png" alt="Aulas modernas de Over the Moon"
-                        class="w-full block">
-                </div>
+    <div class="masonry-item rounded-2xl overflow-hidden shadow-sm group transition-shadow duration-300 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
+        <img src="assets/img/interior-aula-1.png" alt="Aulas modernas de Over the Moon" class="w-full block transition-transform duration-300 group-hover:scale-105">
+    </div>
+    <div class="masonry-item rounded-2xl overflow-hidden shadow-sm group transition-shadow duration-300 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
+        <img src="assets/img/tecnologia-aula.png" alt="Tecnología en el aula" class="w-full block transition-transform duration-300 group-hover:scale-105">
+    </div>
+    <div class="masonry-item rounded-2xl overflow-hidden shadow-sm group transition-shadow duration-300 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
+        <img src="assets/img/aulario-edades.png" alt="Espacios para todas las edades" class="w-full block transition-transform duration-300 group-hover:scale-105">
+    </div>
+    <div class="masonry-item rounded-2xl overflow-hidden shadow-sm group transition-shadow duration-300 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
+        <img src="assets/img/aulario-edades2.png" alt="Aulas para distintas edades" class="w-full block transition-transform duration-300 group-hover:scale-105">
+    </div>
+    <div class="masonry-item rounded-2xl overflow-hidden shadow-sm group transition-shadow duration-300 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
+        <img src="assets/img/aulario-profe.png" alt="Profesor en el aula" class="w-full block transition-transform duration-300 group-hover:scale-105">
+    </div>
+    <div class="masonry-item rounded-2xl overflow-hidden shadow-sm group transition-shadow duration-300 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
+        <img src="assets/img/cafetera.png" alt="Zona de cafetería" class="w-full block transition-transform duration-300 group-hover:scale-105">
+    </div>
+    <div class="masonry-item rounded-2xl overflow-hidden shadow-sm group transition-shadow duration-300 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
+        <img src="assets/img/home-clase.png" alt="Clase en casa" class="w-full block transition-transform duration-300 group-hover:scale-105">
+    </div>
+    <div class="masonry-item rounded-2xl overflow-hidden shadow-sm group transition-shadow duration-300 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
+        <img src="assets/img/londres.png" alt="Londres" class="w-full block transition-transform duration-300 group-hover:scale-105">
+    </div>
+    <div class="masonry-item rounded-2xl overflow-hidden shadow-sm group transition-shadow duration-300 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
+        <img src="assets/img/paris.png" alt="París" class="w-full block transition-transform duration-300 group-hover:scale-105">
+    </div>
+    <div class="masonry-item rounded-2xl overflow-hidden shadow-sm group transition-shadow duration-300 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
+        <img src="assets/img/rusia.png" alt="Rusia" class="w-full block transition-transform duration-300 group-hover:scale-105">
+    </div>
+    <div class="masonry-item rounded-2xl overflow-hidden shadow-sm group transition-shadow duration-300 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
+        <img src="assets/img/sillon.png" alt="Zona de lectura" class="w-full block transition-transform duration-300 group-hover:scale-105">
+    </div>
+    <div class="masonry-item rounded-2xl overflow-hidden shadow-sm group transition-shadow duration-300 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
+        <img src="assets/img/botellas-agua.png" alt="Zona de descanso" class="w-full block transition-transform duration-300 group-hover:scale-105">
+    </div>
+    <div class="masonry-item rounded-2xl overflow-hidden shadow-sm group transition-shadow duration-300 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
+        <img src="assets/img/tutoria.png" alt="Sesión de tutoría" class="w-full block transition-transform duration-300 group-hover:scale-105">
+    </div>
+    <div class="masonry-item rounded-2xl overflow-hidden shadow-sm group transition-shadow duration-300 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
+        <img src="assets/img/recepcion.png" alt="Recepción" class="w-full block transition-transform duration-300 group-hover:scale-105">
+    </div>
 
-                <div
-                    class="break-inside-avoid mb-3 rounded-2xl overflow-hidden shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
-                    <img src="assets/img/tecnologia-aula.png" alt="Tecnología en el aula" class="w-full block">
-                </div>
+</div>
 
-                <div
-                    class="break-inside-avoid mb-3 rounded-2xl overflow-hidden shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
-                    <img src="assets/img/aulario-edades.png" alt="Espacios para todas las edades" class="w-full block">
-                </div>
+<script>
+    function masonry() {
+        const grid = document.getElementById('masonry-grid');
+        const items = grid.querySelectorAll('.masonry-item');
+        const gap = 12;
 
-                <div
-                    class="break-inside-avoid mb-3 rounded-2xl overflow-hidden shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
-                    <img src="assets/img/aulario-edades2.png" alt="Aulas para distintas edades" class="w-full block">
-                </div>
+        const cols = window.innerWidth >= 1280 ? 4
+                   : window.innerWidth >= 768  ? 3
+                   : 2;
 
-                <div
-                    class="break-inside-avoid mb-3 rounded-2xl overflow-hidden shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
-                    <img src="assets/img/aulario-profe.png" alt="Profesor en el aula" class="w-full block">
-                </div>
+        const colWidth = (grid.offsetWidth - gap * (cols - 1)) / cols;
+        const colHeights = Array(cols).fill(0);
 
+        items.forEach(item => {
+            item.style.position = 'absolute';
+            item.style.width = colWidth + 'px';
 
+            const shortest = colHeights.indexOf(Math.min(...colHeights));
+            item.style.left = (shortest * (colWidth + gap)) + 'px';
+            item.style.top = colHeights[shortest] + 'px';
 
-                <div
-                    class="break-inside-avoid mb-3 rounded-2xl overflow-hidden shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
-                    <img src="assets/img/cafetera.png" alt="Zona de cafetería" class="w-full block">
-                </div>
+            colHeights[shortest] += item.offsetHeight + gap;
+        });
 
-                <div
-                    class="break-inside-avoid mb-3 rounded-2xl overflow-hidden shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
-                    <img src="assets/img/home-clase.png" alt="Clase en casa" class="w-full block">
-                </div>
+        grid.style.height = Math.max(...colHeights) + 'px';
+    }
 
-                <div
-                    class="break-inside-avoid mb-3 rounded-2xl overflow-hidden shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
-                    <img src="assets/img/londres.png" alt="Londres" class="w-full block">
-                </div>
+    // Esperar a que todas las imágenes carguen antes de calcular
+    const grid = document.getElementById('masonry-grid');
+    const imgs = grid.querySelectorAll('img');
+    let loaded = 0;
 
-                <div
-                    class="break-inside-avoid mb-3 rounded-2xl overflow-hidden shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
-                    <img src="assets/img/paris.png" alt="París" class="w-full block">
-                </div>
+    imgs.forEach(img => {
+        if (img.complete) {
+            loaded++;
+            if (loaded === imgs.length) masonry();
+        } else {
+            img.addEventListener('load', () => {
+                loaded++;
+                if (loaded === imgs.length) masonry();
+            });
+        }
+    });
 
-                <div
-                    class="break-inside-avoid mb-3 rounded-2xl overflow-hidden shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
-                    <img src="assets/img/rusia.png" alt="Rusia" class="w-full block">
-                </div>
-
-                <div
-                    class="break-inside-avoid mb-3 rounded-2xl overflow-hidden shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
-                    <img src="assets/img/sillon.png" alt="Zona de lectura" class="w-full block">
-                </div>
-
-                <div
-                    class="break-inside-avoid mb-3 rounded-2xl overflow-hidden shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
-                    <img src="assets/img/botellas-agua.png" alt="Zona de descanso" class="w-full block">
-                </div>
-
-                <div
-                    class="break-inside-avoid mb-3 rounded-2xl overflow-hidden shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
-                    <img src="assets/img/tutoria.png" alt="Sesión de tutoría" class="w-full block">
-                </div>
-
-                <div
-                    class="break-inside-avoid mb-3 rounded-2xl overflow-hidden shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
-                    <img src="assets/img/recepcion.png" alt="Recepción" class="w-full block">
-                </div>
-
-            </div>
+    window.addEventListener('resize', masonry);
+</script>
         </section>
 
         <section class="w-full bg-[#017281] py-24 text-white transition-all duration-700 opacity-100 translate-y-0">
