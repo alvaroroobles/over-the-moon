@@ -179,232 +179,694 @@
     </div>
 </header>
   <main class="min-h-screen">
-    <!-- Hero Section -->
-    <section class="bg-secondary-container/30 py-section-gap">
-      <div class="max-w-contain
-      r-max mx-auto px-margin-mobile md:px-margin-desktop text-center">
-        <h1 class="font-display-lg text-display-lg text-primary mb-6">Nuestros Servicios Educativos</h1>
-        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
-          Descubre una amplia gama de programas diseñados para potenciar el talento académico y profesional de cada
-          estudiante en un entorno moderno y eficiente.
+
+  <!-- HERO -->
+  <section class="bg-secondary-container/30 py-section-gap">
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center">
+      <h1 class="font-display-lg text-display-lg text-on-background mb-6">
+        Todo lo que necesitas para <span class="text-primary">aprender y crecer</span>
+      </h1>
+      <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+        Clases de idiomas para todas las edades y niveles, talleres creativos para niños y espacios equipados para profesionales. Todo en un mismo lugar.
+      </p>
+    </div>
+  </section>
+
+  <!-- SPLIT: IDIOMAS + AULAS -->
+  <section class="grid grid-cols-1 md:grid-cols-2">
+
+    <!-- IDIOMAS — fondo blanco -->
+    <div class="bg-white px-margin-mobile md:px-12 lg:px-16 py-16 flex flex-col gap-8">
+      <div>
+        <span class="inline-flex items-center gap-2 text-primary bg-primary/10 text-label-sm font-bold uppercase tracking-widest px-4 py-2 rounded-full w-fit">
+          <span class="material-symbols-outlined text-base">book</span>
+          Formación
+        </span>
+        <h2 class="font-headline-lg text-headline-lg text-on-surface mt-3 mb-3">Clases de idiomas</h2>
+        <p class="text-on-surface-variant font-body-md text-body-md">
+          Inglés, Francés, Español y Ruso para niños, jóvenes y adultos. Metodología comunicativa, grupos reducidos y profesores certificados.
         </p>
       </div>
-    </section>
-    <!-- Search & Filter Bar -->
-    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop -mt-8">
-      <div
-        class="bg-surface-container-lowest p-4 rounded-xl shadow-sm border border-outline-variant flex flex-wrap gap-4 items-center justify-between">
-        <div class="flex gap-2 overflow-x-auto pb-2 md:pb-0 scrollbar-hide">
-          <span
-            class="bg-primary-container text-on-primary-container px-4 py-1.5 rounded-full font-label-md text-label-md cursor-pointer">Todos</span>
-          <span
-            class="bg-surface-container text-on-surface-variant px-4 py-1.5 rounded-full font-label-md text-label-md cursor-pointer hover:bg-secondary-container transition-colors">A-Levels</span>
-          <span
-            class="bg-surface-container text-on-surface-variant px-4 py-1.5 rounded-full font-label-md text-label-md cursor-pointer hover:bg-secondary-container transition-colors">Idiomas</span>
-          <span
-            class="bg-surface-container text-on-surface-variant px-4 py-1.5 rounded-full font-label-md text-label-md cursor-pointer hover:bg-secondary-container transition-colors">Empresas</span>
-          <span
-            class="bg-surface-container text-on-surface-variant px-4 py-1.5 rounded-full font-label-md text-label-md cursor-pointer hover:bg-secondary-container transition-colors">Refuerzo</span>
+      <div class="flex flex-col gap-7">
+        <div class="flex items-center gap-4">
+          <div class="icon-feat">
+            <span class="material-symbols-outlined text-primary text-3xl">groups</span>
+          </div>
+          <div>
+            <p class="font-semibold text-on-surface text-base">Grupos reducidos</p>
+            <p class="text-on-surface-variant text-sm mt-0.5">Atención personalizada en cada clase</p>
+          </div>
         </div>
-        <div class="relative w-full md:w-64">
-          <input
-            class="w-full bg-surface-container-low border border-outline-variant rounded-lg py-2 pl-10 pr-4 focus:ring-2 focus:ring-primary focus:border-transparent outline-none font-body-md"
-            placeholder="Buscar cursos..." type="text">
-          <span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant">search</span>
+        <div class="flex items-center gap-4">
+          <div class="icon-feat">
+            <span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings:'FILL' 1;">school</span>
+          </div>
+          <div>
+            <p class="font-semibold text-on-surface text-base">Profesores certificados</p>
+            <p class="text-on-surface-variant text-sm mt-0.5">Formación oficial Cambridge y más</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <div class="icon-feat">
+            <span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings:'FILL' 1;">calendar_month</span>
+          </div>
+          <div>
+            <p class="font-semibold text-on-surface text-base">Horarios flexibles</p>
+            <p class="text-on-surface-variant text-sm mt-0.5">Mañanas y tardes, L–V</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <div class="icon-feat">
+            <span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings:'FILL' 1;">emoji_events</span>
+          </div>
+          <div>
+            <p class="font-semibold text-on-surface text-base">Exámenes oficiales</p>
+            <p class="text-on-surface-variant text-sm mt-0.5">Simulacros y tutorías incluidos</p>
+          </div>
+        </div>
+      </div>
+      <a href="#idiomas" class="inline-flex items-center gap-2 text-primary font-bold text-sm hover:gap-3 transition-all">
+        Ver precios y horarios <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+      </a>
+    </div>
+
+    <!-- AULAS — fondo #017281 -->
+    <div class="px-margin-mobile md:px-12 lg:px-16 py-16 flex flex-col gap-8" style="background:#017281;">
+      <div>
+        <span class="inline-flex items-center gap-2 text-white bg-white/10 text-label-sm font-bold uppercase tracking-widest px-4 py-2 rounded-full w-fit">
+          <span class="material-symbols-outlined text-base">meeting_room</span>
+          Espacios
+        </span>
+        <h2 class="font-headline-lg text-headline-lg text-white mt-3 mb-3">Alquiler de aulas</h2>
+        <p class="font-body-md text-body-md" style="color:rgba(255,255,255,0.8);">
+          Aulas modernas y equipadas disponibles por hora, jornada o mes. Perfectas para clases, talleres, formaciones y reuniones de 3 a 20 personas.
+        </p>
+      </div>
+      <div class="flex flex-col gap-7">
+        <div class="flex items-center gap-4">
+          <div class="icon-feat">
+            <span class="material-symbols-outlined text-white text-3xl" style="font-variation-settings:'FILL' 1;">tv</span>
+          </div>
+          <div>
+            <p class="font-semibold text-white text-base">Pizarras digitales</p>
+            <p class="text-sm mt-0.5" style="color:rgba(255,255,255,0.7);">Proyectores en todas las aulas</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <div class="icon-feat">
+            <span class="material-symbols-outlined text-white text-3xl" style="font-variation-settings:'FILL' 1;">wifi</span>
+          </div>
+          <div>
+            <p class="font-semibold text-white text-base">Acceso a internet</p>
+            <p class="text-sm mt-0.5" style="color:rgba(255,255,255,0.7);">Conexión de alta velocidad</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <div class="icon-feat">
+            <span class="material-symbols-outlined text-white text-3xl" style="font-variation-settings:'FILL' 1;">ac_unit</span>
+          </div>
+          <div>
+            <p class="font-semibold text-white text-base">Clima controlado</p>
+            <p class="text-sm mt-0.5" style="color:rgba(255,255,255,0.7);">Aire acondicionado y calefacción</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <div class="icon-feat">
+            <span class="material-symbols-outlined text-white text-3xl" style="font-variation-settings:'FILL' 1;">light_mode</span>
+          </div>
+          <div>
+            <p class="font-semibold text-white text-base">Luz natural</p>
+            <p class="text-sm mt-0.5" style="color:rgba(255,255,255,0.7);">Espacios luminosos y cómodos</p>
+          </div>
+        </div>
+      </div>
+      <a href="#aulas" class="inline-flex items-center gap-2 text-white font-bold text-sm hover:gap-3 transition-all">
+        Ver disponibilidad <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ==================== INGLÉS ==================== -->
+  <!-- fondo blanco, texto izquierda, tabla derecha -->
+  <section id="idiomas" class="py-section-gap bg-white">
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+        <!-- Info -->
+        <div>
+          
+          <h2 class="font-headline-lg text-headline-lg text-on-surface mt-3 mb-4">Clases de Inglés</h2>
+          <p class="text-on-surface-variant font-body-md text-body-md mb-6">
+            Desde los 3 años hasta adultos. Grupos por edad y nivel con metodología comunicativa. Preparación para exámenes Cambridge (KET, B1, B2, C1) incluida en los niveles correspondientes.
+          </p>
+          <div class="space-y-3 mb-6">
+            <div class="flex items-center gap-2 text-sm text-on-surface-variant">
+              <span class="material-symbols-outlined text-primary text-[18px]">check_circle</span> Tutorías y simulacros de examen oficial incluidos
+            </div>
+            <div class="flex items-center gap-2 text-sm text-on-surface-variant">
+              <span class="material-symbols-outlined text-primary text-[18px]">check_circle</span> Clases individuales presenciales u online: <strong class="text-on-surface">19 €/hora</strong>
+            </div>
+            <div class="flex items-center gap-2 text-sm text-on-surface-variant">
+              <span class="material-symbols-outlined text-primary text-[18px]">check_circle</span> Descuentos para familias y empresas
+            </div>
+            <div class="flex items-center gap-2 text-sm text-on-surface-variant">
+              <span class="material-symbols-outlined text-primary text-[18px]">check_circle</span> Matrícula: <strong class="text-on-surface">30 €</strong> nuevo alumno · <strong class="text-on-surface">20 €</strong> antiguo alumno
+            </div>
+          </div>
+          <button class="bg-primary text-white font-bold px-6 py-3 rounded-lg hover:opacity-90 transition-opacity">
+            Más información
+          </button>
+        </div>
+        <!-- Tabla -->
+        <div class="bg-surface-container-low rounded-xl border border-outline-variant overflow-hidden">
+          <div class="bg-primary px-6 py-4">
+            <p class="text-white font-bold text-sm uppercase tracking-wider">Tarifas mensuales</p>
+          </div>
+          <div class="px-6 py-4">
+            <p class="text-xs font-bold uppercase tracking-wider text-on-surface-variant mb-2">Niños</p>
+            <div class="flex justify-between items-center py-1-light">
+              <span class="text-sm text-on-surface">3 – 5 años · 1h/semana</span>
+              <span class="font-bold text-primary text-sm whitespace-nowrap">28 €/mes</span>
+            </div>
+            <div class="flex justify-between items-center py-1-light">
+              <span class="text-sm text-on-surface">5 – 7 años · 2h/semana</span>
+              <span class="font-bold text-primary text-sm whitespace-nowrap">56 €/mes</span>
+            </div>
+            <div class="flex justify-between items-center py-1-light">
+              <span class="text-sm text-on-surface">7 – 9 años · 2h/semana</span>
+              <span class="font-bold text-primary text-sm whitespace-nowrap">56 €/mes</span>
+            </div>
+            <div class="flex justify-between items-center py-1-light">
+              <span class="text-sm text-on-surface">+9 años · 1,5h/semana</span>
+              <span class="font-bold text-primary text-sm whitespace-nowrap">42 €/mes</span>
+            </div>
+            <div class="flex justify-between items-center py-1-light">
+              <span class="text-sm text-on-surface">ESO / KET (+12 años) · 2h/semana</span>
+              <span class="font-bold text-primary text-sm whitespace-nowrap">56 €/mes</span>
+            </div>
+            <p class="text-xs font-bold uppercase tracking-wider text-on-surface-variant mt-4 mb-2">Adolescentes y jóvenes · 2h/semana</p>
+            <div class="flex justify-between items-center py-1-light">
+              <span class="text-sm text-on-surface">Nivel A1 / A2</span>
+              <span class="font-bold text-primary text-sm whitespace-nowrap">56 €/mes</span>
+            </div>
+            <div class="flex justify-between items-center py-1-light">
+              <span class="text-sm text-on-surface">Nivel B1 / early B2</span>
+              <span class="font-bold text-primary text-sm whitespace-nowrap">60 €/mes</span>
+            </div>
+            <div class="flex justify-between items-center py-1-light">
+              <span class="text-sm text-on-surface">Nivel C1</span>
+              <span class="font-bold text-primary text-sm whitespace-nowrap">80 €/mes</span>
+            </div>
+            <p class="text-xs font-bold uppercase tracking-wider text-on-surface-variant mt-4 mb-2">Adultos</p>
+            <div class="flex justify-between items-center py-1-light">
+              <span class="text-sm text-on-surface">Clases grupales</span>
+              <span class="font-bold text-primary text-sm whitespace-nowrap">60 €/mes</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <!-- Services Grid -->
-    <section class="py-section-gap">
-      <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
-          <!-- Card 1 -->
-          <div
-            class="bg-surface-container-lowest rounded-xl border border-outline-variant card-lift overflow-hidden group"
-            style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s ease-out, transform 0.6s ease-out;">
-            <div class="h-48 overflow-hidden">
-              <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                data-alt="A clean, minimalist study space with a modern desk, a tablet, and professional textbooks. The lighting is bright and airy, reflecting a focused academic atmosphere. The color palette features soft teals and neutral whites, creating a professional and calm learning environment."
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIrbN9Cz0YISADi9-qOf6h_AGqDP4s4YU46X_G4yuZG_2nB5Iyf8O9od4vRCPZINyZuOsg2C10DeH365L0w1_9FSie-3indR0QU5ttvpbVQCfFKrIwnV_BteMYHNmCj4_R14CEy5JtTnzAOA-FOUs2T-ViPTqSJZ7VQP_ieML4_gBbzhKlA2gsW8g-ZVN6YQvzwrMVYKlJltDBfIATtvThZgtOLKRflfnpY6sQk15Ax6VF1v79cEG4XX9A5H0ajhB65vLpYl3S_CA">
+  </section>
+
+  <!-- ==================== FRANCÉS ==================== -->
+  <!-- fondo #017281, tabla izquierda, texto derecha -->
+  <section class="py-section-gap" style="background:#017281;">
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+        <!-- Tabla -->
+        <div class="bg-white/10 rounded-xl border border-white/20 overflow-hidden order-2 lg:order-1">
+          <div class="bg-white/20 px-6 py-4">
+            <p class="text-white font-bold text-sm uppercase tracking-wider">Tarifas mensuales</p>
+          </div>
+          <div class="px-6 py-4">
+            <p class="text-xs font-bold uppercase tracking-wider mb-2" style="color:rgba(255,255,255,0.6);">Niños 6–11 años · 2h/semana</p>
+            <div class="flex justify-between items-center py-1">
+              <span class="text-sm text-white">Pago mensual</span>
+              <span class="font-bold text-yellow-300 text-sm whitespace-nowrap">62 €/mes</span>
             </div>
-            <div class="p-6">
-              <div class="flex items-center gap-2 mb-3">
-                <span class="material-symbols-outlined text-primary"
-                  style="font-variation-settings: 'FILL' 1;">school</span>
-                <span
-                  class="bg-secondary-container text-secondary text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">A-Levels</span>
-              </div>
-              <h3 class="font-headline-md text-headline-md text-on-surface mb-3">Preparación A-Levels</h3>
-              <p class="font-body-md text-body-md text-on-surface-variant mb-6">
-                Programas intensivos diseñados para maximizar tus resultados en exámenes internacionales con tutoría
-                personalizada.
-              </p>
-              <button
-                class="w-full border-2 border-primary text-primary font-bold py-2.5 rounded-lg hover:bg-primary/5 transition-colors flex items-center justify-center gap-2">
-                Más información
-                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
-              </button>
+            <div class="flex justify-between items-center py-1">
+              <span class="text-sm text-white">Pago trimestral</span>
+              <span class="font-bold text-yellow-300 text-sm whitespace-nowrap">56 €/mes</span>
+            </div>
+            <p class="text-xs font-bold uppercase tracking-wider mt-4 mb-2" style="color:rgba(255,255,255,0.6);">Niños 6–11 años · 1h/semana</p>
+            <div class="flex justify-between items-center py-1">
+              <span class="text-sm text-white">Pago mensual</span>
+              <span class="font-bold text-yellow-300 text-sm whitespace-nowrap">31 €/mes</span>
+            </div>
+            <div class="flex justify-between items-center py-1">
+              <span class="text-sm text-white">Pago trimestral</span>
+              <span class="font-bold text-yellow-300 text-sm whitespace-nowrap">27 €/mes</span>
+            </div>
+            <p class="text-xs font-bold uppercase tracking-wider mt-4 mb-2" style="color:rgba(255,255,255,0.6);">Adolescentes y jóvenes</p>
+            <div class="flex justify-between items-center py-1">
+              <span class="text-sm text-white">1h/semana</span>
+              <span class="font-bold text-yellow-300 text-sm whitespace-nowrap">31 €/mes</span>
+            </div>
+            <div class="flex justify-between items-center py-1">
+              <span class="text-sm text-white">2h/semana</span>
+              <span class="font-bold text-yellow-300 text-sm whitespace-nowrap">62 €/mes</span>
+            </div>
+            <p class="text-xs font-bold uppercase tracking-wider mt-4 mb-2" style="color:rgba(255,255,255,0.6);">Adultos A2–C2</p>
+            <div class="flex justify-between items-center py-1">
+              <span class="text-sm text-white">1h/semana</span>
+              <span class="font-bold text-yellow-300 text-sm whitespace-nowrap">31 €/mes</span>
+            </div>
+            <div class="flex justify-between items-center py-1">
+              <span class="text-sm text-white">2h/semana</span>
+              <span class="font-bold text-yellow-300 text-sm whitespace-nowrap">62 €/mes</span>
+            </div>
+            <div class="flex justify-between items-center py-1">
+              <span class="text-sm text-white">3h/semana</span>
+              <span class="font-bold text-yellow-300 text-sm whitespace-nowrap">80 €/mes</span>
             </div>
           </div>
-          <!-- Card 2 -->
-          <div
-            class="bg-surface-container-lowest rounded-xl border border-outline-variant card-lift overflow-hidden group"
-            style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s ease-out, transform 0.6s ease-out;">
-            <div class="h-48 overflow-hidden">
-              <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                data-alt="A small group of diverse students engaging in a collaborative discussion around a modern light wood table. The background is a clean white academy wall with subtle teal accents. The lighting is soft and natural, emphasizing a professional yet welcoming educational setting."
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5qX1fhyOcjPi09Hvf0eZNPWA3JSiV5YfwucTuAQ0PcR2GQzQKQhLgOTglSydVIWXqBf99ESan19G524QG4OnHimiyV1kVfwXqJnN_OO9z7ua_EAfLV3vFhfM3HrgBFKA9Vs1JX1dYrl_E5Rp6vb68-F-xzDj13WiAkGnY5LZ4guqhFEoDncBK_iCHg8NlIBK6E7lAdcFWSX6ene2lErPaAIFB0ndGKjEHaWWMSbsgGQGiTPXxipmKS5obBWa5408JqgQeDg3mxGg">
+        </div>
+        <!-- Info -->
+        <div class="order-1 lg:order-2">
+          <span class="pill mb-4" style="background:rgba(255,255,255,0.2);color:white;">Idioma</span>
+          <h2 class="font-headline-lg text-headline-lg text-white mt-3 mb-4">Clases de Francés</h2>
+          <p class="font-body-md text-body-md mb-6" style="color:rgba(255,255,255,0.85);">
+            Aprende francés en un entorno dinámico y práctico. Clases para todas las edades desde niños hasta adultos, con preparación para exámenes oficiales.
+          </p>
+          <div class="space-y-3 mb-6">
+            <div class="flex items-center gap-2 text-sm" style="color:rgba(255,255,255,0.85);">
+              <span class="material-symbols-outlined text-yellow-300 text-[18px]">check_circle</span> Tutorías y simulacros de examen oficial incluidos
             </div>
-            <div class="p-6">
-              <div class="flex items-center gap-2 mb-3">
-                <span class="material-symbols-outlined text-primary"
-                  style="font-variation-settings: 'FILL' 1;">language</span>
-                <span
-                  class="bg-secondary-container text-secondary text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">Idiomas</span>
-              </div>
-              <h3 class="font-headline-md text-headline-md text-on-surface mb-3">Inglés Académico</h3>
-              <p class="font-body-md text-body-md text-on-surface-variant mb-6">
-                Domina el lenguaje técnico y académico necesario para triunfar en universidades de habla inglesa en todo
-                el mundo.
-              </p>
-              <button
-                class="w-full border-2 border-primary text-primary font-bold py-2.5 rounded-lg hover:bg-primary/5 transition-colors flex items-center justify-center gap-2">
-                Más información
-                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
-              </button>
+            <div class="flex items-center gap-2 text-sm" style="color:rgba(255,255,255,0.85);">
+              <span class="material-symbols-outlined text-yellow-300 text-[18px]">check_circle</span> Descuentos para familias y empresas
+            </div>
+            <div class="flex items-center gap-2 text-sm" style="color:rgba(255,255,255,0.85);">
+              <span class="material-symbols-outlined text-yellow-300 text-[18px]">check_circle</span> Matrícula: <strong class="text-white">30 €</strong> nuevo · <strong class="text-white">20 €</strong> antiguo alumno
             </div>
           </div>
-          <!-- Card 3 -->
-          <div
-            class="bg-surface-container-lowest rounded-xl border border-outline-variant card-lift overflow-hidden group"
-            style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s ease-out, transform 0.6s ease-out;">
-            <div class="h-48 overflow-hidden">
-              <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                data-alt="A professional business setting featuring a sleek laptop on a polished dark desk, with a soft-focus office interior behind it. High-end lighting creates sharp highlights and deep shadows. The color theme is corporate teal and soft gray, representing executive training and professional development."
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAznEkX_oyY8hXJPwd2SkVYiNERP9MiPEtNujOfp3FpVns2wK32j3NHr7f5yxcBLP26Qsz-1tdePR0TqaO8z9paWA1KFxjfd0rgR6MmT7_9sy216C1jUi4Oy4PUGx38DdE_kE5HC3jGuTTFuQu9VN8UyZ_ekV-alLJz8QjGcNty8Mtv2mZTET5lntb23xbbwGNuyUYZOamTUTV_pbz7PKzAraKnEFkalRoeIGr7bQguO6FubtH3d7LaiEcWEyNOIvv8r8t3IoR-iTc">
+          <button class="font-bold px-6 py-3 rounded-lg transition-all hover:opacity-90 hover:scale-105" style="background:#FFB800;color:#271900;">
+            Más información
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ESPAÑOL ==================== -->
+  <!-- fondo blanco, texto izquierda, tabla derecha -->
+  <section class="py-section-gap bg-white">
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+        <!-- Info -->
+        <div>
+          
+          <h2 class="font-headline-lg text-headline-lg text-on-surface mt-3 mb-4">Clases de Español</h2>
+          <p class="text-on-surface-variant font-body-md text-body-md mb-6">
+            Español para hablantes nativos y no nativos. Desde niños hasta adultos, con especial atención al español académico y preparación para certificaciones oficiales como el DELE.
+          </p>
+          <div class="space-y-3 mb-6">
+            <div class="flex items-center gap-2 text-sm text-on-surface-variant">
+              <span class="material-symbols-outlined text-primary text-[18px]">check_circle</span> Tutorías y simulacros de examen oficial incluidos
             </div>
-            <div class="p-6">
-              <div class="flex items-center gap-2 mb-3">
-                <span class="material-symbols-outlined text-primary"
-                  style="font-variation-settings: 'FILL' 1;">corporate_fare</span>
-                <span
-                  class="bg-secondary-container text-secondary text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">Empresas</span>
-              </div>
-              <h3 class="font-headline-md text-headline-md text-on-surface mb-3">Capacitación Ejecutiva</h3>
-              <p class="font-body-md text-body-md text-on-surface-variant mb-6">
-                Soluciones de aprendizaje a medida para equipos corporativos que buscan excelencia y actualización
-                profesional.
-              </p>
-              <button
-                class="w-full border-2 border-primary text-primary font-bold py-2.5 rounded-lg hover:bg-primary/5 transition-colors flex items-center justify-center gap-2">
-                Más información
-                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
-              </button>
+            <div class="flex items-center gap-2 text-sm text-on-surface-variant">
+              <span class="material-symbols-outlined text-primary text-[18px]">check_circle</span> Descuentos para familias y empresas
             </div>
-          </div>
-          <!-- Card 4 -->
-          <div
-            class="bg-surface-container-lowest rounded-xl border border-outline-variant card-lift overflow-hidden group"
-            style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s ease-out, transform 0.6s ease-out;">
-            <div class="h-48 overflow-hidden">
-              <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                data-alt="A brightly lit classroom with modern ergonomic furniture and a clean whiteboard featuring mathematical equations. The aesthetic is modern and structured, with plenty of natural light. Primary teal accents on the furniture provide a pop of color against the neutral background."
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBh6fajoMgHbGtiG1akrM6RfEXMLCA-Je9kMaoDPI94STSH55g62Pu3t9N2_0iiQWYHs4M-lKctYdXZjfCuROmPzUj5iCwsS8RJlv6WVOW1tpEREaC3MKtzYHPDMj2SwMi0pKIy1WOLeHGT4ScsCTMD4s7tOOyCWnHaD2ImA7v3LfGKQj-oYhiRRAav2mXsisv4WCP2K9PJITttiQTOai_xNngYWuCB2u9XYs9HVgGcmJqDYmStrh0JjmOcUdCdtNB0YUG5EHoh8Bs">
-            </div>
-            <div class="p-6">
-              <div class="flex items-center gap-2 mb-3">
-                <span class="material-symbols-outlined text-primary"
-                  style="font-variation-settings: 'FILL' 1;">functions</span>
-                <span
-                  class="bg-secondary-container text-secondary text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">Refuerzo</span>
-              </div>
-              <h3 class="font-headline-md text-headline-md text-on-surface mb-3">Apoyo en Ciencias</h3>
-              <p class="font-body-md text-body-md text-on-surface-variant mb-6">
-                Clases de refuerzo personalizadas en Matemáticas, Física y Química para asegurar el éxito en la
-                educación secundaria.
-              </p>
-              <button
-                class="w-full border-2 border-primary text-primary font-bold py-2.5 rounded-lg hover:bg-primary/5 transition-colors flex items-center justify-center gap-2">
-                Más información
-                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
-              </button>
+            <div class="flex items-center gap-2 text-sm text-on-surface-variant">
+              <span class="material-symbols-outlined text-primary text-[18px]">check_circle</span> Matrícula: <strong class="text-on-surface">30 €</strong> nuevo alumno · <strong class="text-on-surface">20 €</strong> antiguo alumno
             </div>
           </div>
-          <!-- Card 5 -->
-          <div
-            class="bg-surface-container-lowest rounded-xl border border-outline-variant card-lift overflow-hidden group"
-            style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s ease-out, transform 0.6s ease-out;">
-            <div class="h-48 overflow-hidden">
-              <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                data-alt="A focused close-up of hands writing in a leather-bound notebook next to a modern fountain pen. The desk is clean marble, and the lighting is cinematic and warm. The scene conveys a sense of high-end academic rigor and creative writing focus in a professional academia setting."
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB93HF9vKS3_pOA4K6zUOF7a7E2Po-ejH8hpQoXUO44Sa_-FTwNV_HpvA3N3BA59-pPP3kUjJax6V2VBHJ7j-Bw4s27CNHCWIh1PlV7HBAtzXLyeWQr2wrEg-QeZS4VVmx6LHwf3-v8P3k4WRw6Wh792wK_XoA32ORGqMsy1QK2fSIzL5mDWo6rUqYb1-LZT0LxU5ZgvzonwoFKgenV79fDEpwclSC3TdV276KiwXtHEZ2Ivhu-Q78XxxOkDlRDWxEpHQOgH1Ojk9w">
-            </div>
-            <div class="p-6">
-              <div class="flex items-center gap-2 mb-3">
-                <span class="material-symbols-outlined text-primary"
-                  style="font-variation-settings: 'FILL' 1;">edit_note</span>
-                <span
-                  class="bg-secondary-container text-secondary text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">Humanidades</span>
-              </div>
-              <h3 class="font-headline-md text-headline-md text-on-surface mb-3">Literatura y Crítica</h3>
-              <p class="font-body-md text-body-md text-on-surface-variant mb-6">
-                Explora el pensamiento crítico y la expresión escrita a través de nuestros talleres avanzados de
-                literatura universal.
-              </p>
-              <button
-                class="w-full border-2 border-primary text-primary font-bold py-2.5 rounded-lg hover:bg-primary/5 transition-colors flex items-center justify-center gap-2">
-                Más información
-                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
-              </button>
-            </div>
+          <button class="bg-primary text-white font-bold px-6 py-3 rounded-lg hover:opacity-90 transition-opacity">
+            Más información
+          </button>
+        </div>
+        <!-- Tabla -->
+        <div class="bg-surface-container-low rounded-xl border border-outline-variant overflow-hidden">
+          <div class="bg-primary px-6 py-4">
+            <p class="text-white font-bold text-sm uppercase tracking-wider">Tarifas mensuales</p>
           </div>
-          <!-- Card 6 -->
-          <div
-            class="bg-surface-container-lowest rounded-xl border border-outline-variant card-lift overflow-hidden group"
-            style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s ease-out, transform 0.6s ease-out;">
-            <div class="h-48 overflow-hidden">
-              <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                data-alt="A modern tech lab featuring sleek workstations and glowing screens displaying code and data visualizations. The lighting is cool-toned with bright accents. The aesthetic is clean, technological, and professional, representing digital skills training in a modern academic environment."
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWcJzcqhos8TaMxWe0_iXO4WEuC7UW18PmzqNYd_xQmrGCrgxcxLA89U5uHTylqNqTYn4E8eAZwh7YkpH7XWcPIddK-RfLMJEtS3IzcE25pev-ymOo1jDDnaZFB6pPQzgO5680R82b0b4JsNfbB7q7w_eprHyU1axe5chpQw9S8onVSs7VW31ouR2x5wmto86-SP3SbRenKEe7KdzT9eLPCJS2xK2Y6P067omZHyVLpRba_45NpAZGef8ZRGWU-1pPw4ljdKF_WS0">
+          <div class="px-6 py-4">
+            <p class="text-xs font-bold uppercase tracking-wider text-on-surface-variant mb-2">Niños 6–11 años · 2h/semana</p>
+            <div class="flex justify-between items-center py-1-light">
+              <span class="text-sm text-on-surface">Pago mensual</span>
+              <span class="font-bold text-primary text-sm whitespace-nowrap">56 €/mes</span>
             </div>
-            <div class="p-6">
-              <div class="flex items-center gap-2 mb-3">
-                <span class="material-symbols-outlined text-primary"
-                  style="font-variation-settings: 'FILL' 1;">terminal</span>
-                <span
-                  class="bg-secondary-container text-secondary text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">Tecnología</span>
-              </div>
-              <h3 class="font-headline-md text-headline-md text-on-surface mb-3">Habilidades Digitales</h3>
-              <p class="font-body-md text-body-md text-on-surface-variant mb-6">
-                Cursos de programación, análisis de datos y herramientas digitales para el mercado laboral del siglo
-                XXI.
-              </p>
-              <button
-                class="w-full border-2 border-primary text-primary font-bold py-2.5 rounded-lg hover:bg-primary/5 transition-colors flex items-center justify-center gap-2">
-                Más información
-                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
-              </button>
+            <div class="flex justify-between items-center py-1-light">
+              <span class="text-sm text-on-surface">Pago trimestral</span>
+              <span class="font-bold text-primary text-sm whitespace-nowrap">50 €/mes</span>
+            </div>
+            <p class="text-xs font-bold uppercase tracking-wider text-on-surface-variant mt-4 mb-2">Niños 6–11 años · 1h/semana</p>
+            <div class="flex justify-between items-center py-1-light">
+              <span class="text-sm text-on-surface">Pago mensual</span>
+              <span class="font-bold text-primary text-sm whitespace-nowrap">28 €/mes</span>
+            </div>
+            <div class="flex justify-between items-center py-1-light">
+              <span class="text-sm text-on-surface">Pago trimestral</span>
+              <span class="font-bold text-primary text-sm whitespace-nowrap">25 €/mes</span>
+            </div>
+            <p class="text-xs font-bold uppercase tracking-wider text-on-surface-variant mt-4 mb-2">Adolescentes y jóvenes · 2h/semana</p>
+            <div class="flex justify-between items-center py-1-light">
+              <span class="text-sm text-on-surface">Grupales</span>
+              <span class="font-bold text-primary text-sm whitespace-nowrap">62 €/mes</span>
+            </div>
+            <p class="text-xs font-bold uppercase tracking-wider text-on-surface-variant mt-4 mb-2">Adultos A2–C2</p>
+            <div class="flex justify-between items-center py-1-light">
+              <span class="text-sm text-on-surface">1h/semana</span>
+              <span class="font-bold text-primary text-sm whitespace-nowrap">31 €/mes</span>
+            </div>
+            <div class="flex justify-between items-center py-1-light">
+              <span class="text-sm text-on-surface">2h/semana</span>
+              <span class="font-bold text-primary text-sm whitespace-nowrap">62 €/mes</span>
+            </div>
+            <div class="flex justify-between items-center py-1-light">
+              <span class="text-sm text-on-surface">3h/semana</span>
+              <span class="font-bold text-primary text-sm whitespace-nowrap">80 €/mes</span>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- CTA Section -->
-    <section class="py-section-gap bg-primary text-on-primary">
-      <div
-        class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row items-center justify-between gap-8">
-        <div class="text-center md:text-left">
-          <h2 class="font-headline-lg text-headline-lg mb-2">¿No encuentras lo que buscas?</h2>
-          <p class="font-body-lg text-body-lg opacity-90">Creamos planes de estudio personalizados para tus necesidades
-            específicas.</p>
+    </div>
+  </section>
+
+  <!-- ==================== RUSO ==================== -->
+  <!-- fondo #017281, tabla izquierda, texto derecha -->
+  <section class="py-section-gap" style="background:#017281;">
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+        <!-- Tabla -->
+        <div class="bg-white/10 rounded-xl border border-white/20 overflow-hidden order-2 lg:order-1">
+        <div class="bg-white/20 px-6 py-4">
+          <p class="text-white font-bold text-sm uppercase tracking-wider">Tarifas mensuales</p>
         </div>
-        <button
-          class="bg-[#FFB800] text-on-tertiary-fixed font-bold py-4 px-10 rounded-xl shadow-lg hover:scale-105 transition-transform">
-          Contáctanos ahora
-        </button>
+        <div class="px-6 py-4">
+          <p class="text-xs font-bold uppercase tracking-wider mb-2" style="color:rgba(255,255,255,0.6);">Niños 6–11 años · 2h/semana</p>
+          <div class="flex justify-between items-center py-1">
+            <span class="text-sm text-white">Pago mensual</span>
+            <span class="font-bold text-yellow-300 text-sm whitespace-nowrap">64 €/mes</span>
+          </div>
+          <div class="flex justify-between items-center py-1">
+            <span class="text-sm text-white">Pago trimestral</span>
+            <span class="font-bold text-yellow-300 text-sm whitespace-nowrap">54 €/mes</span>
+          </div>
+          <p class="text-xs font-bold uppercase tracking-wider mt-4 mb-2" style="color:rgba(255,255,255,0.6);">Niños 6–11 años · 1h/semana</p>
+          <div class="flex justify-between items-center py-1">
+            <span class="text-sm text-white">Pago mensual</span>
+            <span class="font-bold text-yellow-300 text-sm whitespace-nowrap">32 €/mes</span>
+          </div>
+          <div class="flex justify-between items-center py-1">
+            <span class="text-sm text-white">Pago trimestral</span>
+            <span class="font-bold text-yellow-300 text-sm whitespace-nowrap">25 €/mes</span>
+          </div>
+          <p class="text-xs font-bold uppercase tracking-wider mt-4 mb-2" style="color:rgba(255,255,255,0.6);">Adolescentes · 2h/semana</p>
+          <div class="flex justify-between items-center py-1">
+            <span class="text-sm text-white">Grupales</span>
+            <span class="font-bold text-yellow-300 text-sm whitespace-nowrap">64 €/mes</span>
+          </div>
+          <p class="text-xs font-bold uppercase tracking-wider mt-4 mb-2" style="color:rgba(255,255,255,0.6);">Adultos A2–C2</p>
+          <div class="flex justify-between items-center py-1">
+            <span class="text-sm text-white">1h/semana</span>
+            <span class="font-bold text-yellow-300 text-sm whitespace-nowrap">36 €/mes</span>
+          </div>
+          <div class="flex justify-between items-center py-1">
+            <span class="text-sm text-white">2h/semana</span>
+            <span class="font-bold text-yellow-300 text-sm whitespace-nowrap">72 €/mes</span>
+          </div>
+          <div class="flex justify-between items-center py-1">
+            <span class="text-sm text-white">3h/semana</span>
+            <span class="font-bold text-yellow-300 text-sm whitespace-nowrap">96 €/mes</span>
+          </div>
+        </div>
       </div>
-    </section>
-  </main>
+        <!-- Info -->
+        <div class="order-1 lg:order-2">
+          <span class="pill mb-4" style="background:rgba(255,255,255,0.2);color:white;">Idioma</span>
+          <h2 class="font-headline-lg text-headline-lg text-white mt-3 mb-4">Clases de Ruso</h2>
+          <p class="font-body-md text-body-md mb-6" style="color:rgba(255,255,255,0.85);">
+            Una de las lenguas más habladas del mundo al alcance de todos. Aprende ruso desde cero o mejora tu nivel en un ambiente dinámico y práctico.
+          </p>
+          <div class="space-y-3 mb-6">
+            <div class="flex items-center gap-2 text-sm" style="color:rgba(255,255,255,0.85);">
+              <span class="material-symbols-outlined text-yellow-300 text-[18px]">check_circle</span> Tutorías y simulacros de examen oficial incluidos
+            </div>
+            <div class="flex items-center gap-2 text-sm" style="color:rgba(255,255,255,0.85);">
+              <span class="material-symbols-outlined text-yellow-300 text-[18px]">check_circle</span> Descuentos para familias y empresas
+            </div>
+            <div class="flex items-center gap-2 text-sm" style="color:rgba(255,255,255,0.85);">
+              <span class="material-symbols-outlined text-yellow-300 text-[18px]">check_circle</span> Matrícula: <strong class="text-white">30 €</strong> nuevo · <strong class="text-white">20 €</strong> antiguo alumno
+            </div>
+          </div>
+          <button class="font-bold px-6 py-3 rounded-lg transition-all hover:opacity-90 hover:scale-105" style="background:#FFB800;color:#271900;">
+            Más información
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== HORARIO ==================== -->
+  <!-- fondo blanco -->
+  <section class="py-section-gap bg-white">
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+      <div class="text-center mb-12">
+        <span
+                            class="inline-flex items-center gap-2 text-primary bg-primary/10 text-label-sm font-bold uppercase tracking-widest px-4 py-2 rounded-full w-fit">
+                            <span class="material-symbols-outlined text-base">calendar_month</span>
+                            Organización
+                        </span>
+        <h2 class="font-headline-lg text-headline-lg text-on-surface mt-3 mb-3">Horarios de clases</h2>
+        <p class="text-on-surface-variant font-body-md max-w-xl mx-auto">Ofrecemos franjas de mañana y tarde de lunes a viernes para que puedas compaginar el aprendizaje con tu ritmo de vida.</p>
+      </div>
+
+      <!-- Mañanas -->
+      <div class="mb-16">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="material-symbols-outlined text-primary">wb_sunny</span>
+          <h3 class="font-bold text-on-surface text-base uppercase tracking-wider">Mañanas</h3>
+        </div>
+        <div class="overflow-x-auto rounded-xl border border-outline-variant">
+          <table class="w-full text-sm min-w-[500px]">
+            <thead>
+              <tr class="bg-primary text-white">
+                <th class="px-4 py-3 text-left font-bold">Hora</th>
+                <th class="px-4 py-3 text-center font-bold">Lunes</th>
+                <th class="px-4 py-3 text-center font-bold">Martes</th>
+                <th class="px-4 py-3 text-center font-bold">Miércoles</th>
+                <th class="px-4 py-3 text-center font-bold">Jueves</th>
+                <th class="px-4 py-3 text-center font-bold">Viernes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-t border-outline-variant bg-white">
+                <td class="px-4 py-3 font-medium text-on-surface-variant whitespace-nowrap">10:00–11:30</td>
+                <td class="px-4 py-3 text-center">—</td>
+                <td class="px-4 py-3 text-center">—</td>
+                <td class="px-4 py-3 text-center"><span class="pill" style="background:#fee2e2;color:#991b1b;">Conversación</span></td>
+                <td class="px-4 py-3 text-center">—</td>
+                <td class="px-4 py-3 text-center">—</td>
+              </tr>
+              <tr class="border-t border-outline-variant bg-surface-container-low">
+                <td class="px-4 py-3 font-medium text-on-surface-variant whitespace-nowrap">10:00–11:00</td>
+                <td class="px-4 py-3 text-center">—</td>
+                <td class="px-4 py-3 text-center"><span class="pill" style="background:#dbeafe;color:#1e40af;">B1</span></td>
+                <td class="px-4 py-3 text-center">—</td>
+                <td class="px-4 py-3 text-center"><span class="pill" style="background:#dbeafe;color:#1e40af;">B1</span></td>
+                <td class="px-4 py-3 text-center">—</td>
+              </tr>
+              <tr class="border-t border-outline-variant bg-white">
+                <td class="px-4 py-3 font-medium text-on-surface-variant whitespace-nowrap">11:00–12:00</td>
+                <td class="px-4 py-3 text-center">—</td>
+                <td class="px-4 py-3 text-center">—</td>
+                <td class="px-4 py-3 text-center">—</td>
+                <td class="px-4 py-3 text-center">—</td>
+                <td class="px-4 py-3 text-center">—</td>
+              </tr>
+              <tr class="border-t border-outline-variant bg-surface-container-low">
+                <td class="px-4 py-3 font-medium text-on-surface-variant whitespace-nowrap">12:00–13:00</td>
+                <td class="px-4 py-3 text-center">—</td>
+                <td class="px-4 py-3 text-center">—</td>
+                <td class="px-4 py-3 text-center">—</td>
+                <td class="px-4 py-3 text-center">—</td>
+                <td class="px-4 py-3 text-center">—</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Tardes -->
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <span class="material-symbols-outlined text-primary">nights_stay</span>
+          <h3 class="font-bold text-on-surface text-base uppercase tracking-wider">Tardes</h3>
+        </div>
+        <div class="overflow-x-auto rounded-xl border border-outline-variant">
+          <table class="w-full text-sm min-w-[600px]">
+            <thead>
+              <tr class="bg-primary text-white">
+                <th class="px-4 py-3 text-left font-bold">Hora</th>
+                <th class="px-4 py-3 text-center font-bold">Lunes</th>
+                <th class="px-4 py-3 text-center font-bold">Martes</th>
+                <th class="px-4 py-3 text-center font-bold">Miércoles</th>
+                <th class="px-4 py-3 text-center font-bold">Jueves</th>
+                <th class="px-4 py-3 text-center font-bold">Viernes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-t border-outline-variant bg-white">
+                <td class="px-4 py-3 font-medium text-on-surface-variant whitespace-nowrap">16:00–17:00</td>
+                <td class="px-4 py-3 text-center"><span class="pill" style="background:#dbeafe;color:#1e40af;">Rockets 1</span></td>
+                <td class="px-4 py-3 text-center"><span class="pill" style="background:#fef9c3;color:#854d0e;">Comets / B1</span></td>
+                <td class="px-4 py-3 text-center"><span class="pill" style="background:#dbeafe;color:#1e40af;">Rockets 1</span></td>
+                <td class="px-4 py-3 text-center"><span class="pill" style="background:#fef9c3;color:#854d0e;">Comets / B1</span></td>
+                <td class="px-4 py-3 text-center"><span class="pill" style="background:#e0f2fe;color:#0c4a6e;">Individual</span></td>
+              </tr>
+              <tr class="border-t border-outline-variant bg-surface-container-low">
+                <td class="px-4 py-3 font-medium text-on-surface-variant whitespace-nowrap">17:00–18:00</td>
+                <td class="px-4 py-3 text-center"><span class="pill" style="background:#e0f2fe;color:#0c4a6e;">Individual</span></td>
+                <td class="px-4 py-3 text-center"><span class="pill" style="background:#e0f2fe;color:#0c4a6e;">Individual</span></td>
+                <td class="px-4 py-3 text-center"><span class="pill" style="background:#e0f2fe;color:#0c4a6e;">Individual</span></td>
+                <td class="px-4 py-3 text-center"><span class="pill" style="background:#e0f2fe;color:#0c4a6e;">Individual</span></td>
+                <td class="px-4 py-3 text-center"><span class="pill" style="background:#fce7f3;color:#9d174d;">Little Stars</span></td>
+              </tr>
+              <tr class="border-t border-outline-variant bg-white">
+                <td class="px-4 py-3 font-medium text-on-surface-variant whitespace-nowrap">18:00–19:00</td>
+                <td class="px-4 py-3 text-center"><span class="pill" style="background:#fef9c3;color:#854d0e;">Comets II</span></td>
+                <td class="px-4 py-3 text-center"><span class="pill" style="background:#dcfce7;color:#14532d;">KET+</span></td>
+                <td class="px-4 py-3 text-center"><span class="pill" style="background:#fef9c3;color:#854d0e;">Comets II</span></td>
+                <td class="px-4 py-3 text-center"><span class="pill" style="background:#dcfce7;color:#14532d;">KET+</span></td>
+                <td class="px-4 py-3 text-center"><span class="pill" style="background:#f3e8ff;color:#581c87;">Adults</span></td>
+              </tr>
+              <tr class="border-t border-outline-variant bg-surface-container-low">
+                <td class="px-4 py-3 font-medium text-on-surface-variant whitespace-nowrap">19:00–20:00</td>
+                <td class="px-4 py-3 text-center"><span class="pill" style="background:#fee2e2;color:#991b1b;">B2</span></td>
+                <td class="px-4 py-3 text-center"><span class="pill" style="background:#ffedd5;color:#9a3412;">B1 Teens</span></td>
+                <td class="px-4 py-3 text-center"><span class="pill" style="background:#fee2e2;color:#991b1b;">B2</span></td>
+                <td class="px-4 py-3 text-center"><span class="pill" style="background:#ffedd5;color:#9a3412;">B1 Teens</span></td>
+                <td class="px-4 py-3 text-center">—</td>
+              </tr>
+              <tr class="border-t border-outline-variant bg-white">
+                <td class="px-4 py-3 font-medium text-on-surface-variant whitespace-nowrap">20:00–21:00</td>
+                <td class="px-4 py-3 text-center"><span class="pill" style="background:#e0f2fe;color:#0c4a6e;">Individual</span></td>
+                <td class="px-4 py-3 text-center"><span class="pill" style="background:#f3e8ff;color:#581c87;">Adults</span></td>
+                <td class="px-4 py-3 text-center"><span class="pill" style="background:#e0f2fe;color:#0c4a6e;">Individual</span></td>
+                <td class="px-4 py-3 text-center">—</td>
+                <td class="px-4 py-3 text-center">—</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TALLER DE ARTE ==================== -->
+  <!-- fondo #017281, tabla izq, texto der -->
+  <section class="py-section-gap" style="background:#017281;">
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+        <!-- Tabla -->
+        <div class="bg-white/10 rounded-xl border border-white/20 overflow-hidden order-2 lg:order-1">
+          <div class="bg-white/20 px-6 py-4">
+            <p class="text-white font-bold text-sm uppercase tracking-wider">Tarifas mensuales · niños 5–12 años</p>
+          </div>
+          <div class="px-6 py-2">
+            <p class="text-xs font-bold uppercase tracking-wider mt-4 mb-2" style="color:rgba(255,255,255,0.6);">Dibujo</p>
+            <div class="flex justify-between items-center py-1"><span class="text-sm text-white">1h/semana</span><span class="font-bold text-yellow-300 text-sm whitespace-nowrap">30 €/mes</span></div>
+            <div class="flex justify-between items-center py-1"><span class="text-sm text-white">2h/semana</span><span class="font-bold text-yellow-300 text-sm whitespace-nowrap">54 €/mes</span></div>
+            <p class="text-xs font-bold uppercase tracking-wider mt-4 mb-2" style="color:rgba(255,255,255,0.6);">Manualidades</p>
+            <div class="flex justify-between items-center py-1"><span class="text-sm text-white">1h/semana</span><span class="font-bold text-yellow-300 text-sm whitespace-nowrap">32 €/mes</span></div>
+            <div class="flex justify-between items-center py-1"><span class="text-sm text-white">2h/semana</span><span class="font-bold text-yellow-300 text-sm whitespace-nowrap">64 €/mes</span></div>
+            <p class="text-xs font-bold uppercase tracking-wider mt-4 mb-2" style="color:rgba(255,255,255,0.6);">Cuentacuentos</p>
+            <div class="flex justify-between items-center py-1"><span class="text-sm text-white">1h/semana</span><span class="font-bold text-yellow-300 text-sm whitespace-nowrap">30 €/mes</span></div>
+            <div class="flex justify-between items-center py-1"><span class="text-sm text-white">2h/semana</span><span class="font-bold text-yellow-300 text-sm whitespace-nowrap">54 €/mes</span></div>
+            <p class="text-xs font-bold uppercase tracking-wider mt-4 mb-2" style="color:rgba(255,255,255,0.6);">Viaje alrededor del mundo</p>
+            <div class="flex justify-between items-center py-1"><span class="text-sm text-white">1h/semana</span><span class="font-bold text-yellow-300 text-sm whitespace-nowrap">32 €/mes</span></div>
+            <div class="flex justify-between items-center py-1"><span class="text-sm text-white">2h/semana</span><span class="font-bold text-yellow-300 text-sm whitespace-nowrap">64 €/mes</span></div>
+            <div class="mt-4 px-4 py-3 rounded-lg" style="background:rgba(255,184,0,0.15);border:1px solid rgba(255,184,0,0.3);">
+              <p class="text-sm text-yellow-200 font-medium">★ El precio incluye todo el material</p>
+            </div>
+          </div>
+        </div>
+        <!-- Info -->
+        <div class="order-1 lg:order-2">
+          <span
+                        class="inline-flex items-center gap-2 text-white bg-white/10 text-label-sm font-bold uppercase tracking-widest px-4 py-2 rounded-full w-fit">
+                        <span class="material-symbols-outlined text-base">school</span>
+                        Extraescolares
+                    </span>
+          <h2 class="font-headline-lg text-headline-lg text-white mt-3 mb-4">Taller de Arte</h2>
+          <p class="font-body-md text-body-md mb-6" style="color:rgba(255,255,255,0.85);">
+            Talleres creativos para niños de 5 a 12 años. Dibujo, manualidades, cuentacuentos y un apasionante viaje alrededor del mundo a través del arte. Todo el material incluido en el precio.
+          </p>
+          <div class="space-y-3 mb-6">
+            <div class="flex items-center gap-2 text-sm" style="color:rgba(255,255,255,0.85);">
+              <span class="material-symbols-outlined text-yellow-300 text-[18px]">check_circle</span> Para niños de 5 a 12 años
+            </div>
+            <div class="flex items-center gap-2 text-sm" style="color:rgba(255,255,255,0.85);">
+              <span class="material-symbols-outlined text-yellow-300 text-[18px]">check_circle</span> Material incluido en el precio
+            </div>
+            <div class="flex items-center gap-2 text-sm" style="color:rgba(255,255,255,0.85);">
+              <span class="material-symbols-outlined text-yellow-300 text-[18px]">check_circle</span> Inscripciones abiertas
+            </div>
+          </div>
+          <button class="font-bold px-6 py-3 rounded-lg transition-all hover:opacity-90 hover:scale-105" style="background:#FFB800;color:#271900;">
+            Más información
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ALQUILER DE AULAS ==================== -->
+  <!-- fondo blanco, texto izquierda, info derecha -->
+  <section id="aulas" class="py-section-gap bg-white">
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+        <!-- Info -->
+        <div>
+          <h2 class="font-headline-lg text-headline-lg text-on-surface mt-3 mb-4">Alquiler de aulas</h2>
+          <p class="text-on-surface-variant font-body-md text-body-md mb-6">
+            ¿Necesitas un espacio para dar clases, talleres, capacitaciones o reuniones? Nuestras aulas están completamente equipadas y disponibles por hora, jornada o mes para grupos de 3 a 20 personas.
+          </p>
+          
+          <div class="flex flex-col sm:flex-row gap-3">
+            <button class="bg-primary text-white font-bold px-6 py-3 rounded-lg hover:opacity-90 transition-opacity">
+              Reservar ahora
+            </button>
+            <a href="contact.html" class="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary font-bold px-6 py-3 rounded-lg hover:bg-primary/5 transition-colors">
+              Contactar
+            </a>
+          </div>
+        </div>
+        <!-- Detalles -->
+        <div class="space-y-4">
+          <div class="bg-surface-container-low rounded-xl border border-outline-variant p-6">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="material-symbols-outlined text-primary" style="font-variation-settings:'FILL' 1;">people</span>
+              <h3 class="font-bold text-on-surface">Capacidad</h3>
+            </div>
+            <p class="text-on-surface-variant text-sm">Aulas disponibles para grupos de <strong class="text-on-surface">3 a 20 personas</strong>. Mobiliario reconfigurable según tu actividad.</p>
+          </div>
+          <div class="rounded-xl p-5 flex items-start gap-4" style="background:#017281;">
+            <span class="material-symbols-outlined text-yellow-300 shrink-0" style="font-variation-settings:'FILL' 1;">info</span>
+            <div>
+              <p class="font-bold text-white text-sm mb-1">¿Tienes alguna pregunta?</p>
+              <p class="text-sm" style="color:rgba(255,255,255,0.8);">Llámanos al <strong class="text-white">858 814 666</strong> o escríbenos a <strong class="text-white">info@overthemoonidiomas.com</strong> y te informamos sin compromiso.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="py-section-gap bg-primary text-on-primary">
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row items-center justify-between gap-8">
+      <div class="text-center md:text-left">
+        <h2 class="font-headline-lg text-headline-lg mb-2">¿No encuentras lo que buscas?</h2>
+        <p class="font-body-lg text-body-lg opacity-90">Creamos planes de estudio personalizados para tus necesidades específicas.</p>
+      </div>
+      <button class="font-bold py-4 px-10 rounded-xl shadow-lg hover:scale-105 transition-transform" style="background:#FFB800;color:#271900;">
+        Contáctanos ahora
+      </button>
+    </div>
+  </section>
+
+</main>
+
   <!-- Footer -->
   <footer class="w-full bg-[#017281] text-white">
       <div class="max-w-[1600px] mx-auto px-6 xl:px-0 py-section-gap">
