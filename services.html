@@ -126,11 +126,12 @@
 </head>
 
 <body class="bg-surface font-body-md text-on-surface">
-  <!-- TopNavBar -->
   <header class="sticky top-0 z-50 w-full bg-white/70 backdrop-blur-md border-b border-white/20 shadow-[0_10px_40px_rgba(0,191,255,0.4)] transition-all duration-300">
     <nav class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
         <div class="flex items-center gap-3">
-            <img alt="Over the Moon Academia Logo" class="h-14 w-auto object-contain" src="assets/img/logo (2).png">
+            <a href="index.html" class="inline-block hover:opacity-90 transition-opacity duration-200">
+                <img alt="Over the Moon Academia Logo" class="h-14 w-auto object-contain" src="assets/img/logo (2).png">
+            </a>
         </div>
         
         <div class="hidden md:flex items-center gap-8">
@@ -152,15 +153,39 @@
                 Servicios
             </a>
 
+            <div class="relative group py-1">
+                <button class="flex items-center gap-1 text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 text-base focus:outline-none">
+                    Idiomas
+                    <span class="material-symbols-outlined text-lg transition-transform duration-300 group-hover:rotate-180 select-none">expand_more</span>
+                </button>
+                
+                <div class="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-44 bg-white backdrop-blur-md border border-outline-variant rounded-xl shadow-xl opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 overflow-hidden z-50">
+                    <div class="py-1.5">
+                        <a href="ingles.html" class="flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-on-surface-variant hover:bg-primary/10 hover:text-primary transition-colors">
+                             Inglés
+                        </a>
+                        <a href="frances.html" class="flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-on-surface-variant hover:bg-primary/10 hover:text-primary transition-colors">
+                             Francés
+                        </a>
+                        <a href="ruso.html" class="flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-on-surface-variant hover:bg-primary/10 hover:text-primary transition-colors">
+                             Ruso
+                        </a>
+                        <a href="espanol.html" class="flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-on-surface-variant hover:bg-primary/10 hover:text-primary transition-colors">
+                             Español
+                        </a>
+                    </div>
+                </div>
+            </div>
+
             <a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 text-base relative py-1
               after:absolute after:bottom-0 after:left-1/2 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-out hover:after:left-0 hover:after:w-full"
                 href="contact.html">
                 Contacto
             </a>
 
-            <button class="bg-tertiary-fixed text-on-tertiary-fixed px-6 py-2.5 rounded-lg text-base font-bold transition-all duration-300 hover:opacity-90 hover:scale-105 active:scale-95">
+            <a href="contact.html" class="inline-block bg-tertiary-fixed text-on-tertiary-fixed px-6 py-2.5 rounded-lg text-base font-bold transition-all duration-300 hover:opacity-90 hover:scale-105 active:scale-95 text-center">
                 Inscribirse
-            </button>
+            </a>
         </div>
 
         <button class="md:hidden text-primary"
@@ -168,14 +193,31 @@
             <span class="material-symbols-outlined">menu</span>
         </button>
     </nav>
-
+    
     <div class="hidden bg-white/90 backdrop-blur-lg border-t border-outline-variant px-margin-mobile py-4 space-y-4 shadow-lg"
         id="mobile-menu">
         <a class="block text-primary font-bold text-base" href="index.html">Inicio</a>
         <a class="block text-on-surface-variant font-medium text-base" href="about.html">Sobre Nosotros</a>
         <a class="block text-on-surface-variant font-medium text-base" href="services.html">Servicios</a>
+        
+        <div class="block">
+            <button class="flex items-center justify-between w-full text-on-surface-variant font-medium text-base py-1 focus:outline-none"
+                onclick="document.getElementById('mobile-languages').classList.toggle('hidden')">
+                <span>Idiomas</span>
+                <span class="material-symbols-outlined text-lg select-none">expand_more</span>
+            </button>
+            <div id="mobile-languages" class="hidden mt-2 pl-4 space-y-3 border-l-2 border-outline-variant/50">
+                <a class="block text-on-surface-variant font-medium text-sm py-0.5" href="ingles.html">Inglés</a>
+                <a class="block text-on-surface-variant font-medium text-sm py-0.5" href="frances.html">Francés</a>
+                <a class="block text-on-surface-variant font-medium text-sm py-0.5" href="ruso.html">Ruso</a>
+                <a class="block text-on-surface-variant font-medium text-sm py-0.5" href="aleman.html">Alemán</a>
+            </div>
+        </div>
+
         <a class="block text-on-surface-variant font-medium text-base" href="contact.html">Contacto</a>
-        <button class="w-full bg-tertiary-fixed text-on-tertiary-fixed px-6 py-3 rounded-lg text-base font-bold">Inscribirse </button>
+        <a href="contact.html" class="block w-full text-center bg-tertiary-fixed text-on-tertiary-fixed px-6 py-3 rounded-lg text-base font-bold transition-all hover:opacity-90">
+            Inscribirse
+        </a>
     </div>
 </header>
   <main class="min-h-screen">
@@ -313,7 +355,10 @@
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
         <!-- Info -->
         <div>
-          
+          <span class="inline-flex items-center gap-2 text-primary bg-primary/10 text-label-sm font-bold uppercase tracking-widest px-4 py-2 rounded-full w-fit">
+          <span class="material-symbols-outlined text-base">translate</span>
+          IDIOMA
+        </span>
           <h2 class="font-headline-lg text-headline-lg text-on-surface mt-3 mb-4">Clases de Inglés</h2>
           <p class="text-on-surface-variant font-body-md text-body-md mb-6">
             Desde los 3 años hasta adultos. Grupos por edad y nivel con metodología comunicativa. Preparación para exámenes Cambridge (KET, B1, B2, C1) incluida en los niveles correspondientes.
@@ -332,9 +377,9 @@
               <span class="material-symbols-outlined text-primary text-[18px]">check_circle</span> Matrícula: <strong class="text-on-surface">30 €</strong> nuevo alumno · <strong class="text-on-surface">20 €</strong> antiguo alumno
             </div>
           </div>
-          <button class="bg-primary text-white font-bold px-6 py-3 rounded-lg hover:opacity-90 transition-opacity">
+          <a href="ingles.html" class="inline-block bg-primary text-white font-bold px-6 py-3 rounded-lg hover:opacity-90 transition-opacity text-center">
             Más información
-          </button>
+          </a>
         </div>
         <!-- Tabla -->
         <div class="bg-surface-container-low rounded-xl border border-outline-variant overflow-hidden">
@@ -442,7 +487,10 @@
         </div>
         <!-- Info -->
         <div class="order-1 lg:order-2">
-          <span class="pill mb-4" style="background:rgba(255,255,255,0.2);color:white;">Idioma</span>
+          <span class="inline-flex items-center gap-2 text-white bg-white/10 text-label-sm font-bold uppercase tracking-widest px-4 py-2 rounded-full w-fit">
+          <span class="material-symbols-outlined text-base">translate</span>
+          Idioma
+        </span>
           <h2 class="font-headline-lg text-headline-lg text-white mt-3 mb-4">Clases de Francés</h2>
           <p class="font-body-md text-body-md mb-6" style="color:rgba(255,255,255,0.85);">
             Aprende francés en un entorno dinámico y práctico. Clases para todas las edades desde niños hasta adultos, con preparación para exámenes oficiales.
@@ -458,9 +506,9 @@
               <span class="material-symbols-outlined text-yellow-300 text-[18px]">check_circle</span> Matrícula: <strong class="text-white">30 €</strong> nuevo · <strong class="text-white">20 €</strong> antiguo alumno
             </div>
           </div>
-          <button class="font-bold px-6 py-3 rounded-lg transition-all hover:opacity-90 hover:scale-105" style="background:#FFB800;color:#271900;">
+          <a href="frances.html" class="inline-block font-bold px-6 py-3 rounded-lg transition-all hover:opacity-90 hover:scale-105 text-center" style="background:#FFB800;color:#271900;">
             Más información
-          </button>
+          </a>
         </div>
       </div>
     </div>
@@ -473,7 +521,10 @@
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
         <!-- Info -->
         <div>
-          
+          <span class="inline-flex items-center gap-2 text-primary bg-primary/10 text-label-sm font-bold uppercase tracking-widest px-4 py-2 rounded-full w-fit">
+          <span class="material-symbols-outlined text-base">translate</span>
+          IDIOMA
+        </span>
           <h2 class="font-headline-lg text-headline-lg text-on-surface mt-3 mb-4">Clases de Español</h2>
           <p class="text-on-surface-variant font-body-md text-body-md mb-6">
             Español para hablantes nativos y no nativos. Desde niños hasta adultos, con especial atención al español académico y preparación para certificaciones oficiales como el DELE.
@@ -489,9 +540,9 @@
               <span class="material-symbols-outlined text-primary text-[18px]">check_circle</span> Matrícula: <strong class="text-on-surface">30 €</strong> nuevo alumno · <strong class="text-on-surface">20 €</strong> antiguo alumno
             </div>
           </div>
-          <button class="bg-primary text-white font-bold px-6 py-3 rounded-lg hover:opacity-90 transition-opacity">
+          <a href="espanol.html" class="inline-block bg-primary text-white font-bold px-6 py-3 rounded-lg hover:opacity-90 transition-opacity text-center">
             Más información
-          </button>
+          </a>
         </div>
         <!-- Tabla -->
         <div class="bg-surface-container-low rounded-xl border border-outline-variant overflow-hidden">
@@ -592,7 +643,10 @@
       </div>
         <!-- Info -->
         <div class="order-1 lg:order-2">
-          <span class="pill mb-4" style="background:rgba(255,255,255,0.2);color:white;">Idioma</span>
+          <span class="inline-flex items-center gap-2 text-white bg-white/10 text-label-sm font-bold uppercase tracking-widest px-4 py-2 rounded-full w-fit">
+          <span class="material-symbols-outlined text-base">translate</span>
+          Idioma
+        </span>
           <h2 class="font-headline-lg text-headline-lg text-white mt-3 mb-4">Clases de Ruso</h2>
           <p class="font-body-md text-body-md mb-6" style="color:rgba(255,255,255,0.85);">
             Una de las lenguas más habladas del mundo al alcance de todos. Aprende ruso desde cero o mejora tu nivel en un ambiente dinámico y práctico.
@@ -608,9 +662,9 @@
               <span class="material-symbols-outlined text-yellow-300 text-[18px]">check_circle</span> Matrícula: <strong class="text-white">30 €</strong> nuevo · <strong class="text-white">20 €</strong> antiguo alumno
             </div>
           </div>
-          <button class="font-bold px-6 py-3 rounded-lg transition-all hover:opacity-90 hover:scale-105" style="background:#FFB800;color:#271900;">
+          <a href="ruso.html" class="inline-block font-bold px-6 py-3 rounded-lg transition-all hover:opacity-90 hover:scale-105 text-center" style="background:#FFB800;color:#271900;">
             Más información
-          </button>
+          </a>
         </div>
       </div>
     </div>
@@ -802,9 +856,6 @@
               <span class="material-symbols-outlined text-yellow-300 text-[18px]">check_circle</span> Inscripciones abiertas
             </div>
           </div>
-          <button class="font-bold px-6 py-3 rounded-lg transition-all hover:opacity-90 hover:scale-105" style="background:#FFB800;color:#271900;">
-            Más información
-          </button>
         </div>
       </div>
     </div>
@@ -823,9 +874,6 @@
           </p>
           
           <div class="flex flex-col sm:flex-row gap-3">
-            <button class="bg-primary text-white font-bold px-6 py-3 rounded-lg hover:opacity-90 transition-opacity">
-              Reservar ahora
-            </button>
             <a href="contact.html" class="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary font-bold px-6 py-3 rounded-lg hover:bg-primary/5 transition-colors">
               Contactar
             </a>

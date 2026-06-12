@@ -131,7 +131,9 @@
   <header class="sticky top-0 z-50 w-full bg-white/70 backdrop-blur-md border-b border-white/20 shadow-[0_10px_40px_rgba(0,191,255,0.4)] transition-all duration-300">
     <nav class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
         <div class="flex items-center gap-3">
-            <img alt="Over the Moon Academia Logo" class="h-14 w-auto object-contain" src="assets/img/logo (2).png">
+            <a href="index.html" class="inline-block hover:opacity-90 transition-opacity duration-200">
+                <img alt="Over the Moon Academia Logo" class="h-14 w-auto object-contain" src="assets/img/logo (2).png">
+            </a>
         </div>
         
         <div class="hidden md:flex items-center gap-8">
@@ -153,15 +155,39 @@
                 Servicios
             </a>
 
+            <div class="relative group py-1">
+                <button class="flex items-center gap-1 text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 text-base focus:outline-none">
+                    Idiomas
+                    <span class="material-symbols-outlined text-lg transition-transform duration-300 group-hover:rotate-180 select-none">expand_more</span>
+                </button>
+                
+                <div class="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-44 bg-white backdrop-blur-md border border-outline-variant rounded-xl shadow-xl opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 overflow-hidden z-50">
+                    <div class="py-1.5">
+                        <a href="ingles.html" class="flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-on-surface-variant hover:bg-primary/10 hover:text-primary transition-colors">
+                             Inglés
+                        </a>
+                        <a href="frances.html" class="flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-on-surface-variant hover:bg-primary/10 hover:text-primary transition-colors">
+                             Francés
+                        </a>
+                        <a href="ruso.html" class="flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-on-surface-variant hover:bg-primary/10 hover:text-primary transition-colors">
+                             Ruso
+                        </a>
+                        <a href="espanol.html" class="flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-on-surface-variant hover:bg-primary/10 hover:text-primary transition-colors">
+                             Español
+                        </a>
+                    </div>
+                </div>
+            </div>
+
             <a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 text-base relative py-1
               after:absolute after:bottom-0 after:left-1/2 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-out hover:after:left-0 hover:after:w-full"
                 href="contact.html">
                 Contacto
             </a>
 
-            <button class="bg-tertiary-fixed text-on-tertiary-fixed px-6 py-2.5 rounded-lg text-base font-bold transition-all duration-300 hover:opacity-90 hover:scale-105 active:scale-95">
+            <a href="contact.html" class="inline-block bg-tertiary-fixed text-on-tertiary-fixed px-6 py-2.5 rounded-lg text-base font-bold transition-all duration-300 hover:opacity-90 hover:scale-105 active:scale-95 text-center">
                 Inscribirse
-            </button>
+            </a>
         </div>
 
         <button class="md:hidden text-primary"
@@ -169,14 +195,31 @@
             <span class="material-symbols-outlined">menu</span>
         </button>
     </nav>
-
+    
     <div class="hidden bg-white/90 backdrop-blur-lg border-t border-outline-variant px-margin-mobile py-4 space-y-4 shadow-lg"
         id="mobile-menu">
         <a class="block text-primary font-bold text-base" href="index.html">Inicio</a>
         <a class="block text-on-surface-variant font-medium text-base" href="about.html">Sobre Nosotros</a>
         <a class="block text-on-surface-variant font-medium text-base" href="services.html">Servicios</a>
+        
+        <div class="block">
+            <button class="flex items-center justify-between w-full text-on-surface-variant font-medium text-base py-1 focus:outline-none"
+                onclick="document.getElementById('mobile-languages').classList.toggle('hidden')">
+                <span>Idiomas</span>
+                <span class="material-symbols-outlined text-lg select-none">expand_more</span>
+            </button>
+            <div id="mobile-languages" class="hidden mt-2 pl-4 space-y-3 border-l-2 border-outline-variant/50">
+                <a class="block text-on-surface-variant font-medium text-sm py-0.5" href="ingles.html">Inglés</a>
+                <a class="block text-on-surface-variant font-medium text-sm py-0.5" href="frances.html">Francés</a>
+                <a class="block text-on-surface-variant font-medium text-sm py-0.5" href="ruso.html">Ruso</a>
+                <a class="block text-on-surface-variant font-medium text-sm py-0.5" href="aleman.html">Alemán</a>
+            </div>
+        </div>
+
         <a class="block text-on-surface-variant font-medium text-base" href="contact.html">Contacto</a>
-        <button class="w-full bg-tertiary-fixed text-on-tertiary-fixed px-6 py-3 rounded-lg text-base font-bold">Inscribirse</button>
+        <a href="contact.html" class="block w-full text-center bg-tertiary-fixed text-on-tertiary-fixed px-6 py-3 rounded-lg text-base font-bold transition-all hover:opacity-90">
+            Inscribirse
+        </a>
     </div>
 </header>
   <main>

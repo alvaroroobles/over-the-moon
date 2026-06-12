@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Clases de Francés - Over the Moon Academia</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface": "#f9f9fc", "on-tertiary": "#ffffff", "secondary-container": "#dae1e2",
+            "tertiary-container": "#886000", "primary-fixed-dim": "#80d3e4",
+            "surface-dim": "#dadadc", "on-primary-fixed": "#001f25", "error-container": "#ffdad6",
+            "background": "#f9f9fc", "surface-container-low": "#f3f3f6", "primary": "#005864",
+            "on-primary-container": "#b1f1ff", "on-primary-fixed-variant": "#004e59",
+            "inverse-on-surface": "#f0f0f3", "secondary": "#586061", "tertiary": "#694a00",
+            "on-secondary-container": "#5d6465", "surface-container": "#eeeef0",
+            "surface-bright": "#f9f9fc", "tertiary-fixed": "#ffdea8", "surface-tint": "#006876",
+            "on-primary": "#ffffff", "on-background": "#1a1c1e", "primary-container": "#017281",
+            "surface-container-lowest": "#ffffff", "outline-variant": "#bec8cb",
+            "inverse-primary": "#80d3e4", "on-surface-variant": "#3e484b",
+            "on-surface": "#1a1c1e", "surface-variant": "#e2e2e5",
+            "surface-container-high": "#e8e8ea", "outline": "#6e797b",
+            "on-error": "#ffffff", "surface-container-highest": "#e2e2e5", "inverse-surface": "#2f3133"
+          },
+          borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+          spacing: { "margin-desktop": "64px", "margin-mobile": "20px", "section-gap": "80px", "container-max": "1280px", "gutter": "24px", "base": "8px" },
+          fontFamily: { "headline-lg": ["Montserrat"], "headline-md": ["Montserrat"], "display-lg": ["Montserrat"], "body-md": ["Inter"], "body-lg": ["Inter"], "label-sm": ["Inter"], "label-md": ["Inter"] },
+          fontSize: {
+            "headline-lg": ["32px", { lineHeight: "40px", fontWeight: "600" }],
+            "headline-md": ["24px", { lineHeight: "32px", fontWeight: "600" }],
+            "label-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.05em", fontWeight: "600" }],
+            "label-md": ["14px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "500" }],
+            "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+            "display-lg": ["48px", { lineHeight: "56px", letterSpacing: "-0.02em", fontWeight: "700" }],
+            "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }]
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; display: inline-block; line-height: 1; }
+    .card-lift { transition: transform 200ms ease-out, box-shadow 200ms ease-out; }
+    .card-lift:hover { transform: translateY(-4px); box-shadow: 0 12px 24px -8px rgba(1,114,129,0.15); }
+  </style>
+</head>
+<body class="bg-surface font-['Inter'] text-on-surface">
+
+  <!-- NAV -->
+  <header class="sticky top-0 z-50 w-full bg-white/70 backdrop-blur-md border-b border-white/20 shadow-[0_10px_40px_rgba(0,191,255,0.4)] transition-all duration-300">
+    <nav class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+        <div class="flex items-center gap-3">
+            <a href="index.html" class="inline-block hover:opacity-90 transition-opacity duration-200">
+                <img alt="Over the Moon Academia Logo" class="h-14 w-auto object-contain" src="assets/img/logo (2).png">
+            </a>
+        </div>
+        
+        <div class="hidden md:flex items-center gap-8">
+            <a class="text-primary font-bold transition-colors duration-300 text-base relative py-1
+              after:absolute after:bottom-0 after:left-1/2 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-out hover:after:left-0 hover:after:w-full"
+                href="index.html">
+                Inicio
+            </a>
+
+            <a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 text-base relative py-1
+              after:absolute after:bottom-0 after:left-1/2 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-out hover:after:left-0 hover:after:w-full"
+                href="about.html">
+                Sobre Nosotros
+            </a>
+
+            <a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 text-base relative py-1
+              after:absolute after:bottom-0 after:left-1/2 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-out hover:after:left-0 hover:after:w-full"
+                href="services.html">
+                Servicios
+            </a>
+
+            <div class="relative group py-1">
+                <button class="flex items-center gap-1 text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 text-base focus:outline-none">
+                    Idiomas
+                    <span class="material-symbols-outlined text-lg transition-transform duration-300 group-hover:rotate-180 select-none">expand_more</span>
+                </button>
+                
+                <div class="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-44 bg-white backdrop-blur-md border border-outline-variant rounded-xl shadow-xl opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 overflow-hidden z-50">
+                    <div class="py-1.5">
+                        <a href="ingles.html" class="flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-on-surface-variant hover:bg-primary/10 hover:text-primary transition-colors">
+                             Inglés
+                        </a>
+                        <a href="frances.html" class="flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-on-surface-variant hover:bg-primary/10 hover:text-primary transition-colors">
+                             Francés
+                        </a>
+                        <a href="ruso.html" class="flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-on-surface-variant hover:bg-primary/10 hover:text-primary transition-colors">
+                             Ruso
+                        </a>
+                        <a href="espanol.html" class="flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-on-surface-variant hover:bg-primary/10 hover:text-primary transition-colors">
+                             Español
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 text-base relative py-1
+              after:absolute after:bottom-0 after:left-1/2 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-out hover:after:left-0 hover:after:w-full"
+                href="contact.html">
+                Contacto
+            </a>
+
+            <a href="contact.html" class="inline-block bg-tertiary-fixed text-on-tertiary-fixed px-6 py-2.5 rounded-lg text-base font-bold transition-all duration-300 hover:opacity-90 hover:scale-105 active:scale-95 text-center">
+                Inscribirse
+            </a>
+        </div>
+
+        <button class="md:hidden text-primary"
+            onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+            <span class="material-symbols-outlined">menu</span>
+        </button>
+    </nav>
+    
+    <div class="hidden bg-white/90 backdrop-blur-lg border-t border-outline-variant px-margin-mobile py-4 space-y-4 shadow-lg"
+        id="mobile-menu">
+        <a class="block text-primary font-bold text-base" href="index.html">Inicio</a>
+        <a class="block text-on-surface-variant font-medium text-base" href="about.html">Sobre Nosotros</a>
+        <a class="block text-on-surface-variant font-medium text-base" href="services.html">Servicios</a>
+        
+        <div class="block">
+            <button class="flex items-center justify-between w-full text-on-surface-variant font-medium text-base py-1 focus:outline-none"
+                onclick="document.getElementById('mobile-languages').classList.toggle('hidden')">
+                <span>Idiomas</span>
+                <span class="material-symbols-outlined text-lg select-none">expand_more</span>
+            </button>
+            <div id="mobile-languages" class="hidden mt-2 pl-4 space-y-3 border-l-2 border-outline-variant/50">
+                <a class="block text-on-surface-variant font-medium text-sm py-0.5" href="ingles.html">Inglés</a>
+                <a class="block text-on-surface-variant font-medium text-sm py-0.5" href="frances.html">Francés</a>
+                <a class="block text-on-surface-variant font-medium text-sm py-0.5" href="ruso.html">Ruso</a>
+                <a class="block text-on-surface-variant font-medium text-sm py-0.5" href="aleman.html">Alemán</a>
+            </div>
+        </div>
+
+        <a class="block text-on-surface-variant font-medium text-base" href="contact.html">Contacto</a>
+        <a href="contact.html" class="block w-full text-center bg-tertiary-fixed text-on-tertiary-fixed px-6 py-3 rounded-lg text-base font-bold transition-all hover:opacity-90">
+            Inscribirse
+        </a>
+    </div>
+</header>
+
+  <main class="min-h-screen">
+
+    <!-- HERO -->
+    <section class="relative overflow-hidden py-[80px]" style="background:linear-gradient(135deg,#017281 0%,#005864 100%);">
+      <div class="absolute inset-0 opacity-10" style="background-image:radial-gradient(circle at 30% 40%, #fff 1px, transparent 1px),radial-gradient(circle at 70% 70%, #fff 1px, transparent 1px); background-size:50px 50px;"></div>
+      <div class="absolute right-0 top-0 bottom-0 w-1/3 opacity-5 hidden lg:block" style="background-image:url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>⚜</text></svg>'); background-size:80px 80px;"></div>
+      <div class="relative max-w-[1280px] mx-auto px-[20px] md:px-[64px]">
+        <div class="flex flex-col md:flex-row items-center gap-10">
+          <div class="flex-1 text-center md:text-left">
+            <span class="inline-flex items-center gap-2 bg-white/15 text-white text-[12px] font-bold uppercase tracking-[0.05em] px-4 py-2 rounded-full mb-4">
+              <span class="material-symbols-outlined text-base">book</span>Idioma
+            </span>
+            <h1 class="font-['Montserrat'] text-[48px] leading-[56px] font-bold tracking-[-0.02em] text-white mb-4">Clases de<br><span style="color:#ffdea8;">Francés</span></h1>
+            <p class="text-white/80 text-[18px] leading-[28px] max-w-xl mb-8">La lengua del amor y del arte, la literatura clásica y moderna, la música y el cine. Clases interactivas, dinámicas y entretenidas para niños y adultos.</p>
+            <div class="flex flex-wrap gap-3 justify-center md:justify-start">
+              <a href="#cursos" class="bg-[#FFB800] text-[#271900] font-bold px-8 py-3 rounded-lg hover:opacity-90 hover:scale-105 transition-all">Ver cursos</a>
+              <a href="contact.html" class="border-2 border-white/40 text-white font-bold px-8 py-3 rounded-lg hover:bg-white/10 transition-all">Contactar</a>
+            </div>
+          </div>
+          <div class="flex-shrink-0 hidden md:flex flex-col items-center gap-6">
+            <div class="w-[100px] h-[60px] rounded-lg overflow-hidden flex shadow-lg shadow-black/20">
+              <div class="w-1/3 h-full bg-[#002654]"></div>
+              <div class="w-1/3 h-full bg-white"></div>
+              <div class="w-1/3 h-full bg-[#ED2939]"></div>
+            </div>
+            <div class="flex gap-3">
+              <div class="bg-white/15 rounded-xl px-4 py-3 text-center backdrop-blur-sm">
+                <p class="text-white font-bold text-[24px] leading-tight">6+</p>
+                <p class="text-white/70 text-[12px] font-medium">Años</p>
+              </div>
+              <div class="bg-white/15 rounded-xl px-4 py-3 text-center backdrop-blur-sm">
+                <p class="text-white font-bold text-[24px] leading-tight">A2–C2</p>
+                <p class="text-white/70 text-[12px] font-medium">Niveles</p>
+              </div>
+              <div class="bg-white/15 rounded-xl px-4 py-3 text-center backdrop-blur-sm">
+                <p class="text-white font-bold text-[24px] leading-tight">31€</p>
+                <p class="text-white/70 text-[12px] font-medium">Desde</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTRO -->
+    <section id="cursos" class="py-[80px] bg-white">
+      <div class="max-w-[1280px] mx-auto px-[20px] md:px-[64px]">
+        <div class="max-w-3xl mx-auto text-center mb-14">
+          <span class="inline-flex items-center gap-2 text-[#005864] bg-[#005864]/10 text-[12px] font-bold uppercase tracking-[0.05em] px-4 py-2 rounded-full mb-4">
+            <span class="material-symbols-outlined text-base">school</span>Nuestro enfoque
+          </span>
+          <h2 class="font-['Montserrat'] text-[32px] leading-[40px] font-semibold text-[#1a1c1e] mb-4">Aprende francés en nuestra academia</h2>
+          <p class="text-[#3e484b] text-[16px] leading-[24px]">Tanto si planeas un viaje a Francia, un programa de estudios en el extranjero, empezar desde cero o consolidar tus conocimientos, los profesores de Over the Moon crearán un plan de aprendizaje personalizado adaptado a tus objetivos y preferencias.</p>
+        </div>
+
+        <!-- Tipos de cursos -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-14">
+          <div class="card-lift bg-[#f3f3f6] rounded-xl border border-[#bec8cb] p-6">
+            <div class="w-10 h-10 rounded-xl bg-[#005864]/10 flex items-center justify-center mb-4">
+              <span class="material-symbols-outlined text-[#005864] text-[22px]" style="font-variation-settings:'FILL' 1;">groups</span>
+            </div>
+            <h3 class="font-['Montserrat'] font-semibold text-[#1a1c1e] text-[16px] mb-2">Grupales o individuales</h3>
+            <p class="text-[#3e484b] text-[14px] leading-[20px]">Elige estudiar individualmente, en grupo estándar o reducido, con un profesor nativo.</p>
+          </div>
+          <div class="card-lift bg-[#f3f3f6] rounded-xl border border-[#bec8cb] p-6">
+            <div class="w-10 h-10 rounded-xl bg-[#005864]/10 flex items-center justify-center mb-4">
+              <span class="material-symbols-outlined text-[#005864] text-[22px]" style="font-variation-settings:'FILL' 1;">chat_bubble</span>
+            </div>
+            <h3 class="font-['Montserrat'] font-semibold text-[#1a1c1e] text-[16px] mb-2">Francés conversacional</h3>
+            <p class="text-[#3e484b] text-[14px] leading-[20px]">Para viajar o simplemente para disfrutar. Fluidez en la comunicación real.</p>
+          </div>
+          <div class="card-lift bg-[#f3f3f6] rounded-xl border border-[#bec8cb] p-6">
+            <div class="w-10 h-10 rounded-xl bg-[#005864]/10 flex items-center justify-center mb-4">
+              <span class="material-symbols-outlined text-[#005864] text-[22px]" style="font-variation-settings:'FILL' 1;">business_center</span>
+            </div>
+            <h3 class="font-['Montserrat'] font-semibold text-[#1a1c1e] text-[16px] mb-2">Francés para negocios</h3>
+            <p class="text-[#3e484b] text-[14px] leading-[20px]">Programa personalizado, adaptado a las necesidades específicas de tu empresa.</p>
+          </div>
+          <div class="card-lift bg-[#f3f3f6] rounded-xl border border-[#bec8cb] p-6">
+            <div class="w-10 h-10 rounded-xl bg-[#005864]/10 flex items-center justify-center mb-4">
+              <span class="material-symbols-outlined text-[#005864] text-[22px]" style="font-variation-settings:'FILL' 1;">emoji_events</span>
+            </div>
+            <h3 class="font-['Montserrat'] font-semibold text-[#1a1c1e] text-[16px] mb-2">Exámenes oficiales</h3>
+            <p class="text-[#3e484b] text-[14px] leading-[20px]">Preparación completa para los exámenes oficiales de francés con simulacros incluidos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TARIFAS NIÑOS -->
+    <section class="py-[80px]" style="background:#017281;">
+      <div class="max-w-[1280px] mx-auto px-[20px] md:px-[64px]">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+          <!-- Tabla -->
+          <div class="bg-white/10 rounded-xl border border-white/20 overflow-hidden order-2 lg:order-1">
+            <div class="bg-white/20 px-6 py-4"><p class="text-white font-bold text-sm uppercase tracking-wider">Tarifas mensuales</p></div>
+            <div class="px-6 py-4">
+              <p class="text-[11px] font-bold uppercase tracking-wider text-white/60 mb-2">Niños 6–11 años · 2h/semana</p>
+              <div class="flex justify-between items-center py-1"><span class="text-sm text-white">Pago mensual</span><span class="font-bold text-[#FFB800] text-sm whitespace-nowrap">62 €/mes</span></div>
+              <div class="flex justify-between items-center py-1"><span class="text-sm text-white">Pago trimestral</span><span class="font-bold text-[#FFB800] text-sm whitespace-nowrap">56 €/mes</span></div>
+              <p class="text-[11px] font-bold uppercase tracking-wider text-white/60 mt-4 mb-2">Niños 6–11 años · 1h/semana</p>
+              <div class="flex justify-between items-center py-1"><span class="text-sm text-white">Pago mensual</span><span class="font-bold text-[#FFB800] text-sm whitespace-nowrap">31 €/mes</span></div>
+              <div class="flex justify-between items-center py-1"><span class="text-sm text-white">Pago trimestral</span><span class="font-bold text-[#FFB800] text-sm whitespace-nowrap">27 €/mes</span></div>
+              <p class="text-[11px] font-bold uppercase tracking-wider text-white/60 mt-4 mb-2">Adolescentes y jóvenes</p>
+              <div class="flex justify-between items-center py-1"><span class="text-sm text-white">1h/semana</span><span class="font-bold text-[#FFB800] text-sm whitespace-nowrap">31 €/mes</span></div>
+              <div class="flex justify-between items-center py-1"><span class="text-sm text-white">2h/semana</span><span class="font-bold text-[#FFB800] text-sm whitespace-nowrap">62 €/mes</span></div>
+              <p class="text-[11px] font-bold uppercase tracking-wider text-white/60 mt-4 mb-2">Adultos A2–C2</p>
+              <div class="flex justify-between items-center py-1"><span class="text-sm text-white">1h/semana</span><span class="font-bold text-[#FFB800] text-sm whitespace-nowrap">31 €/mes</span></div>
+              <div class="flex justify-between items-center py-1"><span class="text-sm text-white">2h/semana</span><span class="font-bold text-[#FFB800] text-sm whitespace-nowrap">62 €/mes</span></div>
+              <div class="flex justify-between items-center py-1"><span class="text-sm text-white">3h/semana</span><span class="font-bold text-[#FFB800] text-sm whitespace-nowrap">80 €/mes</span></div>
+              <div class="mt-4 px-4 py-3 rounded-lg" style="background:rgba(255,184,0,0.15);border:1px solid rgba(255,184,0,0.3);">
+                <p class="text-sm text-yellow-200 font-medium">★ Matrícula: 30 € nuevo · 20 € alumno antiguo</p>
+              </div>
+            </div>
+          </div>
+          <!-- Info -->
+          <div class="order-1 lg:order-2">
+            <span class="inline-flex items-center gap-2 bg-white/15 text-white text-[12px] font-bold uppercase tracking-[0.05em] px-4 py-2 rounded-full mb-4">
+              <span class="material-symbols-outlined text-base">child_care</span>Todas las edades
+            </span>
+            <h2 class="font-['Montserrat'] text-[32px] leading-[40px] font-semibold text-white mb-4">Clases para niños, jóvenes y adultos</h2>
+            <p class="text-white/85 text-[16px] leading-[24px] mb-6">Clases interactivas, dinámicas y entretenidas que gustarán tanto a niños como a adultos. Aprende francés en un entorno dinámico y práctico, con preparación para exámenes oficiales.</p>
+            <div class="space-y-3 mb-8">
+              <div class="flex items-center gap-2 text-white/85 text-sm"><span class="material-symbols-outlined text-[#FFB800] text-[18px]">check_circle</span>Tutorías y simulacros de examen incluidos</div>
+              <div class="flex items-center gap-2 text-white/85 text-sm"><span class="material-symbols-outlined text-[#FFB800] text-[18px]">check_circle</span>Descuentos para familias y empresas</div>
+              <div class="flex items-center gap-2 text-white/85 text-sm"><span class="material-symbols-outlined text-[#FFB800] text-[18px]">check_circle</span>Plan de aprendizaje personalizado</div>
+              <div class="flex items-center gap-2 text-white/85 text-sm"><span class="material-symbols-outlined text-[#FFB800] text-[18px]">check_circle</span>Profesores nativos disponibles</div>
+            </div>
+            <button class="font-bold px-6 py-3 rounded-lg transition-all hover:opacity-90 hover:scale-105" style="background:#FFB800;color:#271900;">Más información</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CULTURA FRANCESA -->
+    <section class="py-[80px] bg-white">
+      <div class="max-w-[1280px] mx-auto px-[20px] md:px-[64px]">
+        <div class="text-center mb-12">
+          <span class="inline-flex items-center gap-2 text-[#005864] bg-[#005864]/10 text-[12px] font-bold uppercase tracking-[0.05em] px-4 py-2 rounded-full mb-4">
+            <span class="material-symbols-outlined text-base">palette</span>Cultura y lengua
+          </span>
+          <h2 class="font-['Montserrat'] text-[32px] leading-[40px] font-semibold text-[#1a1c1e] mb-3">¿Por qué aprender francés?</h2>
+          <p class="text-[#3e484b] text-[16px] leading-[24px] max-w-2xl mx-auto">El francés es la lengua del amor y del arte, de la literatura clásica y moderna, de la música y el cine. Hablado en más de 50 países, es una puerta a culturas únicas y oportunidades profesionales.</p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div class="text-center p-6 bg-[#f3f3f6] rounded-xl border border-[#bec8cb] flex flex-col items-center justify-center">
+            <span class="material-symbols-outlined text-4xl text-[#005864] mb-3 select-none">theater_comedy</span>
+            <p class="font-['Montserrat'] font-semibold text-[#1a1c1e] text-[14px]">Arte y cultura</p>
+          </div>
+          <div class="text-center p-6 bg-[#f3f3f6] rounded-xl border border-[#bec8cb] flex flex-col items-center justify-center">
+            <span class="material-symbols-outlined text-4xl text-[#005864] mb-3 select-none">flight_takeoff</span>
+            <p class="font-['Montserrat'] font-semibold text-[#1a1c1e] text-[14px]">Viajes sin barreras</p>
+          </div>
+          <div class="text-center p-6 bg-[#f3f3f6] rounded-xl border border-[#bec8cb] flex flex-col items-center justify-center">
+            <span class="material-symbols-outlined text-4xl text-[#005864] mb-3 select-none">work</span>
+            <p class="font-['Montserrat'] font-semibold text-[#1a1c1e] text-[14px]">Oportunidades laborales</p>
+          </div>
+          <div class="text-center p-6 bg-[#f3f3f6] rounded-xl border border-[#bec8cb] flex flex-col items-center justify-center">
+            <span class="material-symbols-outlined text-4xl text-[#005864] mb-3 select-none">school</span>
+            <p class="font-['Montserrat'] font-semibold text-[#1a1c1e] text-[14px]">Estudios en el extranjero</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-[80px] bg-[#005864] text-white">
+      <div class="max-w-[1280px] mx-auto px-[20px] md:px-[64px] flex flex-col md:flex-row items-center justify-between gap-8">
+        <div class="text-center md:text-left">
+          <h2 class="font-['Montserrat'] text-[32px] leading-[40px] font-semibold mb-2">¿Empezamos juntos?</h2>
+          <p class="text-white/90 text-[18px] leading-[28px]">Matrícula: 30 € nuevo alumno · 20 € alumno antiguo · Descuentos para familias y empresas</p>
+        </div>
+        <button class="font-bold py-4 px-10 rounded-xl shadow-lg hover:scale-105 transition-transform whitespace-nowrap" style="background:#FFB800;color:#271900;">Inscribirse ahora</button>
+      </div>
+    </section>
+
+  </main>
+
+ 
+    <!-- Footer -->
+  <footer class="w-full bg-[#017281] text-white">
+      <div class="max-w-[1600px] mx-auto px-6 xl:px-0 py-section-gap">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 min-[1201px]:grid-cols-4 gap-10 lg:gap-gutter justify-items-stretch"
+        >
+          <div class="space-y-6 flex flex-col justify-between">
+            <div class="space-y-4 lg:ml-12">
+              <div class="flex flex-col items-start gap-2">
+                <img
+                  alt="Footer Logo"
+                  class="h-20 w-auto"
+                  src="assets/img/logo (2).png"
+                />
+                <span
+                  class="text-headline-md font-headline-md font-bold text-white"
+                  >Over the Moon</span
+                >
+              </div>
+              <p class="font-body-md text-body-md text-white/80 max-w-sm">
+                Tu pasaporte al mundo. Te acompañamos a dominar nuevos idiomas
+                con un método <br />práctico y adaptado a tu ritmo.
+              </p>
+              <div class="flex gap-5 items-center pt-2">
+                <a
+                  class="text-white hover:opacity-70 transition-opacity"
+                  href="https://www.instagram.com/overthemoonidiomas?igsh=MXJjbTQyaDZmZHlzcw=="
+                  title="Instagram"
+                >
+                  <svg
+                    class="w-5 h-5 stroke-current fill-none"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect
+                      x="2"
+                      y="2"
+                      width="20"
+                      height="20"
+                      rx="5"
+                      ry="5"
+                    ></rect>
+                    <path
+                      d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                    ></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <p class="text-xs text-white/60 hidden md:block lg:ml-12 pt-6">
+              © 2026 Over the Moon Academia.
+            </p>
+          </div>
+
+          <div class="space-y-4 w-full">
+            <h4
+              class="font-headline-sm text-base text-white font-bold uppercase tracking-wider opacity-90"
+            >
+              Explora
+            </h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0"
+                  href="index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li>
+                <a
+                  class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0"
+                  href="about.html"
+                  >Sobre Nosotros</a
+                >
+              </li>
+              <li>
+                <a
+                  class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0"
+                  href="services.html"
+                  >Nuestros Servicios</a
+                >
+              </li>
+              <li>
+                <a
+                  class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0"
+                  href="contacto.html"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="space-y-4 w-full">
+            <h4
+              class="font-headline-sm text-base text-white font-bold uppercase tracking-wider opacity-90"
+            >
+              Información
+            </h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0"
+                  href="politica-privacidad.html"
+                  >Política de Privacidad</a
+                >
+              </li>
+              <li>
+                <a
+                  class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0"
+                  href="terminos-condiciones.html"
+                  >Términos y Condiciones</a
+                >
+              </li>
+              <li>
+                <a
+                  class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0"
+                  href="aviso-legal.html"
+                  >Aviso Legal</a
+                >
+              </li>
+              <li>
+                <a
+                  class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0"
+                  href="cookie-policy.html"
+                  >Política de Cookies</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="space-y-4 w-full">
+            <h4
+              class="font-headline-sm text-base text-white font-bold uppercase tracking-wider opacity-90"
+            >
+              Contacto
+            </h4>
+            <div class="space-y-4 font-body-md text-body-md text-white/80">
+              <div class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-white shrink-0"
+                  >location_on</span
+                >
+                <span>Avda América, 28, 18006 Zaidín</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-white shrink-0"
+                  >call</span
+                >
+                <span>858 814 666 / 602 880 834</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-white shrink-0"
+                  >mail</span
+                >
+                <span class="break-all min-[1201px]:break-normal"
+                  >info@overthemoonidiomas.com</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+<button 
+    id="btn-scroll-top" 
+    class="fixed bottom-6 right-6 z-50 hidden bg-[#017281] text-white p-1.5 rounded-full shadow-lg hover:bg-opacity-90 transition-all duration-300 hover:scale-110 active:scale-95 focus:outline-none group w-12 h-12"
+    onclick="scrollToTop()"
+    title="Volver arriba">
+    
+    <div class="relative w-full h-full flex items-center justify-center">
+        
+        <svg class="absolute top-0 left-0 w-full h-full transform -rotate-90" viewBox="0 0 36 36">
+            <path 
+                class="text-white/20" 
+                stroke="currentColor" 
+                stroke-width="2" 
+                fill="none" 
+                d="M18 1 a 17 17 0 0 1 0 34 a 17 17 0 0 1 0 -34" 
+            />
+            <path 
+                id="progress-circle"
+                class="text-white transition-all duration-75" 
+                stroke="currentColor" 
+                stroke-width="2" 
+                stroke-dasharray="106.8"
+                stroke-dashoffset="106.8"
+                stroke-linecap="round"
+                fill="none" 
+                d="M18 1 a 17 17 0 0 1 0 34 a 17 17 0 0 1 0 -34" 
+            />
+        </svg>
+
+        <svg class="w-5 h-5 transform transition-transform duration-300 group-hover:-translate-y-0.5 relative z-10" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5"></path>
+        </svg>
+    </div>
+</button>
+
+<script>
+    const scrollTopBtn = document.getElementById("btn-scroll-top");
+    const progressCircle = document.getElementById("progress-circle");
+    
+    // La longitud real del contorno de nuestro círculo de radio 17
+    const pathLength = 106.8; 
+
+    window.onscroll = function() {
+        const totalHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrollTop = document.documentElement.scrollTop;
+        
+        if (totalHeight > 0) {
+            // Calculamos el desfase exacto que necesita la línea para completarse
+            const progress = scrollTop / totalHeight;
+            const offset = pathLength - (progress * pathLength);
+            
+            // Modificamos el offset: cuando llega abajo, el offset es 0 y se cierra ENTERO
+            progressCircle.style.strokeDashoffset = offset;
+        }
+
+        // Mostrar u ocultar botón
+        if (scrollTop > 300) {
+            scrollTopBtn.classList.remove("hidden");
+            scrollTopBtn.classList.add("flex");
+        } else {
+            scrollTopBtn.classList.remove("flex");
+            scrollTopBtn.classList.add("hidden");
+        }
+    };
+
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+</script>
+</body>
+</html>
