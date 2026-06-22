@@ -20,8 +20,8 @@ export default async function handler(req, res) {
   // 2. Si el captcha es correcto, enviamos el correo con Resend
   try {
     const data = await resend.emails.send({
-      from: 'Academia <onboarding@resend.dev>', // Más adelante lo cambiaremos por tu dominio
-      to: 'alvaro.becerril.robles@gmail.com',     // <-- TU CORREO AQUÍ
+      from: 'Academia <no-reply@overthemoonidiomas.es>',
+      to: 'info@overthemoonidiomas.com',
       subject: 'Nueva consulta desde la web',
       html: `
         <h2>¡Tienes un nuevo mensaje de contacto!</h2>
