@@ -8,27 +8,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap"
         rel="stylesheet">
-    <link href="/css/styles.css" rel="stylesheet">
-    <style>
-        .glass-card {
-            background: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-        }
-
-        .hover-lift {
-            transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
-        }
-
-        .hover-lift:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 12px 16px rgba(1, 114, 129, 0.08);
-        }
-
-        body {
-            scroll-behavior: smooth;
-        }
-    </style>
+    <link href="assets/css/main.css" rel="stylesheet">
 </head>
 
 <body class="bg-background text-on-surface font-body-md">
@@ -974,54 +954,8 @@
         });
     }
 </script>
-<script type="text/javascript">
-    // 1. Inicializa el traductor en segundo plano
-    function googleTranslateElementInit() {
-        new google.translate.TranslateElement({
-            pageLanguage: 'es',
-            includedLanguages: 'en,fr,es', // Los idiomas que vas a permitir
-            autoDisplay: false
-        }, 'google_translate_element');
-    }
 
-    // 2. Función mágica que activa el cambio desde tus botones Tailwind
-    function cambiarIdiomaGoogle(codigoLang, emoji, nombreLang) {
-        const selectElement = document.querySelector('.goog-te-combo');
-        if (selectElement) {
-            selectElement.value = codigoLang;
-            // Desencadenamos el evento de cambio para que Google se entere
-            selectElement.dispatchEvent(new Event('change'));
-            
-            // Actualizamos tus textos del Header
-            document.getElementById('active-flag').textContent = emoji;
-            document.getElementById('active-lang').textContent = nombreLang;
-            
-            // Guardamos la elección para que no se pierda al cambiar de página (.html)
-            localStorage.setItem('idioma-academia', JSON.stringify({codigoLang, emoji, nombreLang}));
-        } else {
-            console.error("El traductor de Google aún no ha cargado completamente.");
-        }
-    }
-
-    // 3. Persistencia: Recuperar el idioma si el usuario refresca o navega por la web
-    document.addEventListener("DOMContentLoaded", () => {
-        const checkGoogleLoad = setInterval(() => {
-            const selectElement = document.querySelector('.goog-te-combo');
-            if (selectElement) {
-                clearInterval(checkGoogleLoad);
-                const idiomaGuardado = localStorage.getItem('idioma-academia');
-                if (idiomaGuardado) {
-                    const { codigoLang, emoji, nombreLang } = JSON.parse(idiomaGuardado);
-                    // Solo aplicamos si es distinto de español para evitar bucles de carga
-                    if (codigoLang !== 'es') {
-                        cambiarIdiomaGoogle(codigoLang, emoji, nombreLang);
-                    }
-                }
-            }
-        }, 300); // Revisa cada 300ms si Google ya está listo
-    });
-</script>
-
+<script type="text/javascript" src="assets/js/traductor.js"></script>
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 

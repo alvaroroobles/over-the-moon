@@ -1,0 +1,29 @@
+.card-lift { transition: transform 200ms ease-out, box-shadow 200ms ease-out; }
+.card-lift:hover { transform: translateY(-4px); box-shadow: 0 12px 24px -8px rgba(1,114,129,0.15); }
+.pill { display: inline-flex; align-items: center; padding: 4px 12px; border-radius: 9999px; font-size: 12px; font-weight: 600; letter-spacing: 0.05em; }
+.hero-flag { font-size: 72px; line-height: 1; }
+
+.glass-card {
+     background: rgba(255, 255, 255, 0.8);
+     backdrop-filter: blur(12px);
+     order: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.hover-lift {
+ transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+}
+
+.hover-lift:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 16px rgba(1, 114, 129, 0.08);
+}
+
+body {
+            scroll-behavior: smooth;
+}
+
+.form-focus-ring:focus {
+        border-color: #017281;
+        box-shadow: 0 0 0 2px rgba(1, 114, 129, 0.1);
+        outline: none;
+      }
