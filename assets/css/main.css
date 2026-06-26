@@ -1,7 +1,26 @@
-.card-lift { transition: transform 200ms ease-out, box-shadow 200ms ease-out; }
-.card-lift:hover { transform: translateY(-4px); box-shadow: 0 12px 24px -8px rgba(1,114,129,0.15); }
-.pill { display: inline-flex; align-items: center; padding: 4px 12px; border-radius: 9999px; font-size: 12px; font-weight: 600; letter-spacing: 0.05em; }
-.hero-flag { font-size: 72px; line-height: 1; }
+.card-lift {
+     transition: transform 200ms ease-out, box-shadow 200ms ease-out;
+}
+
+.card-lift:hover {
+     transform: translateY(-4px);
+     box-shadow: 0 12px 24px -8px rgba(1, 114, 129, 0.15);
+}
+
+.pill {
+     display: inline-flex;
+     align-items: center;
+     padding: 4px 12px;
+     border-radius: 9999px;
+     font-size: 12px;
+     font-weight: 600;
+     letter-spacing: 0.05em;
+}
+
+.hero-flag {
+     font-size: 72px;
+     line-height: 1;
+}
 
 .glass-card {
      background: rgba(255, 255, 255, 0.8);
@@ -10,20 +29,42 @@
 }
 
 .hover-lift {
- transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+     transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
 }
 
 .hover-lift:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 12px 16px rgba(1, 114, 129, 0.08);
+     transform: translateY(-4px);
+     box-shadow: 0 12px 16px rgba(1, 114, 129, 0.08);
 }
 
 body {
-            scroll-behavior: smooth;
+     scroll-behavior: smooth;
 }
 
 .form-focus-ring:focus {
-        border-color: #017281;
-        box-shadow: 0 0 0 2px rgba(1, 114, 129, 0.1);
-        outline: none;
-      }
+     border-color: #017281;
+     box-shadow: 0 0 0 2px rgba(1, 114, 129, 0.1);
+     outline: none;
+}
+
+/* 1. Ocultar por completo la barra superior/tabla de Google Translate */
+#goog-gt-tt,
+.goog-te-banner-frame,
+.goog-te-banner,
+.skiptranslate {
+     display: none !important;
+     visibility: hidden !important;
+}
+
+/* 2. Evitar que Google desplace tu header hacia abajo al meter su barra */
+body {
+     top: 0 !important;
+     position: static !important;
+}
+
+/* 3. Ocultar el aviso que sale en las imágenes o elementos al traducir */
+.goog-text-highlight {
+     background-color: transparent !important;
+     box-shadow: none !important;
+     box-sizing: border-box !important;
+}

@@ -2,7 +2,7 @@
   "name": "over-themoon",
   "version": "1.0.0",
   "scripts": {
-    "build": "tailwindcss -i ./src/input.css -o ./css/styles.css --minify"
+    "build": "tailwindcss -i ./src/input.css -o ./assets/css/styles.css --minify"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.0"
