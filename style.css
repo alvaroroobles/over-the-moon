@@ -1,0 +1,16 @@
+/* Ocultar el banner superior de Google Translate */
+.goog-te-banner-frame {
+    display: none !important;
+}
+body {
+    top: 0 !important;
+}
+/* Ocultar el widget flotante original */
+.goog-te-gadget {
+    display: none !important;
+}
+/* Ocultar el tooltip que sale al pasar el ratón por encima del texto traducido */
+.goog-text-highlight {
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
