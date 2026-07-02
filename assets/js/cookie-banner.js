@@ -4,11 +4,15 @@
  */
 (function() {
     const STORAGE_KEY = 'cookie-consent-settings';
+    let stylesInjected = false;
 
     function init() {
+        injectStyles();
         const consent = getConsent();
         if (!consent) {
             showBanner();
+        } else {
+            showSettingsButton();
         }
     }
 
@@ -29,8 +33,8 @@
         }
     }
 
-    function showBanner() {
-        // Create styles
+    function injectStyles() {
+        if (stylesInjected) return;
         const style = document.createElement('style');
         style.textContent = `
             #cookie-banner-container {
@@ -185,17 +189,74 @@
             .cookie-switch input:checked + .cookie-slider:before {
                 transform: translateX(20px);
             }
+            
+            /* Settings button CSS */
+            #cookie-settings-btn {
+                position: fixed;
+                bottom: 24px;
+                left: 24px;
+                z-index: 99998;
+                width: 44px;
+                height: 44px;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, 0.95);
+                backdrop-filter: blur(8px);
+                border: 1px solid #bec8cb;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+                padding: 0;
+                outline: none;
+            }
+            #cookie-settings-btn:hover {
+                transform: scale(1.1);
+                background: #ffffff;
+                box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+            }
         `;
         document.head.appendChild(style);
+        stylesInjected = true;
+    }
 
-        // Create elements
+    function showSettingsButton() {
+        let btn = document.getElementById('cookie-settings-btn');
+        if (!btn) {
+            btn = document.createElement('button');
+            btn.id = 'cookie-settings-btn';
+            btn.setAttribute('aria-label', 'Configurar cookies');
+            btn.title = 'Configurar cookies';
+            btn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:24px;height:24px;color:#017281;"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path><circle cx="12" cy="12" r="3"></circle></svg>`;
+            document.body.appendChild(btn);
+            
+            btn.addEventListener('click', () => {
+                showBanner();
+            });
+        }
+        btn.style.display = 'flex';
+    }
+
+    function hideSettingsButton() {
+        const btn = document.getElementById('cookie-settings-btn');
+        if (btn) {
+            btn.style.display = 'none';
+        }
+    }
+
+    function showBanner() {
+        hideSettingsButton();
+        injectStyles();
+
+        if (document.getElementById('cookie-banner-container')) return;
+
         const container = document.createElement('div');
         container.id = 'cookie-banner-container';
 
         const card = document.createElement('div');
         card.id = 'cookie-banner-card';
 
-        // Content HTML
         card.innerHTML = `
             <div id="cookie-banner-title">
                 <span>🍪</span> Consentimiento de Cookies
@@ -248,12 +309,19 @@
         container.appendChild(card);
         document.body.appendChild(container);
 
-        // Add class with a small delay for animation
+        // Pre-fill current choices
+        const consent = getConsent();
+        if (consent) {
+            const cbAnalytics = document.getElementById('cookie-cb-analytics');
+            const cbMarketing = document.getElementById('cookie-cb-marketing');
+            if (cbAnalytics) cbAnalytics.checked = !!consent.analytics;
+            if (cbMarketing) cbMarketing.checked = !!consent.marketing;
+        }
+
         setTimeout(() => {
             card.classList.add('show');
         }, 100);
 
-        // Event listeners
         document.getElementById('cookie-accept-all').addEventListener('click', () => {
             respond({ necessary: true, analytics: true, marketing: true });
         });
@@ -282,11 +350,11 @@
             card.classList.remove('show');
             setTimeout(() => {
                 container.remove();
+                showSettingsButton();
             }, 300);
         }
     }
 
-    // Run
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', init);
     } else {
