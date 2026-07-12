@@ -1,3 +1,7 @@
+html {
+     scroll-behavior: smooth;
+}
+
 .card-lift {
      transition: transform 200ms ease-out, box-shadow 200ms ease-out;
 }
