@@ -262,7 +262,7 @@
              Consentimiento de Cookies
             </div>
             <div id="cookie-banner-text">
-                En <strong>Over the Moon Academia</strong> utilizamos cookies propias y de terceros para asegurar el correcto funcionamiento del sitio, recordar sus preferencias, analizar visitas estadísticas y mostrar contenido interactivo. Puede configurar sus preferencias o aceptarlas todas. Lea más en nuestra <a href="cookie-policy.html">Política de Cookies</a>.
+                En <strong>Over the Moon Academia</strong> utilizamos cookies propias y de terceros para asegurar el correcto funcionamiento del sitio, recordar sus preferencias, analizar visitas estadísticas y mostrar contenido interactivo. Puedes configurar tus preferencias o aceptarlas todas. Lee más sobre este apartado en nuestra <a href="cookie-policy.html">Política de Cookies</a>.
             </div>
             <div id="cookie-banner-buttons">
                 <button type="button" class="cookie-banner-btn cookie-banner-btn-primary" id="cookie-accept-all">Aceptar todo</button>
