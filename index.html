@@ -13,130 +13,176 @@
 </head>
 
 <body class="bg-background text-on-surface font-body-md">
-   <header class="sticky top-0 z-50 w-full bg-white/70 backdrop-blur-md border-b border-white/20 shadow-[0_10px_40px_rgba(0,191,255,0.4)] transition-all duration-300">
-    <nav class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
-        <div class="flex items-center gap-3">
-            <a href="index.html" class="inline-block hover:opacity-90 transition-opacity duration-200">
-                <img alt="Over the Moon Academia Logo" class="h-14 w-auto object-contain" src="assets/img/logo (2).png">
-            </a>
-        </div>
-        
-        <div class="hidden md:flex items-center gap-8">
-            <a class="text-primary font-bold transition-colors duration-300 text-base relative py-1
-              after:absolute after:bottom-0 after:left-1/2 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-out hover:after:left-0 hover:after:w-full"
-                href="index.html">
-                Inicio
-            </a>
+    <header
+        class="sticky top-0 z-50 w-full bg-white/70 backdrop-blur-md border-b border-white/20 shadow-[0_10px_40px_rgba(0,191,255,0.4)] transition-all duration-300">
+        <nav
+            class="flex justify-between items-center w-full px-margin-mobile lg:px-margin-desktop py-4 max-w-container-max mx-auto">
+            <div class="flex items-center gap-3">
+                <a href="index.html" class="inline-block hover:opacity-90 transition-opacity duration-200">
+                    <img alt="Over the Moon Academia Logo" class="h-14 w-auto object-contain"
+                        src="assets/img/logo (2).png">
+                </a>
+            </div>
 
-            <a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 text-base relative py-1
+            <!-- Cambiado de md:flex a lg:flex -->
+            <div class="hidden lg:flex items-center gap-8">
+                <a class="text-primary font-bold transition-colors duration-300 text-base relative py-1
               after:absolute after:bottom-0 after:left-1/2 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-out hover:after:left-0 hover:after:w-full"
-                href="about.html">
-                Sobre Nosotros
-            </a>
+                    href="index.html">
+                    Inicio
+                </a>
 
-            <a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 text-base relative py-1
+                <a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 text-base relative py-1
               after:absolute after:bottom-0 after:left-1/2 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-out hover:after:left-0 hover:after:w-full"
-                href="services.html">
-                Servicios
-            </a>
+                    href="about.html">
+                    Sobre Nosotros
+                </a>
 
-            <div class="relative group py-1">
-                <button class="flex items-center gap-1 text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 text-base focus:outline-none">
-                    Idiomas
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor" class="w-5 h-5 transition-transform duration-300 group-hover:rotate-180 select-none">
-                        <path d="M480-120 300-300l58-58 122 122 122-122 58 58-180 180ZM358-598l-58-58 180-180 180 180-58 58-122-122-122 122Z"/>
+                <a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 text-base relative py-1
+              after:absolute after:bottom-0 after:left-1/2 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-out hover:after:left-0 hover:after:w-full"
+                    href="services.html">
+                    Servicios
+                </a>
+
+                <div class="relative group py-1">
+                    <button
+                        class="flex items-center gap-1 text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 text-base focus:outline-none">
+                        Idiomas
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor"
+                            class="w-5 h-5 transition-transform duration-300 group-hover:rotate-180 select-none">
+                            <path
+                                d="M480-120 300-300l58-58 122 122 122-122 58 58-180 180ZM358-598l-58-58 180-180 180 180-58 58-122-122-122 122Z" />
+                        </svg>
+                    </button>
+
+                    <div
+                        class="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-44 bg-white backdrop-blur-md border border-outline-variant rounded-xl shadow-xl opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 overflow-hidden z-50">
+                        <div class="py-1.5">
+                            <a href="ingles.html"
+                                class="flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-on-surface-variant hover:bg-primary/10 hover:text-primary transition-colors">Inglés</a>
+                            <a href="frances.html"
+                                class="flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-on-surface-variant hover:bg-primary/10 hover:text-primary transition-colors">Francés</a>
+                            <a href="ruso.html"
+                                class=" capitalize flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-on-surface-variant hover:bg-primary/10 hover:text-primary transition-colors">Ruso</a>
+                            <a href="espanol.html"
+                                class="flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-on-surface-variant hover:bg-primary/10 hover:text-primary transition-colors">Español</a>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 text-base relative py-1
+              after:absolute after:bottom-0 after:left-1/2 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-out hover:after:left-0 hover:after:w-full"
+                    href="contact.html">
+                    Contacto
+                </a>
+
+                <div class="relative group py-1 notranslate">
+                    <button
+                        class="flex items-center gap-2 border border-primary/30 rounded-lg px-3 py-1.5 text-on-surface-variant font-medium hover:text-primary hover:border-primary transition-all duration-300 text-sm focus:outline-none bg-white/50">
+                        <span id="active-flag">🇪🇸</span>
+                        <span id="active-lang">ESP</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            class="w-4 h-4 transition-transform duration-300 group-hover:rotate-180">
+                            <path fill-rule="evenodd"
+                                d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <div
+                        class="absolute right-0 top-full mt-2 w-36 bg-white backdrop-blur-md border border-outline-variant rounded-xl shadow-xl opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 overflow-hidden z-50">
+                        <div class="py-1">
+                            <button onclick="cambiarIdiomaGoogle('es', '🇪🇸', 'ESP')"
+                                class="flex items-center gap-3 w-full px-4 py-2 text-sm font-medium text-on-surface-variant hover:bg-primary/10 hover:text-primary transition-colors">🇪🇸
+                                ESP</button>
+                            <button onclick="cambiarIdiomaGoogle('en', '🇬🇧', 'ENG')"
+                                class="flex items-center gap-3 w-full px-4 py-2 text-sm font-medium text-on-surface-variant hover:bg-primary/10 hover:text-primary transition-colors">🇬🇧
+                                ENG</button>
+                            <button onclick="cambiarIdiomaGoogle('fr', '🇫🇷', 'FRA')"
+                                class="flex items-center gap-3 w-full px-4 py-2 text-sm font-medium text-on-surface-variant hover:bg-primary/10 hover:text-primary transition-colors">🇫🇷
+                                FRA</button>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="contact.html"
+                    class="inline-block bg-tertiary-fixed text-on-tertiary-fixed px-6 py-2.5 rounded-lg text-base font-bold transition-all duration-300 hover:opacity-90 hover:scale-105 active:scale-95 text-center">
+                    Inscribirse
+                </a>
+            </div>
+
+            <!-- Cambiado de md:hidden a lg:hidden -->
+            <button class="lg:hidden text-primary"
+                onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="#017281">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                </svg>
+            </button>
+        </nav>
+
+        <div class="hidden bg-white/90 backdrop-blur-lg border-t border-outline-variant px-margin-mobile py-4 space-y-4 shadow-lg"
+            id="mobile-menu">
+            <a class="block text-primary font-bold text-base" href="index.html">Inicio</a>
+            <a class="block text-on-surface-variant font-medium text-base" href="about.html">Sobre Nosotros</a>
+            <a class="block text-on-surface-variant font-medium text-base" href="services.html">Servicios</a>
+
+            <div class="block">
+                <button
+                    class="flex items-center justify-between w-full text-on-surface-variant font-medium text-base py-1 focus:outline-none"
+                    onclick="document.getElementById('mobile-languages').classList.toggle('hidden')">
+                    <span>Idiomas (Cursos)</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor"
+                        class="w-5 h-5">
+                        <path
+                            d="M480-120 300-300l58-58 122 122 122-122 58 58-180 180ZM358-598l-58-58 180-180 180 180-58 58-122-122-122 122Z" />
                     </svg>
                 </button>
-                
-                <div class="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-44 bg-white backdrop-blur-md border border-outline-variant rounded-xl shadow-xl opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 overflow-hidden z-50">
-                    <div class="py-1.5">
-                        <a href="ingles.html" class="flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-on-surface-variant hover:bg-primary/10 hover:text-primary transition-colors">Inglés</a>
-                        <a href="frances.html" class="flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-on-surface-variant hover:bg-primary/10 hover:text-primary transition-colors">Francés</a>
-                        <a href="ruso.html" class=" capitalize flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-on-surface-variant hover:bg-primary/10 hover:text-primary transition-colors">Ruso</a>
-                        <a href="espanol.html" class="flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-on-surface-variant hover:bg-primary/10 hover:text-primary transition-colors">Español</a>
-                    </div>
+                <div id="mobile-languages" class="hidden mt-2 pl-4 space-y-3 border-l-2 border-outline-variant/50">
+                    <a class="block text-on-surface-variant font-medium text-sm py-0.5" href="ingles.html">Inglés</a>
+                    <a class="block text-on-surface-variant font-medium text-sm py-0.5" href="frances.html">Francés</a>
+                    <a class="capitalize block text-on-surface-variant font-medium text-sm py-0.5"
+                        href="ruso.html">Ruso</a>
+                    <a class="block text-on-surface-variant font-medium text-sm py-0.5" href="espanol.html">Español</a>
                 </div>
             </div>
 
-            <a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 text-base relative py-1
-              after:absolute after:bottom-0 after:left-1/2 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-out hover:after:left-0 hover:after:w-full"
-                href="contact.html">
-                Contacto
-            </a>
-
-            <div class="relative group py-1 notranslate">
-                <button class="flex items-center gap-2 border border-primary/30 rounded-lg px-3 py-1.5 text-on-surface-variant font-medium hover:text-primary hover:border-primary transition-all duration-300 text-sm focus:outline-none bg-white/50">
-                    <span id="active-flag">🇪🇸</span>
-                    <span id="active-lang">ESP</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4 transition-transform duration-300 group-hover:rotate-180">
-                        <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+            <div class="block border-t border-outline-variant/30 pt-2 notranslate">
+                <button
+                    class="flex items-center justify-between w-full text-on-surface-variant font-medium text-base py-1 focus:outline-none"
+                    onclick="document.getElementById('mobile-traductor').classList.toggle('hidden')">
+                    <span class="flex items-center gap-2">
+                        <span>Traducción:</span>
+                        <span id="mobile-active-flag">🇲🇽/🇪🇸</span>
+                        <span id="mobile-active-lang">Español</span>
+                    </span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                        <path fill-rule="evenodd"
+                            d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                            clip-rule="evenodd" />
                     </svg>
                 </button>
-                <div class="absolute right-0 top-full mt-2 w-36 bg-white backdrop-blur-md border border-outline-variant rounded-xl shadow-xl opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 overflow-hidden z-50">
-                    <div class="py-1">
-                        <button onclick="cambiarIdiomaGoogle('es', '🇪🇸', 'ESP')" class="flex items-center gap-3 w-full px-4 py-2 text-sm font-medium text-on-surface-variant hover:bg-primary/10 hover:text-primary transition-colors">🇪🇸 ESP</button>
-                        <button onclick="cambiarIdiomaGoogle('en', '🇬🇧', 'ENG')" class="flex items-center gap-3 w-full px-4 py-2 text-sm font-medium text-on-surface-variant hover:bg-primary/10 hover:text-primary transition-colors">🇬🇧 ENG</button>
-                        <button onclick="cambiarIdiomaGoogle('fr', '🇫🇷', 'FRA')" class="flex items-center gap-3 w-full px-4 py-2 text-sm font-medium text-on-surface-variant hover:bg-primary/10 hover:text-primary transition-colors">🇫🇷 FRA</button>
-                    </div>
+                <div id="mobile-traductor" class="hidden mt-2 pl-4 space-y-3 border-l-2 border-primary/40">
+                    <button onclick="cambiarIdiomaGoogle('es', '🇪🇸', 'Español')"
+                        class="block text-on-surface-variant font-medium text-sm py-1 w-full text-left">🇪🇸
+                        Español</button>
+                    <button onclick="cambiarIdiomaGoogle('en', '🇬🇧', 'English')"
+                        class="block text-on-surface-variant font-medium text-sm py-1 w-full text-left">🇬🇧
+                        English</button>
+                    <button onclick="cambiarIdiomaGoogle('fr', '🇫🇷', 'Français')"
+                        class="block text-on-surface-variant font-medium text-sm py-1 w-full text-left">🇫🇷
+                        Français</button>
                 </div>
             </div>
 
-            <a href="contact.html" class="inline-block bg-tertiary-fixed text-on-tertiary-fixed px-6 py-2.5 rounded-lg text-base font-bold transition-all duration-300 hover:opacity-90 hover:scale-105 active:scale-95 text-center">
+            <a class="block text-on-surface-variant font-medium text-base" href="contact.html">Contacto</a>
+            <a href="contact.html"
+                class="block w-full text-center bg-tertiary-fixed text-on-tertiary-fixed px-6 py-3 rounded-lg text-base font-bold transition-all hover:opacity-90">
                 Inscribirse
             </a>
         </div>
+    </header>
 
-        <button class="md:hidden text-primary" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#017281"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
-        </button>
-    </nav>
-    
-    <div class="hidden bg-white/90 backdrop-blur-lg border-t border-outline-variant px-margin-mobile py-4 space-y-4 shadow-lg" id="mobile-menu">
-        <a class="block text-primary font-bold text-base" href="index.html">Inicio</a>
-        <a class="block text-on-surface-variant font-medium text-base" href="about.html">Sobre Nosotros</a>
-        <a class="block text-on-surface-variant font-medium text-base" href="services.html">Servicios</a>
-        
-        <div class="block">
-            <button class="flex items-center justify-between w-full text-on-surface-variant font-medium text-base py-1 focus:outline-none" onclick="document.getElementById('mobile-languages').classList.toggle('hidden')">
-                <span>Idiomas (Cursos)</span>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor" class="w-5 h-5">
-                    <path d="M480-120 300-300l58-58 122 122 122-122 58 58-180 180ZM358-598l-58-58 180-180 180 180-58 58-122-122-122 122Z"/>
-                </svg>
-            </button>
-            <div id="mobile-languages" class="hidden mt-2 pl-4 space-y-3 border-l-2 border-outline-variant/50">
-                <a class="block text-on-surface-variant font-medium text-sm py-0.5" href="ingles.html">Inglés</a>
-                <a class="block text-on-surface-variant font-medium text-sm py-0.5" href="frances.html">Francés</a>
-                <a class="capitalize block text-on-surface-variant font-medium text-sm py-0.5" href="ruso.html">Ruso</a>
-                <a class="block text-on-surface-variant font-medium text-sm py-0.5" href="espanol.html">Español</a>
-            </div>
-        </div>
-
-        <div class="block border-t border-outline-variant/30 pt-2 notranslate">
-            <button class="flex items-center justify-between w-full text-on-surface-variant font-medium text-base py-1 focus:outline-none" onclick="document.getElementById('mobile-traductor').classList.toggle('hidden')">
-                <span class="flex items-center gap-2">
-                    <span>Traducción:</span>
-                    <span id="mobile-active-flag">🇲🇽/🇪🇸</span>
-                    <span id="mobile-active-lang">Español</span>
-                </span>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
-                    <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
-                </svg>
-            </button>
-            <div id="mobile-traductor" class="hidden mt-2 pl-4 space-y-3 border-l-2 border-primary/40">
-                <button onclick="cambiarIdiomaGoogle('es', '🇪🇸', 'Español')" class="block text-on-surface-variant font-medium text-sm py-1 w-full text-left">🇪🇸 Español</button>
-                <button onclick="cambiarIdiomaGoogle('en', '🇬🇧', 'English')" class="block text-on-surface-variant font-medium text-sm py-1 w-full text-left">🇬🇧 English</button>
-                <button onclick="cambiarIdiomaGoogle('fr', '🇫🇷', 'Français')" class="block text-on-surface-variant font-medium text-sm py-1 w-full text-left">🇫🇷 Français</button>
-            </div>
-        </div>
-
-        <a class="block text-on-surface-variant font-medium text-base" href="contact.html">Contacto</a>
-        <a href="contact.html" class="block w-full text-center bg-tertiary-fixed text-on-tertiary-fixed px-6 py-3 rounded-lg text-base font-bold transition-all hover:opacity-90">
-            Inscribirse
-        </a>
-    </div>
-</header>
-
-<div id="google_translate_element" class="hidden"></div>
+    <div id="google_translate_element" class="hidden"></div>
     <main>
         <section
             class="relative min-h-[85vh] flex items-center justify-center overflow-hidden bg-surface-container-lowest transition-all duration-700 opacity-100 translate-y-0">
@@ -170,15 +216,15 @@
                 </div>
 
                 <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center">
-                <a href="contact.html"
-                class="inline-block bg-primary-container text-on-primary px-8 py-4 rounded-xl font-label-md text-label-md font-bold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                    Reserva tu plaza
-                </a>
+                    <a href="contact.html"
+                        class="inline-block bg-primary-container text-on-primary px-8 py-4 rounded-xl font-label-md text-label-md font-bold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                        Reserva tu plaza
+                    </a>
 
-                <a href="services.html"
-                class="inline-block border-2 border-white text-white px-8 py-4 rounded-xl font-label-md text-label-md font-bold hover:bg-white/10 transition-all duration-300 [text-shadow:_0_1px_5px_rgba(0,0,0,0.5)] shadow-md">
-                    Ver cursos y horarios
-                </a>
+                    <a href="services.html"
+                        class="inline-block border-2 border-white text-white px-8 py-4 rounded-xl font-label-md text-label-md font-bold hover:bg-white/10 transition-all duration-300 [text-shadow:_0_1px_5px_rgba(0,0,0,0.5)] shadow-md">
+                        Ver cursos y horarios
+                    </a>
                 </div>
 
                 <!-- Sombreado sutil también en la sección inferior de datos -->
@@ -205,7 +251,11 @@
                     <div class="hidden md:block w-px h-8 bg-white/20"></div>
 
                     <div class="flex items-center gap-3 text-left">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#017281"><path d="m476-80 182-480h84L924-80h-84l-43-122H603L560-80h-84ZM160-200l-56-56 202-202q-35-35-63.5-80T190-640h84q20 39 40 68t48 58q33-33 68.5-92.5T484-720H40v-80h280v-80h80v80h280v80H564q-21 72-63 148t-83 116l96 98-30 82-122-125-202 201Zm468-72h144l-72-204-72 204Z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#017281">
+                            <path
+                                d="m476-80 182-480h84L924-80h-84l-43-122H603L560-80h-84ZM160-200l-56-56 202-202q-35-35-63.5-80T190-640h84q20 39 40 68t48 58q33-33 68.5-92.5T484-720H40v-80h280v-80h80v80h280v80H564q-21 72-63 148t-83 116l96 98-30 82-122-125-202 201Zm468-72h144l-72-204-72 204Z" />
+                        </svg>
                         <div>
                             <p class="font-label-md text-label-md text-white font-bold">Clases Presenciales
                             </p>
@@ -234,7 +284,11 @@
 
                         <span
                             class="inline-flex items-center gap-2 text-primary bg-primary/10 text-label-sm font-bold uppercase tracking-widest px-4 py-2 rounded-full w-fit">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="16px" fill="#017281"><path d="M536.5-503.5Q560-527 560-560t-23.5-56.5Q513-640 480-640t-56.5 23.5Q400-593 400-560t23.5 56.5Q447-480 480-480t56.5-23.5ZM480-186q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="16px"
+                                fill="#017281">
+                                <path
+                                    d="M536.5-503.5Q560-527 560-560t-23.5-56.5Q513-640 480-640t-56.5 23.5Q400-593 400-560t23.5 56.5Q447-480 480-480t56.5-23.5ZM480-186q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z" />
+                            </svg>
                             Tu academia en Granada
                         </span>
 
@@ -263,7 +317,11 @@
 
                         <span
                             class="inline-flex items-center gap-2 text-primary bg-primary/10 text-label-sm font-bold uppercase tracking-widest px-4 py-2 rounded-full w-fit mt-6">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="16px" fill="#017281"><path d="M325-111.5q-73-31.5-127.5-86t-86-127.5Q80-398 80-480.5t31.5-155q31.5-72.5 86-127t127.5-86Q398-880 480.5-880t155 31.5q72.5 31.5 127 86t86 127Q880-563 880-480.5T848.5-325q-31.5 73-86 127.5t-127 86Q563-80 480.5-80T325-111.5ZM480-162q26-36 45-75t31-83H404q12 44 31 83t45 75Zm-104-16q-18-33-31.5-68.5T322-320H204q29 50 72.5 87t99.5 55Zm208 0q56-18 99.5-55t72.5-87H638q-9 38-22.5 73.5T584-178ZM170-400h136q-3-20-4.5-39.5T300-480q0-21 1.5-40.5T306-560H170q-5 20-7.5 39.5T160-480q0 21 2.5 40.5T170-400Zm216 0h188q3-20 4.5-39.5T580-480q0-21-1.5-40.5T574-560H386q-3 20-4.5 39.5T380-480q0 21 1.5 40.5T386-400Zm268 0h136q5-20 7.5-39.5T800-480q0-21-2.5-40.5T790-560H654q3 20 4.5 39.5T660-480q0 21-1.5 40.5T654-400Zm-16-240h118q-29-50-72.5-87T584-782q18 33 31.5 68.5T638-640Zm-234 0h152q-12-44-31-83t-45-75q-26 36-45 75t-31 83Zm-200 0h118q9-38 22.5-73.5T376-782q-56 18-99.5 55T204-640Z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="16px"
+                                fill="#017281">
+                                <path
+                                    d="M325-111.5q-73-31.5-127.5-86t-86-127.5Q80-398 80-480.5t31.5-155q31.5-72.5 86-127t127.5-86Q398-880 480.5-880t155 31.5q72.5 31.5 127 86t86 127Q880-563 880-480.5T848.5-325q-31.5 73-86 127.5t-127 86Q563-80 480.5-80T325-111.5ZM480-162q26-36 45-75t31-83H404q12 44 31 83t45 75Zm-104-16q-18-33-31.5-68.5T322-320H204q29 50 72.5 87t99.5 55Zm208 0q56-18 99.5-55t72.5-87H638q-9 38-22.5 73.5T584-178ZM170-400h136q-3-20-4.5-39.5T300-480q0-21 1.5-40.5T306-560H170q-5 20-7.5 39.5T160-480q0 21 2.5 40.5T170-400Zm216 0h188q3-20 4.5-39.5T580-480q0-21-1.5-40.5T574-560H386q-3 20-4.5 39.5T380-480q0 21 1.5 40.5T386-400Zm268 0h136q5-20 7.5-39.5T800-480q0-21-2.5-40.5T790-560H654q3 20 4.5 39.5T660-480q0 21-1.5 40.5T654-400Zm-16-240h118q-29-50-72.5-87T584-782q18 33 31.5 68.5T638-640Zm-234 0h152q-12-44-31-83t-45-75q-26 36-45 75t-31 83Zm-200 0h118q9-38 22.5-73.5T376-782q-56 18-99.5 55T204-640Z" />
+                            </svg>
                             Impartimos clases de
                         </span>
                         <div class="grid grid-cols-4 gap-3 mt-6">
@@ -339,7 +397,11 @@
                 <div class="text-center mb-16 flex flex-col items-center space-y-4">
                     <span
                         class="inline-flex items-center gap-2 text-white bg-white/10 text-label-sm font-bold uppercase tracking-widest px-4 py-2 rounded-full w-fit">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="16px" fill="#FFFFFF"><path d="M240-80v-172q-57-52-88.5-121.5T120-520q0-150 105-255t255-105q125 0 221.5 73.5T827-615l52 205q5 19-7 34.5T840-360h-80v120q0 33-23.5 56.5T680-160h-80v80h-80v-160h160v-200h108l-38-155q-23-91-98-148t-172-57q-116 0-198 81t-82 197q0 60 24.5 114t69.5 96l26 24v208h-80Zm254-360Zm-54 80h80l6-50q8-3 14.5-7t11.5-9l46 20 40-68-40-30q2-8 2-16t-2-16l40-30-40-68-46 20q-5-5-11.5-9t-14.5-7l-6-50h-80l-6 50q-8 3-14.5 7t-11.5 9l-46-20-40 68 40 30q-2 8-2 16t2 16l-40 30 40 68 46-20q5 5 11.5 9t14.5 7l6 50Zm-2.5-117.5Q420-495 420-520t17.5-42.5Q455-580 480-580t42.5 17.5Q540-545 540-520t-17.5 42.5Q505-460 480-460t-42.5-17.5Z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="16px"
+                            fill="#FFFFFF">
+                            <path
+                                d="M240-80v-172q-57-52-88.5-121.5T120-520q0-150 105-255t255-105q125 0 221.5 73.5T827-615l52 205q5 19-7 34.5T840-360h-80v120q0 33-23.5 56.5T680-160h-80v80h-80v-160h160v-200h108l-38-155q-23-91-98-148t-172-57q-116 0-198 81t-82 197q0 60 24.5 114t69.5 96l26 24v208h-80Zm254-360Zm-54 80h80l6-50q8-3 14.5-7t11.5-9l46 20 40-68-40-30q2-8 2-16t-2-16l40-30-40-68-46 20q-5-5-11.5-9t-14.5-7l-6-50h-80l-6 50q-8 3-14.5 7t-11.5 9l-46-20-40 68 40 30q-2 8-2 16t2 16l-40 30 40 68 46-20q5 5 11.5 9t14.5 7l6 50Zm-2.5-117.5Q420-495 420-520t17.5-42.5Q455-580 480-580t42.5 17.5Q540-545 540-520t-17.5 42.5Q505-460 480-460t-42.5-17.5Z" />
+                        </svg>
                         Nuestra Esencia
                     </span>
 
@@ -358,7 +420,11 @@
                         <div class="space-y-4">
                             <div
                                 class="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center text-white group-hover:bg-white group-hover:text-[#017281] transition-all duration-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M880-80 720-240H320q-33 0-56.5-23.5T240-320v-40h440q33 0 56.5-23.5T760-440v-280h40q33 0 56.5 23.5T880-640v560ZM160-473l47-47h393v-280H160v327ZM80-280v-520q0-33 23.5-56.5T160-880h440q33 0 56.5 23.5T680-800v280q0 33-23.5 56.5T600-440H240L80-280Zm80-240v-280 280Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="currentColor">
+                                    <path
+                                        d="M880-80 720-240H320q-33 0-56.5-23.5T240-320v-40h440q33 0 56.5-23.5T760-440v-280h40q33 0 56.5 23.5T880-640v560ZM160-473l47-47h393v-280H160v327ZM80-280v-520q0-33 23.5-56.5T160-880h440q33 0 56.5 23.5T680-800v280q0 33-23.5 56.5T600-440H240L80-280Zm80-240v-280 280Z" />
+                                </svg>
                             </div>
                             <h3 class="font-headline-sm text-base font-bold text-white">Enfoque Activo</h3>
                             <p class="font-body-sm text-xs text-white/70 leading-relaxed">
@@ -374,7 +440,11 @@
                         <div class="space-y-4">
                             <div
                                 class="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center text-white group-hover:bg-white group-hover:text-[#017281] transition-all duration-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M480-120 200-272v-240L40-600l440-240 440 240v320h-80v-276l-80 44v240L480-120Zm0-332 274-148-274-148-274 148 274 148Zm0 241 200-108v-151L480-360 280-470v151l200 108Zm0-241Zm0 90Zm0 0Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="currentColor">
+                                    <path
+                                        d="M480-120 200-272v-240L40-600l440-240 440 240v320h-80v-276l-80 44v240L480-120Zm0-332 274-148-274-148-274 148 274 148Zm0 241 200-108v-151L480-360 280-470v151l200 108Zm0-241Zm0 90Zm0 0Z" />
+                                </svg>
                             </div>
                             <h3 class="font-headline-sm text-base font-bold text-white">Profesores Certificados</h3>
                             <p class="font-body-sm text-xs text-white/70 leading-relaxed">
@@ -389,7 +459,11 @@
                         <div class="space-y-4">
                             <div
                                 class="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center text-white group-hover:bg-white group-hover:text-[#017281] transition-all duration-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h168q14-36 44-58t68-22q38 0 68 22t44 58h168q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm301.5-678.5Q510-807 510-820t-8.5-21.5Q493-850 480-850t-21.5 8.5Q450-833 450-820t8.5 21.5Q467-790 480-790t21.5-8.5ZM200-246q54-53 125.5-83.5T480-360q83 0 154.5 30.5T760-246v-514H200v514Zm379-235q41-41 41-99t-41-99q-41-41-99-41t-99 41q-41 41-41 99t41 99q41 41 99 41t99-41ZM280-200h400v-10q-42-35-93-52.5T480-280q-56 0-107 17.5T280-210v10Zm157.5-337.5Q420-555 420-580t17.5-42.5Q455-640 480-640t42.5 17.5Q540-605 540-580t-17.5 42.5Q505-520 480-520t-42.5-17.5ZM480-503Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="currentColor">
+                                    <path
+                                        d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h168q14-36 44-58t68-22q38 0 68 22t44 58h168q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm301.5-678.5Q510-807 510-820t-8.5-21.5Q493-850 480-850t-21.5 8.5Q450-833 450-820t8.5 21.5Q467-790 480-790t21.5-8.5ZM200-246q54-53 125.5-83.5T480-360q83 0 154.5 30.5T760-246v-514H200v514Zm379-235q41-41 41-99t-41-99q-41-41-99-41t-99 41q-41 41-41 99t41 99q41 41 99 41t99-41ZM280-200h400v-10q-42-35-93-52.5T480-280q-56 0-107 17.5T280-210v10Zm157.5-337.5Q420-555 420-580t17.5-42.5Q455-640 480-640t42.5 17.5Q540-605 540-580t-17.5 42.5Q505-520 480-520t-42.5-17.5ZM480-503Z" />
+                                </svg>
                             </div>
                             <h3 class="font-headline-sm text-base font-bold text-white">Atención Personalizada</h3>
                             <p class="font-body-sm text-xs text-white/70 leading-relaxed">
@@ -404,7 +478,11 @@
                         <div class="space-y-4">
                             <div
                                 class="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center text-white group-hover:bg-white group-hover:text-[#017281] transition-all duration-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Zm280 240q-17 0-28.5-11.5T440-440q0-17 11.5-28.5T480-480q17 0 28.5 11.5T520-440q0 17-11.5 28.5T480-400Zm-188.5-11.5Q280-423 280-440t11.5-28.5Q303-480 320-480t28.5 11.5Q360-457 360-440t-11.5 28.5Q337-400 320-400t-28.5-11.5ZM640-400q-17 0-28.5-11.5T600-440q0-17 11.5-28.5T640-480q17 0 28.5 11.5T680-440q0 17-11.5 28.5T640-400ZM480-240q-17 0-28.5-11.5T440-280q0-17 11.5-28.5T480-320q17 0 28.5 11.5T520-280q0 17-11.5 28.5T480-240Zm-188.5-11.5Q280-263 280-280t11.5-28.5Q303-320 320-320t28.5 11.5Q360-297 360-280t-11.5 28.5Q337-240 320-240t-28.5-11.5ZM640-240q-17 0-28.5-11.5T600-280q0-17 11.5-28.5T640-320q17 0 28.5 11.5T680-280q0 17-11.5 28.5T640-240Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="currentColor">
+                                    <path
+                                        d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Zm280 240q-17 0-28.5-11.5T440-440q0-17 11.5-28.5T480-480q17 0 28.5 11.5T520-440q0 17-11.5 28.5T480-400Zm-188.5-11.5Q280-423 280-440t11.5-28.5Q303-480 320-480t28.5 11.5Q360-457 360-440t-11.5 28.5Q337-400 320-400t-28.5-11.5ZM640-400q-17 0-28.5-11.5T600-440q0-17 11.5-28.5T640-480q17 0 28.5 11.5T680-440q0 17-11.5 28.5T640-400ZM480-240q-17 0-28.5-11.5T440-280q0-17 11.5-28.5T480-320q17 0 28.5 11.5T520-280q0 17-11.5 28.5T480-240Zm-188.5-11.5Q280-263 280-280t11.5-28.5Q303-320 320-320t28.5 11.5Q360-297 360-280t-11.5 28.5Q337-240 320-240t-28.5-11.5ZM640-240q-17 0-28.5-11.5T600-280q0-17 11.5-28.5T640-320q17 0 28.5 11.5T680-280q0 17-11.5 28.5T640-240Z" />
+                                </svg>
                             </div>
                             <h3 class="font-headline-sm text-base font-bold text-white">Horarios Flexibles</h3>
                             <p class="font-body-sm text-xs text-white/70 leading-relaxed">
@@ -420,7 +498,11 @@
                         <div class="space-y-4">
                             <div
                                 class="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center text-white group-hover:bg-white group-hover:text-[#017281] transition-all duration-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="m476-80 182-480h84L924-80h-84l-43-122H603L560-80h-84ZM160-200l-56-56 202-202q-35-35-63.5-80T190-640h84q20 39 40 68t48 58q33-33 68.5-92.5T484-720H40v-80h280v-80h80v80h280v80H564q-21 72-63 148t-83 116l96 98-30 82-122-125-202 201Zm468-72h144l-72-204-72 204Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="currentColor">
+                                    <path
+                                        d="m476-80 182-480h84L924-80h-84l-43-122H603L560-80h-84ZM160-200l-56-56 202-202q-35-35-63.5-80T190-640h84q20 39 40 68t48 58q33-33 68.5-92.5T484-720H40v-80h280v-80h80v80h280v80H564q-21 72-63 148t-83 116l96 98-30 82-122-125-202 201Zm468-72h144l-72-204-72 204Z" />
+                                </svg>
                             </div>
                             <h3 class="font-headline-sm text-base font-bold text-white">Inmersión Real</h3>
                             <p class="font-body-sm text-xs text-white/70 leading-relaxed">
@@ -463,7 +545,10 @@
                 <a href="services.html"
                     class="inline-flex items-center justify-center gap-2 bg-[#017281] text-white px-8 py-4 rounded-xl font-label-md text-label-md font-bold shadow-sm hover:-translate-y-1 hover:shadow-md hover:bg-[#005864] transition-all duration-300">
                     Conoce nuestros programas y servicios
-                    <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="16px" fill="currentColor"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="16px"
+                        fill="currentColor">
+                        <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z" />
+                    </svg>
                 </a>
             </div>
         </section>
@@ -474,7 +559,11 @@
 
                 <span
                     class="inline-flex items-center gap-2 text-[#017281] bg-[#017281]/10 text-label-sm font-bold uppercase tracking-widest px-4 py-2 rounded-full w-fit">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="16px" fill="#017281"><path d="m270-120-10-88 114-314q15 14 32.5 23.5T444-484L334-182l-64 62Zm420 0-64-62-110-302q20-5 37.5-14.5T586-522l114 314-10 88ZM395-555q-35-35-35-85 0-39 22.5-69.5T440-752v-88h80v88q35 12 57.5 42.5T600-640q0 50-35 85t-85 35q-50 0-85-35Zm113.5-56.5Q520-623 520-640t-11.5-28.5Q497-680 480-680t-28.5 11.5Q440-657 440-640t11.5 28.5Q463-600 480-600t28.5-11.5Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="16px"
+                        fill="#017281">
+                        <path
+                            d="m270-120-10-88 114-314q15 14 32.5 23.5T444-484L334-182l-64 62Zm420 0-64-62-110-302q20-5 37.5-14.5T586-522l114 314-10 88ZM395-555q-35-35-35-85 0-39 22.5-69.5T440-752v-88h80v88q35 12 57.5 42.5T600-640q0 50-35 85t-85 35q-50 0-85-35Zm113.5-56.5Q520-623 520-640t-11.5-28.5Q497-680 480-680t-28.5 11.5Q440-657 440-640t11.5 28.5Q463-600 480-600t28.5-11.5Z" />
+                    </svg>
                     Instalaciones
                 </span>
 
@@ -487,192 +576,294 @@
 
             <div class="relative w-full" id="masonry-grid" style="position: relative;">
 
-    <div class="masonry-item rounded-2xl overflow-hidden shadow-sm group transition-shadow duration-300 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
-        <img src="assets/img/interior-aula-1.png" alt="Aulas modernas de Over the Moon" class="w-full block transition-transform duration-300 group-hover:scale-105">
-    </div>
-    <div class="masonry-item rounded-2xl overflow-hidden shadow-sm group transition-shadow duration-300 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
-        <img src="assets/img/tecnologia-aula.png" alt="Tecnología en el aula" class="w-full block transition-transform duration-300 group-hover:scale-105">
-    </div>
-    <div class="masonry-item rounded-2xl overflow-hidden shadow-sm group transition-shadow duration-300 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
-        <img src="assets/img/aulario-edades.png" alt="Espacios para todas las edades" class="w-full block transition-transform duration-300 group-hover:scale-105">
-    </div>
-    <div class="masonry-item rounded-2xl overflow-hidden shadow-sm group transition-shadow duration-300 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
-        <img src="assets/img/aulario-edades2.png" alt="Aulas para distintas edades" class="w-full block transition-transform duration-300 group-hover:scale-105">
-    </div>
-    <div class="masonry-item rounded-2xl overflow-hidden shadow-sm group transition-shadow duration-300 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
-        <img src="assets/img/aulario-profe.png" alt="Profesor en el aula" class="w-full block transition-transform duration-300 group-hover:scale-105">
-    </div>
-    <div class="masonry-item rounded-2xl overflow-hidden shadow-sm group transition-shadow duration-300 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
-        <img src="assets/img/cafetera.png" alt="Zona de cafetería" class="w-full block transition-transform duration-300 group-hover:scale-105">
-    </div>
-    <div class="masonry-item rounded-2xl overflow-hidden shadow-sm group transition-shadow duration-300 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
-        <img src="assets/img/home-clase.png" alt="Clase en casa" class="w-full block transition-transform duration-300 group-hover:scale-105">
-    </div>
-    <div class="masonry-item rounded-2xl overflow-hidden shadow-sm group transition-shadow duration-300 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
-        <img src="assets/img/londres.png" alt="Londres" class="w-full block transition-transform duration-300 group-hover:scale-105">
-    </div>
-    <div class="masonry-item rounded-2xl overflow-hidden shadow-sm group transition-shadow duration-300 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
-        <img src="assets/img/paris.png" alt="París" class="w-full block transition-transform duration-300 group-hover:scale-105">
-    </div>
-    <div class="masonry-item rounded-2xl overflow-hidden shadow-sm group transition-shadow duration-300 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
-        <img src="assets/img/rusia.png" alt="Rusia" class="w-full block transition-transform duration-300 group-hover:scale-105">
-    </div>
-    <div class="masonry-item rounded-2xl overflow-hidden shadow-sm group transition-shadow duration-300 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
-        <img src="assets/img/sillon.png" alt="Zona de lectura" class="w-full block transition-transform duration-300 group-hover:scale-105">
-    </div>
-    <div class="masonry-item rounded-2xl overflow-hidden shadow-sm group transition-shadow duration-300 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
-        <img src="assets/img/botellas-agua.png" alt="Zona de descanso" class="w-full block transition-transform duration-300 group-hover:scale-105">
-    </div>
-    <div class="masonry-item rounded-2xl overflow-hidden shadow-sm group transition-shadow duration-300 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
-        <img src="assets/img/tutoria.png" alt="Sesión de tutoría" class="w-full block transition-transform duration-300 group-hover:scale-105">
-    </div>
-    <div class="masonry-item rounded-2xl overflow-hidden shadow-sm group transition-shadow duration-300 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
-        <img src="assets/img/recepcion.png" alt="Recepción" class="w-full block transition-transform duration-300 group-hover:scale-105">
-    </div>
+                <div
+                    class="masonry-item rounded-2xl overflow-hidden shadow-sm group transition-shadow duration-300 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
+                    <img src="assets/img/interior-aula-1.png" alt="Aulas modernas de Over the Moon"
+                        class="w-full block transition-transform duration-300 group-hover:scale-105">
+                </div>
+                <div
+                    class="masonry-item rounded-2xl overflow-hidden shadow-sm group transition-shadow duration-300 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
+                    <img src="assets/img/tecnologia-aula.png" alt="Tecnología en el aula"
+                        class="w-full block transition-transform duration-300 group-hover:scale-105">
+                </div>
+                <div
+                    class="masonry-item rounded-2xl overflow-hidden shadow-sm group transition-shadow duration-300 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
+                    <img src="assets/img/aulario-edades.png" alt="Espacios para todas las edades"
+                        class="w-full block transition-transform duration-300 group-hover:scale-105">
+                </div>
+                <div
+                    class="masonry-item rounded-2xl overflow-hidden shadow-sm group transition-shadow duration-300 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
+                    <img src="assets/img/aulario-edades2.png" alt="Aulas para distintas edades"
+                        class="w-full block transition-transform duration-300 group-hover:scale-105">
+                </div>
+                <div
+                    class="masonry-item rounded-2xl overflow-hidden shadow-sm group transition-shadow duration-300 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
+                    <img src="assets/img/aulario-profe.png" alt="Profesor en el aula"
+                        class="w-full block transition-transform duration-300 group-hover:scale-105">
+                </div>
+                <div
+                    class="masonry-item rounded-2xl overflow-hidden shadow-sm group transition-shadow duration-300 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
+                    <img src="assets/img/cafetera.png" alt="Zona de cafetería"
+                        class="w-full block transition-transform duration-300 group-hover:scale-105">
+                </div>
+                <div
+                    class="masonry-item rounded-2xl overflow-hidden shadow-sm group transition-shadow duration-300 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
+                    <img src="assets/img/home-clase.png" alt="Clase en casa"
+                        class="w-full block transition-transform duration-300 group-hover:scale-105">
+                </div>
+                <div
+                    class="masonry-item rounded-2xl overflow-hidden shadow-sm group transition-shadow duration-300 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
+                    <img src="assets/img/londres.png" alt="Londres"
+                        class="w-full block transition-transform duration-300 group-hover:scale-105">
+                </div>
+                <div
+                    class="masonry-item rounded-2xl overflow-hidden shadow-sm group transition-shadow duration-300 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
+                    <img src="assets/img/paris.png" alt="París"
+                        class="w-full block transition-transform duration-300 group-hover:scale-105">
+                </div>
+                <div
+                    class="masonry-item rounded-2xl overflow-hidden shadow-sm group transition-shadow duration-300 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
+                    <img src="assets/img/rusia.png" alt="Rusia"
+                        class="w-full block transition-transform duration-300 group-hover:scale-105">
+                </div>
+                <div
+                    class="masonry-item rounded-2xl overflow-hidden shadow-sm group transition-shadow duration-300 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
+                    <img src="assets/img/sillon.png" alt="Zona de lectura"
+                        class="w-full block transition-transform duration-300 group-hover:scale-105">
+                </div>
+                <div
+                    class="masonry-item rounded-2xl overflow-hidden shadow-sm group transition-shadow duration-300 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
+                    <img src="assets/img/botellas-agua.png" alt="Zona de descanso"
+                        class="w-full block transition-transform duration-300 group-hover:scale-105">
+                </div>
+                <div
+                    class="masonry-item rounded-2xl overflow-hidden shadow-sm group transition-shadow duration-300 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
+                    <img src="assets/img/tutoria.png" alt="Sesión de tutoría"
+                        class="w-full block transition-transform duration-300 group-hover:scale-105">
+                </div>
+                <div
+                    class="masonry-item rounded-2xl overflow-hidden shadow-sm group transition-shadow duration-300 hover:shadow-[0_16px_40px_rgba(1,114,129,0.18)]">
+                    <img src="assets/img/recepcion.png" alt="Recepción"
+                        class="w-full block transition-transform duration-300 group-hover:scale-105">
+                </div>
 
-</div>
+            </div>
 
-<script>
-    function masonry() {
-        const grid = document.getElementById('masonry-grid');
-        const items = grid.querySelectorAll('.masonry-item');
-        const gap = 12;
+            <script>
+                function masonry() {
+                    const grid = document.getElementById('masonry-grid');
+                    const items = grid.querySelectorAll('.masonry-item');
+                    const gap = 12;
 
-        const cols = window.innerWidth >= 1280 ? 4
-                   : window.innerWidth >= 768  ? 3
-                   : 2;
+                    const cols = window.innerWidth >= 1280 ? 4
+                        : window.innerWidth >= 768 ? 3
+                            : 2;
 
-        const colWidth = (grid.offsetWidth - gap * (cols - 1)) / cols;
-        const colHeights = Array(cols).fill(0);
+                    const colWidth = (grid.offsetWidth - gap * (cols - 1)) / cols;
+                    const colHeights = Array(cols).fill(0);
 
-        items.forEach(item => {
-            item.style.position = 'absolute';
-            item.style.width = colWidth + 'px';
+                    items.forEach(item => {
+                        item.style.position = 'absolute';
+                        item.style.width = colWidth + 'px';
 
-            const shortest = colHeights.indexOf(Math.min(...colHeights));
-            item.style.left = (shortest * (colWidth + gap)) + 'px';
-            item.style.top = colHeights[shortest] + 'px';
+                        const shortest = colHeights.indexOf(Math.min(...colHeights));
+                        item.style.left = (shortest * (colWidth + gap)) + 'px';
+                        item.style.top = colHeights[shortest] + 'px';
 
-            colHeights[shortest] += item.offsetHeight + gap;
-        });
+                        colHeights[shortest] += item.offsetHeight + gap;
+                    });
 
-        grid.style.height = Math.max(...colHeights) + 'px';
-    }
+                    grid.style.height = Math.max(...colHeights) + 'px';
+                }
 
-    // Esperar a que todas las imágenes carguen antes de calcular
-    const grid = document.getElementById('masonry-grid');
-    const imgs = grid.querySelectorAll('img');
-    let loaded = 0;
+                // Esperar a que todas las imágenes carguen antes de calcular
+                const grid = document.getElementById('masonry-grid');
+                const imgs = grid.querySelectorAll('img');
+                let loaded = 0;
 
-    imgs.forEach(img => {
-        if (img.complete) {
-            loaded++;
-            if (loaded === imgs.length) masonry();
-        } else {
-            img.addEventListener('load', () => {
-                loaded++;
-                if (loaded === imgs.length) masonry();
-            });
-        }
-    });
+                imgs.forEach(img => {
+                    if (img.complete) {
+                        loaded++;
+                        if (loaded === imgs.length) masonry();
+                    } else {
+                        img.addEventListener('load', () => {
+                            loaded++;
+                            if (loaded === imgs.length) masonry();
+                        });
+                    }
+                });
 
-    window.addEventListener('resize', masonry);
-</script>
+                window.addEventListener('resize', masonry);
+            </script>
         </section>
 
         <section class="w-full bg-[#017281] py-24 text-white transition-all duration-700 opacity-100 translate-y-0">
-    <div class="px-6 md:px-16 max-w-[1440px] mx-auto">
+            <div class="px-6 md:px-16 max-w-[1440px] mx-auto">
 
-        <div class="text-center mb-16 space-y-4">
-            <span class="inline-flex items-center gap-2 text-white bg-white/10 text-label-sm font-bold uppercase tracking-widest px-4 py-2 rounded-full w-fit">
-                <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="16px" fill="#FFFFFF"><path d="M80-80v-720q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H240L80-80Zm126-240h594v-480H160v525l46-45Zm-46 0v-480 480Z"/></svg>
-                Testimonios
-            </span>
-            <h2 class="font-headline-lg text-headline-lg md:text-headline-lg text-white font-bold">
-                Lo que dicen nuestros alumnos
-            </h2>
-            <p class="font-body-md text-body-md text-white/80 max-w-2xl mx-auto">
-                Descubre las experiencias de quienes ya han transformado su futuro hablando un nuevo idioma con nosotros.
-            </p>
-        </div>
-
-        <div class="grid grid-cols-1 min-[1201px]:grid-cols-3 gap-8 items-stretch">
-
-            <div class="bg-white/5 border border-white/10 rounded-3xl p-8 flex flex-col justify-between hover:bg-white/10 transition-all duration-300">
-                <div class="space-y-4">
-                    <div class="flex text-white/90">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z"/></svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z"/></svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z"/></svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z"/></svg>
-                    </div>
-                    <p class="font-body-md text-body-md text-white/80 leading-relaxed">
-                        "Increíble academia. Empecé clases de ruso desde cero compaginándolo con mis horarios de trabajo y la metodología es súper práctica. Las clases son muy dinámicas y notas el avance desde la primera semana."
+                <div class="text-center mb-16 space-y-4">
+                    <span
+                        class="inline-flex items-center gap-2 text-white bg-white/10 text-label-sm font-bold uppercase tracking-widest px-4 py-2 rounded-full w-fit">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="16px"
+                            fill="#FFFFFF">
+                            <path
+                                d="M80-80v-720q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H240L80-80Zm126-240h594v-480H160v525l46-45Zm-46 0v-480 480Z" />
+                        </svg>
+                        Testimonios
+                    </span>
+                    <h2 class="font-headline-lg text-headline-lg md:text-headline-lg text-white font-bold">
+                        Lo que dicen nuestros alumnos
+                    </h2>
+                    <p class="font-body-md text-body-md text-white/80 max-w-2xl mx-auto">
+                        Descubre las experiencias de quienes ya han transformado su futuro hablando un nuevo idioma con
+                        nosotros.
                     </p>
                 </div>
-                <div class="flex items-center gap-4 pt-6 border-t border-white/10 mt-6">
-                    <div class="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center text-white font-bold text-sm shrink-0">
-                        AM
+
+                <div class="grid grid-cols-1 min-[1201px]:grid-cols-3 gap-8 items-stretch">
+
+                    <div
+                        class="bg-white/5 border border-white/10 rounded-3xl p-8 flex flex-col justify-between hover:bg-white/10 transition-all duration-300">
+                        <div class="space-y-4">
+                            <div class="flex text-white/90">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#FFFFFF">
+                                    <path
+                                        d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#FFFFFF">
+                                    <path
+                                        d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#FFFFFF">
+                                    <path
+                                        d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#FFFFFF">
+                                    <path
+                                        d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z" />
+                                </svg>
+                            </div>
+                            <p class="font-body-md text-body-md text-white/80 leading-relaxed">
+                                "Increíble academia. Empecé clases de ruso desde cero compaginándolo con mis horarios de
+                                trabajo y la metodología es súper práctica. Las clases son muy dinámicas y notas el
+                                avance desde la primera semana."
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-4 pt-6 border-t border-white/10 mt-6">
+                            <div
+                                class="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center text-white font-bold text-sm shrink-0">
+                                AM
+                            </div>
+                            <div>
+                                <p class="font-label-md text-label-md font-bold text-white">Alejandro Muñoz</p>
+                                <p class="font-label-sm text-label-sm text-white/60">Alumno de Ruso</p>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <p class="font-label-md text-label-md font-bold text-white">Alejandro Muñoz</p>
-                        <p class="font-label-sm text-label-sm text-white/60">Alumno de Ruso</p>
+
+                    <div
+                        class="bg-white text-[#017281] rounded-3xl p-8 flex flex-col justify-between shadow-2xl min-[1201px]:-translate-y-2 transition-all duration-300 border border-white">
+                        <div class="space-y-4">
+                            <div class="flex text-[#017281]">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="currentColor">
+                                    <path
+                                        d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="currentColor">
+                                    <path
+                                        d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="currentColor">
+                                    <path
+                                        d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="currentColor">
+                                    <path
+                                        d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="currentColor">
+                                    <path
+                                        d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z" />
+                                </svg>
+
+                            </div>
+                            <p class="font-body-md text-body-md text-[#017281]/90 font-medium leading-relaxed">
+                                "Buscábamos una academia presencial en Granada para dar un impulso al inglés de mi hija
+                                y ha sido un acierto total. La atención es súper personalizada, ha mejorado muchísimo
+                                sus notas en el colegio y ahora habla con mucha más confianza."
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-4 pt-6 border-t border-[#017281]/10 mt-6">
+                            <div
+                                class="w-11 h-11 rounded-full bg-[#017281]/10 flex items-center justify-center text-[#017281] font-bold text-sm shrink-0">
+                                LG
+                            </div>
+                            <div>
+                                <p class="font-label-md text-label-md font-bold text-[#017281]">Laura Gómez</p>
+                                <p class="font-label-sm text-label-sm text-[#017281]/70">Madre de alumna</p>
+                            </div>
+                        </div>
                     </div>
+
+                    <div
+                        class="bg-white/5 border border-white/10 rounded-3xl p-8 flex flex-col justify-between hover:bg-white/10 transition-all duration-300">
+                        <div class="space-y-4">
+                            <div class="flex text-white/90">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#FFFFFF">
+                                    <path
+                                        d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#FFFFFF">
+                                    <path
+                                        d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#FFFFFF">
+                                    <path
+                                        d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#FFFFFF">
+                                    <path
+                                        d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#FFFFFF">
+                                    <path
+                                        d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z" />
+                                </svg>
+                            </div>
+                            <p class="font-body-md text-body-md text-white/80 leading-relaxed">
+                                "Llevo un año mejorando mi español en Over the Moon y la experiencia es inigualable. Las
+                                clases son dinámicas, enfocadas en hablar con confianza. Te hacen sentir como en casa
+                                desde el primer día."
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-4 pt-6 border-t border-white/10 mt-6">
+                            <div
+                                class="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center text-white font-bold text-sm shrink-0">
+                                DG
+                            </div>
+                            <div>
+                                <p class="font-label-md text-label-md font-bold text-white">John Doe</p>
+                                <p class="font-label-sm text-label-sm text-white/60">Alumno de Español</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-
-            <div class="bg-white text-[#017281] rounded-3xl p-8 flex flex-col justify-between shadow-2xl min-[1201px]:-translate-y-2 transition-all duration-300 border border-white">
-                <div class="space-y-4">
-                    <div class="flex text-[#017281]">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z"/></svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z"/></svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z"/></svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z"/></svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z"/></svg>
-
-                    </div>
-                    <p class="font-body-md text-body-md text-[#017281]/90 font-medium leading-relaxed">
-                        "Buscábamos una academia presencial en Granada para dar un impulso al inglés de mi hija y ha sido un acierto total. La atención es súper personalizada, ha mejorado muchísimo sus notas en el colegio y ahora habla con mucha más confianza."
-                    </p>
-                </div>
-                <div class="flex items-center gap-4 pt-6 border-t border-[#017281]/10 mt-6">
-                    <div class="w-11 h-11 rounded-full bg-[#017281]/10 flex items-center justify-center text-[#017281] font-bold text-sm shrink-0">
-                        LG
-                    </div>
-                    <div>
-                        <p class="font-label-md text-label-md font-bold text-[#017281]">Laura Gómez</p>
-                        <p class="font-label-sm text-label-sm text-[#017281]/70">Madre de alumna</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="bg-white/5 border border-white/10 rounded-3xl p-8 flex flex-col justify-between hover:bg-white/10 transition-all duration-300">
-                <div class="space-y-4">
-                    <div class="flex text-white/90">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z"/></svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z"/></svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z"/></svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z"/></svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z"/></svg>
-                    </div>
-                    <p class="font-body-md text-body-md text-white/80 leading-relaxed">
-                        "Llevo un año mejorando mi español en Over the Moon y la experiencia es inigualable. Las clases son dinámicas, enfocadas en hablar con confianza. Te hacen sentir como en casa desde el primer día."
-                    </p>
-                </div>
-                <div class="flex items-center gap-4 pt-6 border-t border-white/10 mt-6">
-                    <div class="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center text-white font-bold text-sm shrink-0">
-                        DG
-                    </div>
-                    <div>
-                        <p class="font-label-md text-label-md font-bold text-white">John Doe</p>
-                        <p class="font-label-sm text-label-sm text-white/60">Alumno de Español</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
+        </section>
 
         <section
             class="px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto transition-all duration-700 opacity-100 translate-y-0">
@@ -710,256 +901,191 @@
         </section>
     </main>
     <footer class="w-full bg-[#017281] text-white">
-      <div class="max-w-[1600px] mx-auto px-6 xl:px-0 py-section-gap">
-        <div
-          class="grid grid-cols-1 md:grid-cols-2 min-[1201px]:grid-cols-4 gap-10 lg:gap-gutter justify-items-stretch"
-        >
-          <div class="space-y-6 flex flex-col justify-between">
-            <div class="space-y-4 lg:ml-12">
-              <div class="flex flex-col items-start gap-2">
-                <img
-                  alt="Footer Logo"
-                  class="h-20 w-auto"
-                  src="assets/img/logo (2).png"
-                />
-                <span
-                  class="text-headline-md font-headline-md font-bold text-white"
-                  >Over the Moon</span
-                >
-              </div>
-              <p class="font-body-md text-body-md text-white/80 max-w-sm">
-                Tu pasaporte al mundo. Te acompañamos a dominar nuevos idiomas
-                con un método <br />práctico y adaptado a tu ritmo.
-              </p>
-              <div class="flex gap-5 items-center pt-2">
-                <a
-                  class="text-white hover:opacity-70 transition-opacity"
-                  href="https://www.instagram.com/overthemoonidiomas?igsh=MXJjbTQyaDZmZHlzcw=="
-                  title="Instagram"
-                >
-                  <svg
-                    class="w-5 h-5 stroke-current fill-none"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <rect
-                      x="2"
-                      y="2"
-                      width="20"
-                      height="20"
-                      rx="5"
-                      ry="5"
-                    ></rect>
-                    <path
-                      d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
-                    ></path>
-                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                  </svg>
-                </a>
-                <a
-                  class="text-white hover:opacity-70 transition-opacity"
-                  href="https://www.tiktok.com/@academia.over.the?_r=1&_t=ZN-976IBpAUe9u"
-                  title="TikTok"
-                >
-                <svg xmlns="http://www.w3.org/2000/svg" 
-                    viewBox="0 0 24 24" 
-                    fill="none" 
-                    stroke="currentColor" 
-                    stroke-width="2" 
-                    stroke-linecap="round" 
-                    stroke-linejoin="round"
-                    class="w-6 h-6"> <!-- w-6 h-6 es 24px en Tailwind -->
-                    <path d="M12.94,1.61V15.78a2.83,2.83,0,0,1-2.83,2.83h0a2.83,2.83,0,0,1-2.83-2.83h0a2.84,2.84,0,0,1,2.83-2.84h0V9.17h0A6.61,6.61,0,0,0,3.5,15.78h0a6.61,6.61,0,0,0,6.61,6.61h0a6.61,6.61,0,0,0,6.61-6.61V9.17l.2.1a8.08,8.08,0,0,0,3.58.84h0V6.33l-.11,0a4.84,4.84,0,0,1-3.67-4.7H12.94Z"/>
-                </svg>
-                </a>
-              </div>
+        <div class="max-w-[1600px] mx-auto px-6 xl:px-0 py-section-gap">
+            <div
+                class="grid grid-cols-1 md:grid-cols-2 min-[1201px]:grid-cols-4 gap-10 lg:gap-gutter justify-items-stretch">
+                <div class="space-y-6 flex flex-col justify-between">
+                    <div class="space-y-4 lg:ml-12">
+                        <div class="flex flex-col items-start gap-2">
+                            <img alt="Footer Logo" class="h-20 w-auto" src="assets/img/logo (2).png" />
+                            <span class="text-headline-md font-headline-md font-bold text-white">Over the Moon</span>
+                        </div>
+                        <p class="font-body-md text-body-md text-white/80 max-w-sm">
+                            Tu pasaporte al mundo. Te acompañamos a dominar nuevos idiomas
+                            con un método <br />práctico y adaptado a tu ritmo.
+                        </p>
+                        <div class="flex gap-5 items-center pt-2">
+                            <a class="text-white hover:opacity-70 transition-opacity"
+                                href="https://www.instagram.com/overthemoonidiomas?igsh=MXJjbTQyaDZmZHlzcw=="
+                                title="Instagram">
+                                <svg class="w-5 h-5 stroke-current fill-none" stroke-width="2" viewBox="0 0 24 24"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                            </a>
+                            <a class="text-white hover:opacity-70 transition-opacity"
+                                href="https://www.tiktok.com/@academia.over.the?_r=1&_t=ZN-976IBpAUe9u" title="TikTok">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="w-6 h-6"> <!-- w-6 h-6 es 24px en Tailwind -->
+                                    <path
+                                        d="M12.94,1.61V15.78a2.83,2.83,0,0,1-2.83,2.83h0a2.83,2.83,0,0,1-2.83-2.83h0a2.84,2.84,0,0,1,2.83-2.84h0V9.17h0A6.61,6.61,0,0,0,3.5,15.78h0a6.61,6.61,0,0,0,6.61,6.61h0a6.61,6.61,0,0,0,6.61-6.61V9.17l.2.1a8.08,8.08,0,0,0,3.58.84h0V6.33l-.11,0a4.84,4.84,0,0,1-3.67-4.7H12.94Z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="text-xs text-white/60 hidden md:block lg:ml-12 pt-6">
+                        © 2026 Over the Moon Academia.
+                    </p>
+                </div>
+
+                <div class="space-y-4 w-full">
+                    <h4 class="font-headline-sm text-base text-white font-bold uppercase tracking-wider opacity-90">
+                        Explora
+                    </h4>
+                    <ul class="space-y-3">
+                        <li>
+                            <a class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0"
+                                href="index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0"
+                                href="about.html">Sobre Nosotros</a>
+                        </li>
+                        <li>
+                            <a class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0"
+                                href="services.html">Nuestros Servicios</a>
+                        </li>
+                        <li>
+                            <a class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0"
+                                href="contact.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="space-y-4 w-full">
+                    <h4 class="font-headline-sm text-base text-white font-bold uppercase tracking-wider opacity-90">
+                        Información
+                    </h4>
+                    <ul class="space-y-3">
+                        <li>
+                            <a class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0"
+                                href="politica-privacidad.html">Política de Privacidad</a>
+                        </li>
+                        <li>
+                            <a class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0"
+                                href="terminos-condiciones.html">Términos y Condiciones</a>
+                        </li>
+                        <li>
+                            <a class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0"
+                                href="aviso-legal.html">Aviso Legal</a>
+                        </li>
+                        <li>
+                            <a class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0"
+                                href="cookie-policy.html">Política de Cookies</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="space-y-4 w-full">
+                    <h4 class="font-headline-sm text-base text-white font-bold uppercase tracking-wider opacity-90">
+                        Contacto
+                    </h4>
+                    <div class="space-y-4 font-body-md text-body-md text-white/80">
+                        <div class="flex items-start gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#FFFFFF">
+                                <path
+                                    d="M536.5-503.5Q560-527 560-560t-23.5-56.5Q513-640 480-640t-56.5 23.5Q400-593 400-560t23.5 56.5Q447-480 480-480t56.5-23.5ZM480-186q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z" />
+                            </svg>
+                            <span>Avda América, 28, 18006 Zaidín</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#FFFFFF">
+                                <path
+                                    d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z" />
+                            </svg>
+                            <span>858 814 666 / 602 880 834</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#FFFFFF">
+                                <path
+                                    d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z" />
+                            </svg>
+                            <span class="break-all min-[1201px]:break-normal">info@overthemoonidiomas.com</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <p class="text-xs text-white/60 hidden md:block lg:ml-12 pt-6">
-              © 2026 Over the Moon Academia.
-            </p>
-          </div>
-
-          <div class="space-y-4 w-full">
-            <h4
-              class="font-headline-sm text-base text-white font-bold uppercase tracking-wider opacity-90"
-            >
-              Explora
-            </h4>
-            <ul class="space-y-3">
-              <li>
-                <a
-                  class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0"
-                  href="index.html"
-                  >Inicio</a
-                >
-              </li>
-              <li>
-                <a
-                  class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0"
-                  href="about.html"
-                  >Sobre Nosotros</a
-                >
-              </li>
-              <li>
-                <a
-                  class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0"
-                  href="services.html"
-                  >Nuestros Servicios</a
-                >
-              </li>
-              <li>
-                <a
-                  class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0"
-                  href="contact.html"
-                  >Contacto</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <div class="space-y-4 w-full">
-            <h4
-              class="font-headline-sm text-base text-white font-bold uppercase tracking-wider opacity-90"
-            >
-              Información
-            </h4>
-            <ul class="space-y-3">
-              <li>
-                <a
-                  class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0"
-                  href="politica-privacidad.html"
-                  >Política de Privacidad</a
-                >
-              </li>
-              <li>
-                <a
-                  class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0"
-                  href="terminos-condiciones.html"
-                  >Términos y Condiciones</a
-                >
-              </li>
-              <li>
-                <a
-                  class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0"
-                  href="aviso-legal.html"
-                  >Aviso Legal</a
-                >
-              </li>
-              <li>
-                <a
-                  class="relative inline-block text-white/80 hover:text-white transition-all duration-300 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:bg-white before:rounded-full before:opacity-0 before:-translate-x-3 before:transition-all before:duration-300 hover:pl-4 hover:before:opacity-100 hover:before:translate-x-0"
-                  href="cookie-policy.html"
-                  >Política de Cookies</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <div class="space-y-4 w-full">
-            <h4
-              class="font-headline-sm text-base text-white font-bold uppercase tracking-wider opacity-90"
-            >
-              Contacto
-            </h4>
-            <div class="space-y-4 font-body-md text-body-md text-white/80">
-              <div class="flex items-start gap-3">
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M536.5-503.5Q560-527 560-560t-23.5-56.5Q513-640 480-640t-56.5 23.5Q400-593 400-560t23.5 56.5Q447-480 480-480t56.5-23.5ZM480-186q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>
-                <span>Avda América, 28, 18006 Zaidín</span>
-              </div>
-              <div class="flex items-center gap-3">
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
-                <span>858 814 666 / 602 880 834</span>
-              </div>
-              <div class="flex items-center gap-3">
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
-                <span class="break-all min-[1201px]:break-normal"
-                  >info@overthemoonidiomas.com</span
-                >
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </footer>
-<button 
-    id="btn-scroll-top" 
-    class="fixed bottom-6 right-6 z-50 hidden bg-[#017281] text-white p-1.5 rounded-full shadow-lg hover:bg-opacity-90 transition-all duration-300 hover:scale-110 active:scale-95 focus:outline-none group w-12 h-12"
-    onclick="scrollToTop()"
-    title="Volver arriba">
-    
-    <div class="relative w-full h-full flex items-center justify-center">
-        
-        <svg class="absolute top-0 left-0 w-full h-full transform -rotate-90" viewBox="0 0 36 36">
-            <path 
-                class="text-white/20" 
-                stroke="currentColor" 
-                stroke-width="2" 
-                fill="none" 
-                d="M18 1 a 17 17 0 0 1 0 34 a 17 17 0 0 1 0 -34" 
-            />
-            <path 
-                id="progress-circle"
-                class="text-white transition-all duration-75" 
-                stroke="currentColor" 
-                stroke-width="2" 
-                stroke-dasharray="106.8"
-                stroke-dashoffset="106.8"
-                stroke-linecap="round"
-                fill="none" 
-                d="M18 1 a 17 17 0 0 1 0 34 a 17 17 0 0 1 0 -34" 
-            />
-        </svg>
+    <button id="btn-scroll-top"
+        class="fixed bottom-6 right-6 z-50 hidden bg-[#017281] text-white p-1.5 rounded-full shadow-lg hover:bg-opacity-90 transition-all duration-300 hover:scale-110 active:scale-95 focus:outline-none group w-12 h-12"
+        onclick="scrollToTop()" title="Volver arriba">
 
-        <svg class="w-5 h-5 transform transition-transform duration-300 group-hover:-translate-y-0.5 relative z-10" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5"></path>
-        </svg>
-    </div>
-</button>
+        <div class="relative w-full h-full flex items-center justify-center">
 
-<script>
-    const scrollTopBtn = document.getElementById("btn-scroll-top");
-    const progressCircle = document.getElementById("progress-circle");
-    
-    // La longitud real del contorno de nuestro círculo de radio 17
-    const pathLength = 106.8; 
+            <svg class="absolute top-0 left-0 w-full h-full transform -rotate-90" viewBox="0 0 36 36">
+                <path class="text-white/20" stroke="currentColor" stroke-width="2" fill="none"
+                    d="M18 1 a 17 17 0 0 1 0 34 a 17 17 0 0 1 0 -34" />
+                <path id="progress-circle" class="text-white transition-all duration-75" stroke="currentColor"
+                    stroke-width="2" stroke-dasharray="106.8" stroke-dashoffset="106.8" stroke-linecap="round"
+                    fill="none" d="M18 1 a 17 17 0 0 1 0 34 a 17 17 0 0 1 0 -34" />
+            </svg>
 
-    window.onscroll = function() {
-        const totalHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        const scrollTop = document.documentElement.scrollTop;
-        
-        if (totalHeight > 0) {
-            // Calculamos el desfase exacto que necesita la línea para completarse
-            const progress = scrollTop / totalHeight;
-            const offset = pathLength - (progress * pathLength);
-            
-            // Modificamos el offset: cuando llega abajo, el offset es 0 y se cierra ENTERO
-            progressCircle.style.strokeDashoffset = offset;
+            <svg class="w-5 h-5 transform transition-transform duration-300 group-hover:-translate-y-0.5 relative z-10"
+                fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5"></path>
+            </svg>
+        </div>
+    </button>
+
+    <script>
+        const scrollTopBtn = document.getElementById("btn-scroll-top");
+        const progressCircle = document.getElementById("progress-circle");
+
+        // La longitud real del contorno de nuestro círculo de radio 17
+        const pathLength = 106.8;
+
+        window.onscroll = function () {
+            const totalHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrollTop = document.documentElement.scrollTop;
+
+            if (totalHeight > 0) {
+                // Calculamos el desfase exacto que necesita la línea para completarse
+                const progress = scrollTop / totalHeight;
+                const offset = pathLength - (progress * pathLength);
+
+                // Modificamos el offset: cuando llega abajo, el offset es 0 y se cierra ENTERO
+                progressCircle.style.strokeDashoffset = offset;
+            }
+
+            // Mostrar u ocultar botón
+            if (scrollTop > 300) {
+                scrollTopBtn.classList.remove("hidden");
+                scrollTopBtn.classList.add("flex");
+            } else {
+                scrollTopBtn.classList.remove("flex");
+                scrollTopBtn.classList.add("hidden");
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
         }
+    </script>
 
-        // Mostrar u ocultar botón
-        if (scrollTop > 300) {
-            scrollTopBtn.classList.remove("hidden");
-            scrollTopBtn.classList.add("flex");
-        } else {
-            scrollTopBtn.classList.remove("flex");
-            scrollTopBtn.classList.add("hidden");
-        }
-    };
-
-    function scrollToTop() {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    }
-</script>
-
-<script type="text/javascript" src="assets/js/traductor.js"></script>
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-<script type="text/javascript" src="assets/js/cookie-banner.js"></script>
+    <script type="text/javascript" src="assets/js/traductor.js"></script>
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript" src="assets/js/cookie-banner.js"></script>
 </body>
 
 </html>
-
